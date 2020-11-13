@@ -50,6 +50,7 @@
 
         a:hover {
             color: #FA9773;
+            
         }
 
         .dropbtn {
@@ -58,11 +59,14 @@
             font-size: 14px;
             border: none;
             cursor: pointer;
+            transition-delay: 10s;
         }
 
         .dropdown {
             position: relative;
             display: inline-block;
+            z-index: 999;
+            text-align: center;
         }
 
         .dropdown-content {
@@ -73,6 +77,8 @@
             position: absolute;
             right: 0;
             min-width: 200px;
+            /* top: 10px; */
+            padding-left: 5px;
         }
 
         .dropdown-content a {
@@ -82,12 +88,22 @@
 
         .dropdown-content a:hover {
             color: #FA9773;
+            
         }
 
         .dropdown:hover .dropdown-content {
             display: block;
             color: white;
+            
+            
         }
+        .dropdown-content:hover{
+            transition-delay:5s;
+        }
+
+        /* #contact{
+            top: 50px;
+        } */
 
         /* CSS for "Coming soon" */
         #whitespace_for_footer {
@@ -117,6 +133,7 @@
         </div>
     </div>
 
+    <!--------------------- Header bar --------------------->
     <div style="color: white;">
         <ul class="nav justify-content-center navbar-light" style="background-color: #547478;">
 
@@ -137,7 +154,7 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="product&services.html">PRODUCT & SERVICES</a>
+                <a class="nav-link" href="product&services.html" >PRODUCT & SERVICES</a>
             </li>
 
             <div class="nav-item">
@@ -147,7 +164,7 @@
                         <ul class="dropdown-content">
                             <a href="#">NEWS & ACTIVITIES</a><br>
                             <a href="#">PROMOTIONS</a><br>
-                            <a style="color: #FA9773;" href="#">DEK DEK's GALLERY</a><br>
+                            <a href="#">DEK DEK's GALLERY</a><br>
                             <a href="19th-anniversary.html">19th ANNIVERSARY</a>
                         </ul>
                     </div>
@@ -180,13 +197,14 @@
                 <div class="dropdown">
                     <li class="nav-link">
                         <button class="dropbtn">CONTACT</button>
-                        <ul class="dropdown-content">
+                        <ul class="dropdown-content" id="contact">
                             <a href="#">CONTACT US</a><br>
                             <a href="#">WORK WITH US</a>
                         </ul>
                     </li>
                 </div>
             </div>
+
         </ul>
     </div>
 
