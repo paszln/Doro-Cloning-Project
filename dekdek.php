@@ -233,7 +233,7 @@
                          <ul class="dropdown-content">
                              <a href="#">NEWS & ACTIVITIES</a><br>
                              <a href="#">PROMOTIONS</a><br>
-                             <a href="#">DEK DEK's GALLERY</a><br>
+                             <a href="dekdek.php" style="color: #FA9773;">DEK DEK's GALLERY</a><br>
                              <a href="19th-anniversary.html">19th ANNIVERSARY</a>
                          </ul>
                      </div>
