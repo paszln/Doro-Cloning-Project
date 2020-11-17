@@ -9,16 +9,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About us เกี่ยวเถอะนะแม่เกี่ยว เห้ย เห้ย | D'ORO Coffeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
     body {
         font-family: 'Mitr', sans-serif;
+        /* font-family: 'Kanit', sans-serif; */
     }
     
     .nav-item {
         font-size: 14px;
+        /* font-weight: 600; */
     }
     
     .nav-link {
@@ -28,9 +30,6 @@
     .nav-link:hover {
         color: #FA9773;
     }
-    /* h5 {
-        font-size: 16px;
-    } */
     
     #img1 {
         width: 224px;
@@ -82,142 +81,161 @@
         display: block;
         color: white;
     }
+    
+    .bodyparallax {
+        background-image: url(https://static.wixstatic.com/media/9fa84d_cbee5e5593994ca089cafbd62b9f6c2b~mv2_d_8000_8159_s_4_2.png);
+        height: 100%;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+        z-index: -1;
+    }
 </style>
 
 <body>
-    <div style="color: white;">
-        <div class="top" style="font-size:30px; background-color: #104751;">
-            <center><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp">
-            </center>
+    <div class="bodyparallax">
+        <div style="color: white;">
+            <div class="top" style="font-size:30px; background-color: #104751; height: auto; width: 100%; position: relative;">
+                <center><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></center>
+            </div>
         </div>
-    </div>
 
-    <div style="color: white;">
-        <ul class="nav justify-content-center navbar-light" style="background-color: #547478;">
-
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME</a>
-            </li>
-
-            <div class="nav-item">
-                <li class="nav-link">
-                    <div class="dropdown">
-                        <button class="dropbtn">COMPANY</button>
-                        <ul class="dropdown-content">
-                            <a href="aboutus.html" style="color: #FA9773;">ABOUT US</a><br>
-                            <a href="fromfarmtocup.html">FORM FARM TO CUP</a>
-                        </ul>
-                    </div>
+        <div style="color: white;">
+            <ul class="nav justify-content-center navbar-light " style="background-color: #547478; position: static; height: auto; width: 100%;">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
-            </div>
 
-            <li class="nav-item">
-                <a class="nav-link" href="product&services.html">PRODUCT & SERVICES</a>
-            </li>
-
-            <div class="nav-item">
-                <li class="nav-link">
-                    <div class="dropdown">
-                        <button class="dropbtn">NEWS&PROMOTION</button>
-                        <ul class="dropdown-content">
-                            <a href="#">NEWS & ACTIVITIES</a><br>
-                            <a href="#">PROMOTIONS</a><br>
-                            <a href="#">DEK DEK's GALLERY</a><br>
-                            <a href="19th-anniversary.html">19th ANNIVERSARY</a>
-                        </ul>
-                    </div>
-                </li>
-            </div>
-
-            <div class="nav-item">
-                <li class="nav-link">
-                    <div class="dropdown">
-                        <button class="dropbtn">MEMBERSHIP</button>
-                        <ul class="dropdown-content">
-                            <a href="#">EARN & REDEEM</a><br>
-                            <a href="#">PREMIUM COLLECTION</a><br>
-                            <a href="#">MEMBERTIERS</a><br>
-                            <a href="#">REGISTER NOW</a>
-                        </ul>
-                    </div>
-                </li>
-            </div>
-
-            <li class="nav-item ">
-                <a class="nav-link " href="# ">STORE LOCATIONS</a>
-            </li>
-
-            <li class="nav-item ">
-                <a class="nav-link " href="# ">FRANCHISE</a>
-            </li>
-
-            <div class="nav-item">
-                <div class="dropdown">
+                <div class="nav-item">
                     <li class="nav-link">
-                        <button class="dropbtn">CONTACT</button>
-                        <ul class="dropdown-content">
-                            <a href="#">CONTACT US</a><br>
-                            <a href="#">WORK WITH US</a>
-                        </ul>
+                        <div class="dropdown">
+                            <button class="dropbtn">COMPANY</button>
+                            <ul class="dropdown-content">
+                                <a href="aboutus.html" style="color: #FA9773;">ABOUT US</a><br>
+                                <a href="fromfarmtocup.html">FORM FARM TO CUP</a>
+                            </ul>
+                        </div>
                     </li>
                 </div>
-            </div>
 
-        </ul>
-    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="product&services.html">PRODUCT & SERVICES</a>
+                </li>
 
+                <div class="nav-item">
+                    <li class="nav-link">
+                        <div class="dropdown">
+                            <button class="dropbtn">NEWS&PROMOTION</button>
+                            <ul class="dropdown-content">
+                                <a href="News.html">NEWS & ACTIVITIES</a><br>
+                                <a href="promotion.html">PROMOTIONS</a><br>
+                                <a href="dekdek.php">DEK DEK's GALLERY</a><br>
+                                <a href="19th-anniversary.html">19th ANNIVERSARY</a>
+                            </ul>
+                        </div>
+                    </li>
+                </div>
 
+                <div class="nav-item">
+                    <li class="nav-link">
+                        <div class="dropdown">
+                            <button class="dropbtn">MEMBERSHIP</button>
+                            <ul class="dropdown-content">
+                                <a href="#">EARN & REDEEM</a><br>
+                                <a href="#">PREMIUM COLLECTION</a><br>
+                                <a href="#">MEMBERTIERS</a><br>
+                                <a href="#">REGISTER NOW</a>
+                            </ul>
+                        </div>
+                    </li>
+                </div>
 
-    <div class="container" style="text-align: center; ">
-        <h1 style="color: #255c63; margin-top: 70px; font-weight: bold; font-size: 45px;">ABOUT US</h1>
-        <center>
-            <div style="width: 426px; height: 5px; border-top: 2px solid  #547478; opacity: 0.6; margin: 18px 0px 40px 0px;"></div>
-        </center>
-        <p style="text-align: center; font-size: 16px;">ร้านกาแฟ ‘ดิโอโร่’ (D’Oro) ก่อตั้งขึ้นตั้งแต่ปี 2542 โดยเริ่มต้นจากวิสัยทัศน์ของผู้บริหารที่อยากเห็นคนไทย
-            <br>มีกาแฟไทยที่ได้มาตรฐานไม่แพ้ที่ใดในโลกบริโภค ได้ลิ้มรสถึงรสชาติความอร่อย
-            <br>กลิ่นหอมของกาแฟคุณภาพดีฝีมือคนไทยในราคาที่เหมาะสม ร้านกาแฟของคนไทย ‘ดิโอโร่’ จึงถือกำเนิดขึ้น
-            <br><br>สิ่งที่ดิโอโร่ยึดมั่นเสมอมาคือคุณภาพในทุกๆรายละเอียดตั้งแต่ต้นน้ำจนปลายน้ำ<br>ปัจจุบันดิโอโร่เปิดให้บริการรวมทั้งสิ้นกว่า 100 สาขา ในกรุงเทพ ปริมณฑล และต่างจังหวัด<br>เพื่อตอบโจทย์และตอบสนองความต้องการของคนรุ่นใหม่ ดิโอโร่ ขยายสาขาไปสู่แหล่งชุมชนต่างๆ
-            อาทิ
-            <br>สถานบริการน้ำมัน โรงพยาบาล อาคารสำนักงาน และ สถานศึกษา พร้อมทั้งเพิ่มรูปแบบการบริการ
-            <br>ทั้งการจัดคอฟฟี่เบรค และ ยังผลิตมีสินค้าคุณภาพอื่น ๆ ให้ลูกค้าได้เลือกซื้อ เช่น กาแฟคั่วบด ดิโอโร่ และ ชาสมุนไพร (Herb Tea)<br><br>ด้วยการออกแบบ ร้านกาแฟ ที่มีเอกลักษณ์เฉพาะตัวกับบรรยากาศที่เต็มไปด้วยความมีชีวิตชีวา ดิโอโร่จึงกลายเป็น
-            <br>สถานที่ที่เติมเต็มความสุขในการดื่มกาแฟ ทานของว่าง
-            <br>อ่านหนังสือหรือจะใช้เป็นสถานที่พบปะสังสรรค์ในหมู่เพื่อนฝูง คู่รัก และครอบครัว
-            <br> ที่ตอบสนองทุกความต้องการได้อย่างลงตัวที่สุด
-        </p>
-        <img src="https://static.wixstatic.com/media/9fa84d_79552b4f9c6a470fa336e4b495f72333~mv2_d_4988_5267_s_4_2.png/v1/fill/w_1490,h_1576,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_79552b4f9c6a470fa336e4b495f72333~mv2_d_4988_5267_s_4_2.webp " style="width: 1192px; height: 1261px; object-fit: cover; margin-top: 5px;">
-    </div>
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">STORE LOCATIONS</a>
+                </li>
 
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">FRANCHISE</a>
+                </li>
 
-    <footer>
-        <div id="all" style="background-color:#104751; text-align: center; color: white;">
-            <h5 style="padding-top: 65px; font-size: 15px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
-            <div class="input-container" style="border-bottom: 2px solid white; width: 380px; display: inline-block; margin-top: 10px;">
-                <i class="fa fa-envelope icon"></i>
-                <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
-            </div>
-            <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
-                Now</button>
-            <h5 style="padding-top: 70px; font-size: 18px;">Follow Us:</h5>
-            <a href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr" target="_blank">
-                <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp" style="width: 60px; height: 70px;">
-            </a>
-            <a href="https://www.instagram.com/d.orothailand/" target="_blank">
-                <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp"
-                    style="width: 55px; height: 60px;">
-            </a>
-            <a href="https://line.me/R/ti/p/%40d.orothailand" target="_blank">
-                <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp"
-                    style="width: 50px; height: 65px;">
-            </a>
-            <div style="width: 100%; height: 45px; background-color: #c14e25; margin-top: 25px;">
-                <h5 style="padding-top: 9px; font-size: 14px;">Copyright©2018 by Golden Cream Ltd,. (D'ORO) all right reserved.
-                </h5>
-            </div>
-            <div style="width: 100%; height: 25px;">
+                <div class="nav-item">
+                    <div class="dropdown">
+                        <li class="nav-link">
+                            <button class="dropbtn">CONTACT</button>
+                            <ul class="dropdown-content">
+                                <a href="#">CONTACT US</a><br>
+                                <a href="#">WORK WITH US</a>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
 
-            </div>
+            </ul>
         </div>
-    </footer>
+
+
+
+        <div class="container" style="text-align: center; ">
+            <h1 style="color: #255c63; margin-top: 70px; font-weight: bold; font-size: 45px; font-family: 'Kanit', sans-serif;">ABOUT US</h1>
+            <center>
+                <div style="width: 426px; height: 5px; border-top: 2px solid  #547478; opacity: 0.6; margin: 18px 0px 40px 0px;"></div>
+            </center>
+            <p style="text-align: center; font-size: 16px; ">ร้านกาแฟ ‘ดิโอโร่’ (D’Oro) ก่อตั้งขึ้นตั้งแต่ปี 2542 โดยเริ่มต้นจากวิสัยทัศน์ของผู้บริหารที่อยากเห็นคนไทย
+                <br>มีกาแฟไทยที่ได้มาตรฐานไม่แพ้ที่ใดในโลกบริโภค ได้ลิ้มรสถึงรสชาติความอร่อย
+                <br>กลิ่นหอมของกาแฟคุณภาพดีฝีมือคนไทยในราคาที่เหมาะสม ร้านกาแฟของคนไทย ‘ดิโอโร่’ จึงถือกำเนิดขึ้น
+                <br><br>สิ่งที่ดิโอโร่ยึดมั่นเสมอมาคือคุณภาพในทุกๆรายละเอียดตั้งแต่ต้นน้ำจนปลายน้ำ<br>ปัจจุบันดิโอโร่เปิดให้บริการรวมทั้งสิ้นกว่า 100 สาขา ในกรุงเทพ ปริมณฑล และต่างจังหวัด<br>เพื่อตอบโจทย์และตอบสนองความต้องการของคนรุ่นใหม่ ดิโอโร่ ขยายสาขาไปสู่แหล่งชุมชนต่างๆ
+                อาทิ
+                <br>สถานบริการน้ำมัน โรงพยาบาล อาคารสำนักงาน และ สถานศึกษา พร้อมทั้งเพิ่มรูปแบบการบริการ
+                <br>ทั้งการจัดคอฟฟี่เบรค และ ยังผลิตมีสินค้าคุณภาพอื่น ๆ ให้ลูกค้าได้เลือกซื้อ เช่น กาแฟคั่วบด ดิโอโร่ และ ชาสมุนไพร (Herb Tea)<br><br>ด้วยการออกแบบ ร้านกาแฟ ที่มีเอกลักษณ์เฉพาะตัวกับบรรยากาศที่เต็มไปด้วยความมีชีวิตชีวา ดิโอโร่จึงกลายเป็น
+                <br>สถานที่ที่เติมเต็มความสุขในการดื่มกาแฟ ทานของว่าง
+                <br>อ่านหนังสือหรือจะใช้เป็นสถานที่พบปะสังสรรค์ในหมู่เพื่อนฝูง คู่รัก และครอบครัว
+                <br> ที่ตอบสนองทุกความต้องการได้อย่างลงตัวที่สุด
+            </p>
+            <img src="https://static.wixstatic.com/media/9fa84d_79552b4f9c6a470fa336e4b495f72333~mv2_d_4988_5267_s_4_2.png/v1/fill/w_1490,h_1576,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_79552b4f9c6a470fa336e4b495f72333~mv2_d_4988_5267_s_4_2.webp " style="width: 1192px; height: 1261px; object-fit: cover; margin: 5px 0px 0px -40px;">
+        </div>
+
+
+        <footer>
+            <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
+                <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
+                <div class="input-container" style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
+                    <i class="fa fa-envelope icon"></i>
+                    <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
+                </div>
+                <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
+            Now</button>
+
+                <h5 style="padding-top: 70px; ">Follow Us:</h5>
+                <a href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp " style="width: 60px; height: 70px; ">
+                </a>
+                <a href="https://www.instagram.com/d.orothailand/ " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
+                        style="width: 55px; height: 60px; ">
+                </a>
+                <a href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp "
+                        style="width: 50px; height: 65px; ">
+                </a>
+
+                <div style="width: 100%; height: 45px; background-color: #c14e25; margin-top: 25px; ">
+                    <h5 style="padding-top: 12.5px; ">Copyright©2018 by Golden Cream Ltd,. (D'ORO) all right reserved.
+                    </h5>
+                </div>
+
+                <div style="width: 100%; height: 25px; ">
+
+                </div>
+            </div>
+            <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
+                <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp " width="120px
+        " height="100px ">
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

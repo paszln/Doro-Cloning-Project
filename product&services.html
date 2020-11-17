@@ -74,6 +74,7 @@
         position: absolute;
         right: 0;
         min-width: 200px;
+        z-index: 2;
     }
     
     .dropdown-content a {
@@ -83,7 +84,6 @@
     
     .dropdown-content a:hover {
         color: #FA9773;
-        transition-delay: 2s;
     }
     
     .dropdown:hover .dropdown-content {
@@ -131,226 +131,238 @@
     }
     
     .headparallax {
-        background-image: url(https://static.wixstatic.com/media/9fa84d_de40040537654907b602d3df0700fcfb~mv2.jpg/v1/fill/w_980,h_468,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_de40040537654907b602d3df0700fcfb~mv2.webp);
-        min-height: 342.8px;
-        min-width: 980px;
+        background-image: url(https://static.wixstatic.com/media/9fa84d_de40040537654907b602d3df0700fcfb~mv2.jpg);
+        height: 342.8px;
+        width: 100%;
         background-attachment: fixed;
-        background-position: center;
+        background-position: 0% 40.8%;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: hsl(0, 0%, 75%);
         background-blend-mode: multiply;
+        z-index: 0;
+    }
+    
+    .bodyparallax {
+        background-image: url(https://static.wixstatic.com/media/9fa84d_cbee5e5593994ca089cafbd62b9f6c2b~mv2_d_8000_8159_s_4_2.png);
+        height: 100%;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
         z-index: -1;
-        position: relative;
-        width: calc(100% - 0px);
-        min-width: 980px;
     }
 </style>
 
 <body>
-    <div style="color: white;">
-        <div class="top" style="font-size:30px; background-color: #104751; height: 135px;">
-            <center>
-                <a href="index.html"><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
-            </center>
+    <div class="bodyparallax">
+        <div style="color: white;">
+            <div class="top" style="font-size:30px; background-color: #104751; height: 135px;">
+                <center>
+                    <a href="index.html"><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
+                </center>
+            </div>
         </div>
-    </div>
 
-    <div style="color: white;">
-        <ul class="nav justify-content-center navbar-light" style="background-color: #547478; height: 33px;">
+        <div style="color: white;">
+            <ul class="nav justify-content-center navbar-light" style="background-color: #547478; height: 33px;">
 
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME</a>
-            </li>
-
-            <div class="nav-item">
-                <li class="nav-link">
-                    <div class="dropdown">
-                        <button class="dropbtn">COMPANY</button>
-                        <ul class="dropdown-content">
-                            <a href="aboutus.html">ABOUT US</a><br>
-                            <a href="fromfarmtocup.html">FORM FARM TO CUP</a>
-                        </ul>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
-            </div>
 
-            <li class="nav-item">
-                <a class="nav-link" href="product&services.html" style="color: #FA9773;">PRODUCT & SERVICES</a>
-            </li>
-
-            <div class="nav-item">
-                <li class="nav-link">
-                    <div class="dropdown">
-                        <button class="dropbtn">NEWS&PROMOTION</button>
-                        <ul class="dropdown-content">
-                            <a href="News.html">NEWS & ACTIVITIES</a><br>
-                            <a href="promotion.html">PROMOTIONS</a><br>
-                            <a href="dekdek.php">DEK DEK's GALLERY</a><br>
-                            <a href="19th-anniversary.html">19th ANNIVERSARY</a>
-                        </ul>
-                    </div>
-                </li>
-            </div>
-
-            <div class="nav-item">
-                <li class="nav-link">
-                    <div class="dropdown">
-                        <button class="dropbtn">MEMBERSHIP</button>
-                        <ul class="dropdown-content">
-                            <a href="#">EARN & REDEEM</a><br>
-                            <a href="#">PREMIUM COLLECTION</a><br>
-                            <a href="#">MEMBERTIERS</a><br>
-                            <a href="#">REGISTER NOW</a>
-                        </ul>
-                    </div>
-                </li>
-            </div>
-
-            <li class="nav-item ">
-                <a class="nav-link " href="# ">STORE LOCATIONS</a>
-            </li>
-
-            <li class="nav-item ">
-                <a class="nav-link " href="# ">FRANCHISE</a>
-            </li>
-
-            <div class="nav-item">
-                <div class="dropdown">
+                <div class="nav-item">
                     <li class="nav-link">
-                        <button class="dropbtn">CONTACT</button>
-                        <ul class="dropdown-content">
-                            <a href="#">CONTACT US</a><br>
-                            <a href="#">WORK WITH US</a>
-                        </ul>
+                        <div class="dropdown">
+                            <button class="dropbtn">COMPANY</button>
+                            <ul class="dropdown-content">
+                                <a href="aboutus.html">ABOUT US</a><br>
+                                <a href="fromfarmtocup.html">FORM FARM TO CUP</a>
+                            </ul>
+                        </div>
                     </li>
                 </div>
-            </div>
 
-        </ul>
-    </div>
-    <div class="headparallax" style="width: 100%; position: relative; top: 0px; bottom: 0px;">
-        <div class="container">
-            <h1 style="color: white; margin: 0px 0px 0px 100px;"><b>PRODUCT & <br>SERVICE</b></h1>
+                <li class="nav-item">
+                    <a class="nav-link" href="product&services.html" style="color: #FA9773;">PRODUCT & SERVICES</a>
+                </li>
+
+                <div class="nav-item">
+                    <li class="nav-link">
+                        <div class="dropdown">
+                            <button class="dropbtn">NEWS&PROMOTION</button>
+                            <ul class="dropdown-content">
+                                <a href="News.html">NEWS & ACTIVITIES</a><br>
+                                <a href="promotion.html">PROMOTIONS</a><br>
+                                <a href="dekdek.php">DEK DEK's GALLERY</a><br>
+                                <a href="19th-anniversary.html">19th ANNIVERSARY</a>
+                            </ul>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="nav-item">
+                    <li class="nav-link">
+                        <div class="dropdown">
+                            <button class="dropbtn">MEMBERSHIP</button>
+                            <ul class="dropdown-content">
+                                <a href="#">EARN & REDEEM</a><br>
+                                <a href="#">PREMIUM COLLECTION</a><br>
+                                <a href="#">MEMBERTIERS</a><br>
+                                <a href="#">REGISTER NOW</a>
+                            </ul>
+                        </div>
+                    </li>
+                </div>
+
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">STORE LOCATIONS</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">FRANCHISE</a>
+                </li>
+
+                <div class="nav-item">
+                    <div class="dropdown">
+                        <li class="nav-link">
+                            <button class="dropbtn">CONTACT</button>
+                            <ul class="dropdown-content">
+                                <a href="#">CONTACT US</a><br>
+                                <a href="#">WORK WITH US</a>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+
+            </ul>
         </div>
-    </div>
-    <div class="container">
-        <center>
-            <div class="row" style="margin-top: 110px;">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_68ec327ea60b496ba5b61b91a1f72260~mv2_d_3651_5078_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_68ec327ea60b496ba5b61b91a1f72260~mv2_d_3651_5078_s_4_2.webp"
-                            alt="Card image" style="width:100%">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title ">Beverage
-                        </h4>
-                        <p class="card-text ">
-                            นอกจากจะมีกาแฟต้นตำหรับที่คัดสรร<br>และคิดค้นสูตรที่มีเฉพาะแต่ที่ดิโอโร่แล้ว
-                            <br>เรายังมีเมนูเครื่องดื่มอื่นๆ เช่น ชา, โกโก้ และ<br>smoothies ที่พร้อมเสริฟให้กับลูกค้าทุกคน
-                        </p>
-                        <a href="beverage.html " class="btn btn-light">MENU</a>
-                    </div>
-                </div>
-                <div class="col-md-4 ">
-                    <div class="card ">
-                        <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_23c9dfaa071b454f83ec22eadc3f2372~mv2_d_3319_4647_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_23c9dfaa071b454f83ec22eadc3f2372~mv2_d_3319_4647_s_4_2.webp "
-                            alt="Card image " style="width:100% ">
-                    </div>
-                    <div class="card-body">
-                        <h4 class=" card-title ">Bakery
-                        </h4>
-                        <p class="card-text ">พูดถึงเบเกอรี่กับชีวิตประจำวันของผู้คนอาจฟังแล้ว<br> เหมือนจะคนละเรื่องแต่ถ้าลองนึกภาพดูแล้ว
-                            <br> แทบจะเรียกว่าขาดไปเสียไม่ได้
-                            <br> ส่วนหนึ่งคงเป็นเพราะขนมอบอย่างเบเกอรี่นั้นสามารถทานได้ทุกเมื่อไม่ว่าจะเป็นช่วงเวลาไหนของวันก็ตาม
-                        </p>
-                        <a href="bakery.html" class="btn btn-light">MENU</a>
-                    </div>
 
-                </div>
-                <div class="col-md-4 ">
-                    <div class="card ">
-                        <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_e1fbaca6a6a048c48ed276e56409e722~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_e1fbaca6a6a048c48ed276e56409e722~mv2_d_3648_5472_s_4_2.webp "
-                            alt="Card image " style="width:100% ">
-                    </div>
-                    <div class="card-body ">
-                        <h4 class="card-title ">Meals
-                        </h4>
-                        <p class="card-text ">สำหรับคนที่ต้องการการอื่มท้อง<br> ขนาดเบเกอรรี่ก็เอาไม่อยู่ เรามีบริการอาหาร
-                            <br> Light Meal ให้คุณ เปี่ยมไปด้วยคุณภาพ<br> และความอร่อยแน่นอน
-                        </p>
-                        <a href="meals.html" class="btn btn-light">MENU</a>
-                    </div>
-                </div>
+        <div class="headparallax" style="width: 100%; position: relative; top: 0px; bottom: 0px;">
+            <div class="container">
+                <h1 style="color: white; font-size: 60px; padding: 170px 0px 0px 110px;"><b>PRODUCT & <br>SERVICE</b></h1>
             </div>
-            <div class="row ">
-                <div class="col-md-4 ">
-                    <div class="card ">
-                        <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_c49c98ee6dfe4075a96cb54d6adc1215~mv2_d_4528_3234_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_c49c98ee6dfe4075a96cb54d6adc1215~mv2_d_4528_3234_s_4_2.webp "
-                            alt="Card image " style="width:100% ">
+        </div>
+        <div class="container">
+            <center>
+                <div class="row" style="margin-top: 110px;">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_68ec327ea60b496ba5b61b91a1f72260~mv2_d_3651_5078_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_68ec327ea60b496ba5b61b91a1f72260~mv2_d_3651_5078_s_4_2.webp"
+                                alt="Card image" style="width:100%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title ">Beverage
+                            </h4>
+                            <p class="card-text ">
+                                นอกจากจะมีกาแฟต้นตำหรับที่คัดสรร<br>และคิดค้นสูตรที่มีเฉพาะแต่ที่ดิโอโร่แล้ว
+                                <br>เรายังมีเมนูเครื่องดื่มอื่นๆ เช่น ชา, โกโก้ และ<br>smoothies ที่พร้อมเสริฟให้กับลูกค้าทุกคน
+                            </p>
+                            <a href="beverage.html " class="btn btn-light">MENU</a>
+                        </div>
                     </div>
-                    <div class="card-body ">
-                        <h4 class="card-title ">Merchandising
-                        </h4>
-                        <p class="card-text ">ถ้าทานกาแฟที่ดิโอโร่ยังไม่สะใจพอ<br> เรามีสินค้ามากมายที่คุณสามารถเลือกซื้อกลับบ้านไปทำทานต่อให้หนำใจ อาทิเช่น กาแฟ House Blend
-                            <br> ชนิดเม็ดและบด ลองเลือกชมกันไดเลย<br> สามารถหาซื้อได้ที่ดิโอโร่ทุกสาขาค่ะ
-                        </p>
-                        <a href="merchandising.html" class="btn btn-light">MENU</a>
+                    <div class="col-md-4 ">
+                        <div class="card ">
+                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_23c9dfaa071b454f83ec22eadc3f2372~mv2_d_3319_4647_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_23c9dfaa071b454f83ec22eadc3f2372~mv2_d_3319_4647_s_4_2.webp "
+                                alt="Card image " style="width:100% ">
+                        </div>
+                        <div class="card-body">
+                            <h4 class=" card-title ">Bakery
+                            </h4>
+                            <p class="card-text ">พูดถึงเบเกอรี่กับชีวิตประจำวันของผู้คนอาจฟังแล้ว<br> เหมือนจะคนละเรื่องแต่ถ้าลองนึกภาพดูแล้ว
+                                <br> แทบจะเรียกว่าขาดไปเสียไม่ได้
+                                <br> ส่วนหนึ่งคงเป็นเพราะขนมอบอย่างเบเกอรี่นั้นสามารถทานได้ทุกเมื่อไม่ว่าจะเป็นช่วงเวลาไหนของวันก็ตาม
+                            </p>
+                            <a href="bakery.html" class="btn btn-light">MENU</a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="card ">
+                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_e1fbaca6a6a048c48ed276e56409e722~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_e1fbaca6a6a048c48ed276e56409e722~mv2_d_3648_5472_s_4_2.webp "
+                                alt="Card image " style="width:100% ">
+                        </div>
+                        <div class="card-body ">
+                            <h4 class="card-title ">Meals
+                            </h4>
+                            <p class="card-text ">สำหรับคนที่ต้องการการอื่มท้อง<br> ขนาดเบเกอรรี่ก็เอาไม่อยู่ เรามีบริการอาหาร
+                                <br> Light Meal ให้คุณ เปี่ยมไปด้วยคุณภาพ<br> และความอร่อยแน่นอน
+                            </p>
+                            <a href="meals.html" class="btn btn-light">MENU</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-8 ">
-                    <div class="card2 ">
-                        <img class="card-img-top " id="imgmenu2 " src="https://static.wixstatic.com/media/9fa84d_192a0c07f470464bb93fd95b27f8b18f~mv2.jpg/v1/fill/w_704,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_192a0c07f470464bb93fd95b27f8b18f~mv2.webp
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <div class="card ">
+                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_c49c98ee6dfe4075a96cb54d6adc1215~mv2_d_4528_3234_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_c49c98ee6dfe4075a96cb54d6adc1215~mv2_d_4528_3234_s_4_2.webp "
+                                alt="Card image " style="width:100% ">
+                        </div>
+                        <div class="card-body ">
+                            <h4 class="card-title ">Merchandising
+                            </h4>
+                            <p class="card-text ">ถ้าทานกาแฟที่ดิโอโร่ยังไม่สะใจพอ<br> เรามีสินค้ามากมายที่คุณสามารถเลือกซื้อกลับบ้านไปทำทานต่อให้หนำใจ อาทิเช่น กาแฟ House Blend
+                                <br> ชนิดเม็ดและบด ลองเลือกชมกันไดเลย<br> สามารถหาซื้อได้ที่ดิโอโร่ทุกสาขาค่ะ
+                            </p>
+                            <a href="merchandising.html" class="btn btn-light">MENU</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 ">
+                        <div class="card2 ">
+                            <img class="card-img-top " id="imgmenu2 " src="https://static.wixstatic.com/media/9fa84d_192a0c07f470464bb93fd95b27f8b18f~mv2.jpg/v1/fill/w_704,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_192a0c07f470464bb93fd95b27f8b18f~mv2.webp
                         " alt="Card image " style="width:100% ">
-                    </div>
-                    <div class="card-body ">
-                        <h4 class="card-title ">Catering
-                        </h4>
-                        <p class="card-text ">บริการจัดเลี้ยง จัดคอฟฟี่เบรคจำเป็นต้องเลือกเฟ้นกาแฟ เบเกอรี่<br> ที่ได้คุณภาพและเปี่ยมไปด้วยคุณประโยชน์ และเมนูอาหารกลางวัน
-                        </p>
-                        <a href="catering.html" class="btn btn-light">MENU</a>
+                        </div>
+                        <div class="card-body ">
+                            <h4 class="card-title ">Catering
+                            </h4>
+                            <p class="card-text ">บริการจัดเลี้ยง จัดคอฟฟี่เบรคจำเป็นต้องเลือกเฟ้นกาแฟ เบเกอรี่<br> ที่ได้คุณภาพและเปี่ยมไปด้วยคุณประโยชน์ และเมนูอาหารกลางวัน
+                            </p>
+                            <a href="catering.html" class="btn btn-light">MENU</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </center>
-    </div>
+            </center>
+        </div>
 
 
-    <footer>
-        <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
-            <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
-            <div class="input-container" style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
-                <i class="fa fa-envelope icon"></i>
-                <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
-            </div>
-            <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
+        <footer>
+            <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
+                <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
+                <div class="input-container" style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
+                    <i class="fa fa-envelope icon"></i>
+                    <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
+                </div>
+                <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
                 Now</button>
 
-            <h5 style="padding-top: 70px; ">Follow Us:</h5>
-            <a href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
-                <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp " style="width: 60px; height: 70px; ">
-            </a>
-            <a href="https://www.instagram.com/d.orothailand/ " target="_blank ">
-                <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
-                    style="width: 55px; height: 60px; ">
-            </a>
-            <a href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
-                <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp "
-                    style="width: 50px; height: 65px; ">
-            </a>
+                <h5 style="padding-top: 70px; ">Follow Us:</h5>
+                <a href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp " style="width: 60px; height: 70px; ">
+                </a>
+                <a href="https://www.instagram.com/d.orothailand/ " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
+                        style="width: 55px; height: 60px; ">
+                </a>
+                <a href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp "
+                        style="width: 50px; height: 65px; ">
+                </a>
 
-            <div style="width: 100%; height: 45px; background-color: #c14e25; margin-top: 25px; ">
-                <h5 style="padding-top: 12.5px; ">Copyright©2018 by Golden Cream Ltd,. (D'ORO) all right reserved.
-                </h5>
+                <div style="width: 100%; height: 45px; background-color: #c14e25; margin-top: 25px; ">
+                    <h5 style="padding-top: 12.5px; ">Copyright©2018 by Golden Cream Ltd,. (D'ORO) all right reserved.
+                    </h5>
+                </div>
+
+                <div style="width: 100%; height: 25px; ">
+
+                </div>
             </div>
-
-            <div style="width: 100%; height: 25px; ">
-
-            </div>
-        </div>
-        <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
-            <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp " width="120px
+            <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
+                <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp " width="120px
             " height="100px ">
-        </div>
-    </footer>
+            </div>
+        </footer>
+    </div>
 </body>
