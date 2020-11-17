@@ -13,7 +13,6 @@
     <title>D'ORO COFFEE | Thailand</title>
 </head>
 <style>
-
     body {
         font-family: 'Mitr', sans-serif;
     }
@@ -102,6 +101,42 @@
         background-image: url(https://static.wixstatic.com/media/9fa84d_57ad2d479fd049c8abcf53fbb3ca4ff7~mv2_d_5616_3744_s_4_2.jpg);
         background-color: hsl(0, 0%, 78%);
         background-blend-mode: multiply;
+        z-index: 0;
+    }
+
+    .bodybackground {
+        width: 100%;
+        /* height: 650px; */
+        color: white;
+        /* background-attachment: fixed; */
+        background-position: 0% 3%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://static.wixstatic.com/media/9fa84d_cbee5e5593994ca089cafbd62b9f6c2b~mv2_d_8000_8159_s_4_2.png);
+        background-color: hsl(0, 0%, 100%);
+        background-blend-mode: multiply;
+        z-index: -1;
+    }
+
+    .img_bottom {
+        position: absolute;
+        bottom: 0px;
+        background-color: black;
+        width: 316px;
+        height: 30px;
+        font-weight: 600;
+        opacity: 0.5;
+    }
+
+    #imgrow {
+        margin-right: -60px;
+        left: -5px;
+        top: -3px;
+    }
+
+    #textrow {
+        text-align: left;
+        font-size: 13px;
     }
 
     /* #title_home {
@@ -211,6 +246,57 @@
             BEGINS HERE<br>
             AT D'ORO
         </h1>
+    </div>
+    <!-- bodyparallax -->
+    <div class="bodybackground" style="padding-top: 60px;">
+
+        <!-- HIGHLIGHT of THE MONTH -->
+        <h2 style=" font-weight: bold; text-align: center; color: #C14E25; margin-bottom: 50px;">HIGHLIGHT of THE MONTH
+        </h2>
+        <div style="text-align: center;">
+            <div style="position: relative; display: inline-block;">
+                <a href="promotion.html">
+                    <img src="https://static.wixstatic.com/media/9fa84d_fd149ba8aa704b32b0b6071fbc557a07~mv2.jpg"
+                        width="316px" height="448px">
+                </a>
+                <div class="img_bottom">HAPPY NEW YEAR GIFT SET 2021</div>
+            </div>&ensp;&ensp;&ensp;&ensp;&ensp;
+            <div style="position: relative; display: inline-block;">
+                <a href="promotion.html">
+                    <img src="https://static.wixstatic.com/media/9fa84d_250f102a550d410ba38c4694edacdefb~mv2.jpg"
+                        width="316px" height="448px">
+                </a>
+                <div class="img_bottom">Winter Wonderland</div>
+            </div>
+        </div>
+
+        <!-- PROMOTION of THE MONTH -->
+        <h2 style=" font-weight: bold; text-align: center; color: #C14E25; padding-bottom: 50px; padding-top: 60px;">
+            PROMOTION of THE MONTH
+        </h2>
+
+        <!-- NEWS & UPDATE -->
+        <h2 style=" font-weight: bold; text-align: center; color: #C14E25; padding-bottom: 50px; padding-top: 60px;">
+            NEWS & UPDATE
+        </h2>
+        <!-- <center>
+            <div style="width: 1100px">
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img
+                            src="https://static.wixstatic.com/media/9fa84d_9140089abca44e1dbbda8729bea053e3~mv2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Gift%20Set%20Newyear%202021%20-%20Promotions_jp.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span> NEW
+                                YEAR GIFT SET 2021</span>
+                            <br>
+                            พบกับชุดของขวัญปีใหม่สุดพิเศษจาก D'ORO Joy Set และ<br> Premium Cookies Set ได้แล้ววันนี้
+                            ที่ร้านดิโอโร่ทุกสาขา</p><br><br>
+                        <button href="# " class="btn btn-light">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div>
+            </div>
+        </center> -->
     </div>
 
     <!-- Footer -->
