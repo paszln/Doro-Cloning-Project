@@ -193,8 +193,12 @@
         }
      </style>
  </head>
-
- <body>
+ <body >
+     <div  style="position: fixed; background-color:black; width:100%; height:100%; z-index:999;  ">
+    <img src="" alt=""></div>
+ <!-- <body style="overflow:hidden">
+     <div  style="position: fixed; background-color:black; width:100%; height:100%; z-index:500; opacity:0.5;">
+    <img src="" alt=""></div> -->
      <div style="color: white;">
          <div class="top" style="font-size:30px; background-color: #104751;">
              <center><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp">
@@ -203,8 +207,8 @@
      </div>
 
      <!--------------------- Header bar --------------------->
-     <div style="color: white;">
-         <ul class="nav justify-content-center navbar-light" style="background-color: #547478;">
+     <div style="color: white;" >
+         <ul class="nav justify-content-center navbar-light" style="background-color: #547478; ">
 
              <li class="nav-item">
                  <a class="nav-link" href="index.html">HOME</a>
@@ -213,7 +217,7 @@
              <div class="nav-item">
                  <li class="nav-link">
                      <div class="dropdown">
-                         <button class="dropbtn">COMPANY</button>
+                         <button class="dropbtn" >COMPANY</button>
                          <ul class="dropdown-content">
                              <a href="aboutus.html">ABOUT US</a><br>
                              <a href="fromfarmtocup.html">FORM FARM TO CUP</a>
