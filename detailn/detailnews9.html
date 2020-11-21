@@ -191,8 +191,19 @@
        .imgchange:hover{
         cursor: pointer;
        }
+       .bodyparallax {
+            background-image: url(https://static.wixstatic.com/media/9fa84d_cbee5e5593994ca089cafbd62b9f6c2b~mv2_d_8000_8159_s_4_2.png);
+            height: 100%;
+            width: 100%;
+            background-attachment: fixed;
+            background-position: 0% 0%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: multiply;
+            z-index: -1;
+        }
 </style>
-
+<div class="bodyparallax">
 <body id="stop" style="overflow: auto;">
     <div  style="display: flex;width: 100%; height: 100%;justify-content: center; ">
         <div id="change" style="display: none; z-index:20"></div>
@@ -326,7 +337,7 @@
         </div><br><br><br><br>
         
         <div class="container" style="padding-left: 120px;">
-        <img src="https://can2-prod.s3.amazonaws.com/uploads/data/000/385/812/original/button-share-facebook.png" style="left: 400px; width: 140px; height: 32px;"></div>
+        <img src="https://can2-prod.s3.amazonaws.com/uploads/data/000/385/812/original/button-share-facebook.png" style="left: 400px; width: 140px; height: 32px; object-fit: cover; cursor: pointer;" ></div>
         <br><br><br>
         
     <footer>
@@ -362,7 +373,7 @@
                 
             </div>
         </div>
-    </footer>
+    </footer></div>
 
     <script>
         function popup(n) {
