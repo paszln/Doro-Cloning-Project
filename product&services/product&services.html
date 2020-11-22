@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
-    <title>Meals | D'ORA Coffeeeeeeeeeeeee</title>
+    <title>Product & Service | D'ORA Coffeeeeeeeeeeeee</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
@@ -74,6 +74,7 @@
         position: absolute;
         right: 0;
         min-width: 200px;
+        z-index: 2;
     }
     
     .dropdown-content a {
@@ -91,29 +92,24 @@
     }
     
     #imgmenu {
-        width: 232px;
-        height: 232px;
+        width: 240px;
+        height: 334px;
         object-fit: cover;
-        margin-top: none;
     }
     
     .card {
-        width: 232px;
-        height: 232px;
-        border: none;
+        width: 240px;
+        height: 334px;
     }
     
     .card-body {
+        font-size: 14px;
         font-weight: bold;
     }
     
     .card2 {
         width: 563px;
         height: 334px;
-    }
-    
-    .card-text {
-        margin-top: -30px;
     }
     
     .btn-light {
@@ -134,35 +130,17 @@
         font-weight: bold;
     }
     
-    .yummyvJNL7 {
-        stroke: rgb(84, 116, 120);
-        stroke-width: 4px;
-        position: absolute;
-        left: -10px;
-        top: -11px;
-    }
-    
-    .yummyvJNL7 .yummy1V1Qz {
-        z-index: 99;
-        stroke-opacity: 0;
-        fill: rgb(255, 255, 255);
-        fill-opacity: 1;
-    }
-    
-    .yummyvJNL7 .yummy1V1Qz .yummy3v47Q {
-        fill: rgb(84, 116, 120);
-    }
-    
-    #menuname {
-        font-size: 16px;
-        margin-top: 10px;
-    }
-    
-    #underline {
-        width: 190px;
-        height: 50px;
-        border-top: 3px solid rgb(150, 150, 150);
-        margin-top: 20px;
+    .headparallax {
+        background-image: url(https://static.wixstatic.com/media/9fa84d_de40040537654907b602d3df0700fcfb~mv2.jpg);
+        height: 342.8px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: 0% 40.8%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(0, 0%, 75%);
+        background-blend-mode: multiply;
+        z-index: 0;
     }
     
     .bodyparallax {
@@ -176,21 +154,24 @@
         background-blend-mode: multiply;
         z-index: -1;
     }
+
+    .warpbutton:hover{
+        color: transparent;
+    }
 </style>
 
 <body>
-    <!-- Lego -->
     <div class="bodyparallax">
         <div style="color: white;">
-            <div class="top" style="font-size:30px; background-color: #104751;">
-                <center><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp">
+            <div class="top" style="font-size:30px; background-color: #104751; height: 135px;">
+                <center>
+                    <a href="index.html"><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
                 </center>
             </div>
         </div>
 
-        <!--------------------- Header bar --------------------->
         <div style="color: white;">
-            <ul class="nav justify-content-center navbar-light" style="background-color: #547478;">
+            <ul class="nav justify-content-center navbar-light" style="background-color: #547478; height: 33px;">
 
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">HOME</a>
@@ -263,107 +244,93 @@
             </ul>
         </div>
 
-        <!--------------------- Name Menu --------------------->
-
-        <div class="container" style="text-align: center; ">
-            <h1 style="color: #255c63; margin-top: 75px; font-weight: bold; font-size: 50px;  height: 60px;">MEALS</h1>
-            <center>
-                <div style="width: 350px; height: 50px; border-top: 2px solid  #547478; opacity: 0.6;"></div>
-            </center>
-            <h5>อาหารอร่อย ขนมปังกร๊อบกรอบ</h5>
-
-            <!--------------------- MEALS --------------------->
-            <h3 style="color: rgb(153,143,132); margin-top: 75px; font-weight: bold; font-size: 30px;  height: 60px;">MEALS
-            </h3>
-            <center>
-                <div style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px;"></div>
-            </center>
+        <div class="headparallax" style="width: 100%; position: relative; top: 0px; bottom: 0px;">
+            <div class="container">
+                <h1 style="color: white; font-size: 60px; padding: 170px 0px 0px 110px;"><b>PRODUCT & <br>SERVICE</b></h1>
+            </div>
         </div>
-        <!--------------------- row1 --------------------->
         <div class="container">
             <center>
-                <div class="row">
+                <div class="row" style="margin-top: 110px;">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_52b2942d7a484a4ea853217b481791f6~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_68ec327ea60b496ba5b61b91a1f72260~mv2_d_3651_5078_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_68ec327ea60b496ba5b61b91a1f72260~mv2_d_3651_5078_s_4_2.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
-                            <h4 id="menuname" class="card-title ">WHITE MUSHROOM CROISSANT</h4>
-                            <center>
-                                <div id="underline"></div>
-                            </center>
-                            <p class="card-text ">ครัวซองท์ เห็ดแชมปิยอง เชดด้าชีส<br>และซอสมัชรูมเบชาเมล</p>
+                            <h4 class="card-title ">Beverage
+                            </h4>
+                            <p class="card-text ">
+                                นอกจากจะมีกาแฟต้นตำหรับที่คัดสรร<br>และคิดค้นสูตรที่มีเฉพาะแต่ที่ดิโอโร่แล้ว
+                                <br>เรายังมีเมนูเครื่องดื่มอื่นๆ เช่น ชา, โกโก้ และ<br>smoothies ที่พร้อมเสริฟให้กับลูกค้าทุกคน
+                            </p>
+                            <a href="beverage.html " class="btn btn-light">MENU</a>
                         </div>
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_9abc20d7dd93457da762a8dbe7480bab~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_23c9dfaa071b454f83ec22eadc3f2372~mv2_d_3319_4647_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_23c9dfaa071b454f83ec22eadc3f2372~mv2_d_3319_4647_s_4_2.webp "
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
-                            <h4 id="menuname" class=" card-title ">CHICKEN CEASAR SPINACH PANINI</h4>
-                            <center>
-                                <div id="underline"></div>
-                            </center>
-                            <p class="card-text ">พานินี่แซนวิชไส้ไก่ ผักโขม น้ำสลัดซีซ่า<br>และเชดด้าชีส</p>
+                            <h4 class=" card-title ">Bakery
+                            </h4>
+                            <p class="card-text ">พูดถึงเบเกอรี่กับชีวิตประจำวันของผู้คนอาจฟังแล้ว<br> เหมือนจะคนละเรื่องแต่ถ้าลองนึกภาพดูแล้ว
+                                <br> แทบจะเรียกว่าขาดไปเสียไม่ได้
+                                <br> ส่วนหนึ่งคงเป็นเพราะขนมอบอย่างเบเกอรี่นั้นสามารถทานได้ทุกเมื่อไม่ว่าจะเป็นช่วงเวลาไหนของวันก็ตาม
+                            </p>
+                            <a href="bakery.html" class="btn btn-light">MENU</a>
                         </div>
+
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_12ccdb7c267e4f1586d65f574a2e9ba9~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_e1fbaca6a6a048c48ed276e56409e722~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_e1fbaca6a6a048c48ed276e56409e722~mv2_d_3648_5472_s_4_2.webp "
+                                alt="Card image " style="width:100% ">
                         </div>
-                        <div class="card-body">
-                            <h4 id="menuname" class=" card-title ">BREAKFAST PANINI</h4>
-                            <center>
-                                <div id="underline"></div>
-                            </center>
-                            <p class="card-text ">พานินี่แซนวิชสอดไส้ไข่ดาว เบค่อน<br>และเชดด้าชีส</p>
+                        <div class="card-body ">
+                            <h4 class="card-title ">Meals
+                            </h4>
+                            <p class="card-text ">สำหรับคนที่ต้องการการอื่มท้อง<br> ขนาดเบเกอรรี่ก็เอาไม่อยู่ เรามีบริการอาหาร
+                                <br> Light Meal ให้คุณ เปี่ยมไปด้วยคุณภาพ<br> และความอร่อยแน่นอน
+                            </p>
+                            <a href="meals.html" class="btn btn-light">MENU</a>
                         </div>
                     </div>
                 </div>
-                <br><br>
-                <!--------------------- row2 --------------------->
-                <div class="row " style="margin-bottom: 100px;">
+                <div class="row ">
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_bb6cf2f9238d4436b43a1211fab7a87c~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_c49c98ee6dfe4075a96cb54d6adc1215~mv2_d_4528_3234_s_4_2.jpg/v1/fill/w_300,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_c49c98ee6dfe4075a96cb54d6adc1215~mv2_d_4528_3234_s_4_2.webp "
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body ">
-                            <p id="menuname" class="card-title ">BRIOCHE CROISSANT FRENCH TOAST</p>
-                            <center>
-                                <div id="underline"></div>
-                            </center>
-                            <p class="card-text ">ขนมปังบริโอช-ครัวซองท์ชุปไข่ ทานคู่<br>กับบานาน่าคาราเมล</p>
+                            <h4 class="card-title ">Merchandising
+                            </h4>
+                            <p class="card-text ">ถ้าทานกาแฟที่ดิโอโร่ยังไม่สะใจพอ<br> เรามีสินค้ามากมายที่คุณสามารถเลือกซื้อกลับบ้านไปทำทานต่อให้หนำใจ อาทิเช่น กาแฟ House Blend
+                                <br> ชนิดเม็ดและบด ลองเลือกชมกันไดเลย<br> สามารถหาซื้อได้ที่ดิโอโร่ทุกสาขาค่ะ
+                            </p>
+                            <a href="merchandising.html" class="btn btn-light">MENU</a>
                         </div>
                     </div>
-                    <div class="col-md-4 ">
-                        <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_9cc805624fd64d82ac8fc9ca4d6b89d2~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                    <div class="col-md-8 ">
+                        <div class="card2 ">
+                            <img class="card-img-top " id="imgmenu2 " src="https://static.wixstatic.com/media/9fa84d_192a0c07f470464bb93fd95b27f8b18f~mv2.jpg/v1/fill/w_704,h_418,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_192a0c07f470464bb93fd95b27f8b18f~mv2.webp
+                        " alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body ">
-                            <p id="menuname" class="card-title ">SPANICH AU GRATIN</p>
-                            <center>
-                                <div id="underline"></div>
-                            </center>
-                            <p class="card-text ">ผักโขมอบชีสมอสซาเรลล่าและเชดด้าชีส<br>เสิร์ฟพร้อมกับซุปประจำวัน</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ">
-                        <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_bc81651a23a7449f8ce1860dda9c9774~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
-                        </div>
-                        <div class="card-body ">
-                            <p id="menuname" class="card-title ">MUSHROOM AU GRATIN</p>
-                            <center>
-                                <div id="underline"></div>
-                            </center>
-                            <p class="card-text ">อูกราแตงเห็ดและแฮม อบร้อนๆ เสิร์ฟพร้อม<br>กับซุปประจำวัน</p>
+                            <h4 class="card-title ">Catering
+                            </h4>
+                            <p class="card-text ">บริการจัดเลี้ยง จัดคอฟฟี่เบรคจำเป็นต้องเลือกเฟ้นกาแฟ เบเกอรี่<br> ที่ได้คุณภาพและเปี่ยมไปด้วยคุณประโยชน์ และเมนูอาหารกลางวัน
+                            </p>
+                            <a href="catering.html" class="btn btn-light">MENU</a>
                         </div>
                     </div>
                 </div>
             </center>
         </div>
 
-        <!-- Footer -->
+
         <footer>
             <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
                 <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
@@ -375,14 +342,14 @@
                 Now</button>
 
                 <h5 style="padding-top: 70px; ">Follow Us:</h5>
-                <a href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
+                <a class="warpbutton" href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
                     <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp " style="width: 60px; height: 70px; ">
                 </a>
-                <a href="https://www.instagram.com/d.orothailand/ " target="_blank ">
+                <a class="warpbutton" href="https://www.instagram.com/d.orothailand/ " target="_blank ">
                     <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
                         style="width: 55px; height: 60px; ">
                 </a>
-                <a href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
+                <a class="warpbutton" href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
                     <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp "
                         style="width: 50px; height: 65px; ">
                 </a>

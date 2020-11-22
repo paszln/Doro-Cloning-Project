@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>News & Activities| D'ORA Coffee</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Mitr', sans-serif;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: #FA9773;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    #img1 {
+        width: 224px;
+        height: 84px;
+        margin: 20px;
+    }
+
+    #line {
+        width: 426px;
+        height: 50px;
+        border-top: 2px solid #547478;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: #FA9773;
+    }
+
+    .dropbtn {
+        background-color: #547478;
+        color: white;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        border-radius: 3px;
+        opacity: 0.7;
+        background-color: #547478;
+        display: none;
+        position: absolute;
+        right: 0;
+        min-width: 200px;
+    }
+
+    .dropdown-content a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+        color: #FA9773;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        color: white;
+    }
+
+    /* #img2 {
+        z-index: 1;
+    } */
+
+    #img3 {
+        /* position:absolute; */
+        z-index: -1;
+    }
+
+    #upperphoto {
+        margin-top: -400px;
+        /* z-index: -1; */
+    }
+
+    #underphoto {
+        margin-top: -150px;
+        /* z-index: -1; */
+    }
+
+    .btn-light {
+        border-radius: 20px;
+        width: 175px;
+        padding: 7.5px 0px 7.5px 0px;
+        background-color: white;
+        border: solid rgba(37, 92, 99, 1) 1px;
+
+    }
+
+    .btn-light:hover {
+        background-color: rgba(37, 92, 99, 1);
+        color: white;
+    }
+
+    .one {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 4px 8px;
+        width: 29px;
+        height: 30px;
+    }
+
+    .two {
+        background-color: black;
+        color: grey;
+        text-decoration: none;
+        display: inline-block;
+        padding: 4px 8px;
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.5;
+        width: 29px;
+        height: 30px;
+    }
+
+
+    .previous {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 4px 8px;
+        width: 67px;
+        height: 30px;
+    }
+
+    .previous:hover,
+    .one:hover {
+        color: white;
+        opacity: 0.75;
+        text-decoration: none;
+    }
+
+    .warpbutton:hover {
+        color: transparent;
+    }
+</style>
+
+<body>
+    <div style="color: white;">
+        <div class="top" style="font-size:30px; background-color: #104751;">
+            <center><img id="img1"
+                    src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp">
+            </center>
+        </div>
+    </div>
+
+    <div style="color: white;">
+        <ul class="nav justify-content-center navbar-light" style="background-color: #547478;">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+
+            <div class="nav-item">
+                <li class="nav-link">
+                    <div class="dropdown">
+                        <button class="dropbtn">COMPANY</button>
+                        <ul class="dropdown-content">
+                            <a href="aboutus.html">ABOUT US</a><br>
+                            <a href="fromfarmtocup.html">FORM FARM TO CUP</a>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="product&services.html">PRODUCT & SERVICES</a>
+            </li>
+
+            <div class="nav-item">
+                <li class="nav-link">
+                    <div class="dropdown">
+                        <button class="dropbtn">NEWS&PROMOTION</button>
+                        <ul class="dropdown-content">
+                            <a href="#">NEWS & ACTIVITIES</a><br>
+                            <a href="#">PROMOTIONS</a><br>
+                            <a href="#">DEK DEK's GALLERY</a><br>
+                            <a href="19th-anniversary.html" style="color: #FA9773;">19th ANNIVERSARY</a>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+
+            <div class="nav-item">
+                <li class="nav-link">
+                    <div class="dropdown">
+                        <button class="dropbtn">MEMBERSHIP</button>
+                        <ul class="dropdown-content">
+                            <a href="#">EARN & REDEEM</a><br>
+                            <a href="#">PREMIUM COLLECTION</a><br>
+                            <a href="#">MEMBERTIERS</a><br>
+                            <a href="#">REGISTER NOW</a>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+
+            <li class="nav-item ">
+                <a class="nav-link " href="# ">STORE LOCATIONS</a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link " href="# ">FRANCHISE</a>
+            </li>
+
+            <div class="nav-item">
+                <div class="dropdown">
+                    <li class="nav-link">
+                        <button class="dropbtn">CONTACT</button>
+                        <ul class="dropdown-content">
+                            <a href="#">CONTACT US</a><br>
+                            <a href="#">WORK WITH US</a>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+
+        </ul>
+    </div>
+
+
+
+    <div class="container" style="text-align: center; width: 630px;">
+        <h1 style="color: #255c63; margin-top: 75px; font-weight: bold; font-size: 50px;  height: 60px;"> NEWS </h1><br>
+        <center>
+            <div style="width: 465px; height: 50px; border-top: 2px solid  #547478; opacity: 0.6;">
+
+            </div><br><br>
+        </center>
+        <b></b><a href="detailn/detailnews11.html"
+            style="text-align: center; color: black; font-size: 22px; font-weight: 1000; "> เปิดสาขาใหม่ D'ORO สาขา I'm
+            Park Chula
+        </a></b>
+        <h6 style="text-align: center; color: gray; "> July 23, 2018</h6>
+        <center>
+            <img src="https://static.wixstatic.com/media/9fa84d_0a3533924cb94574bd425d720aebd826~mv2_d_3264_1833_s_2.jpg/v1/fill/w_788,h_442,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_0a3533924cb94574bd425d720aebd826~mv2_d_3264_1833_s_2.webp"
+                style="width:630px; height: 354px; "><br><br></center>
+        <h5 style="text-align: left; font-size: 14px;">เปิดให้บริการแล้ววันนี้ที่ I'm Park Chula ชั้น 1 อาคาร B <br>
+            พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่ทุกวัน <br><br> เวลาเปิดให้บริการ: 06:30-20:00 น. (จันทร์-ศุกร์) ,
+            07:00-20:00 น. (เสาร์-อาทิตย์) <br> เบอร์โทร: 089-205-4531</h5><br>
+        <a href="detailn/detailnews11.html" class="btn btn-light"> รายละเอียดเพิ่มเติม</a><br><br><br><br>
+
+        <b></b><a href="detailn/detailnews12.html"
+            style="text-align: center; color: black; font-size: 22px; font-weight: 1000; "> เปิดสาขาใหม่ D'ORO สาขา Thai
+            Summit Tower
+        </a></b>
+        <h6 style="text-align: center; color: gray; "> July 18, 2018</h6>
+        <center>
+            <img src="https://static.wixstatic.com/media/9fa84d_82efa956119b43ac841819df79c4bb22~mv2_d_3264_1833_s_2.jpg/v1/fill/w_788,h_442,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_82efa956119b43ac841819df79c4bb22~mv2_d_3264_1833_s_2.webp"
+                style="width:630px; height: 354px; "><br><br></center>
+        <h5 style="text-align: left; font-size: 14px;">เปิดให้บริการแล้ววันนี้ที่ Thai Summit Tower ชั้น G <br>
+            พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่ทุกวัน <br><br> เวลาเปิดให้บริการ: 07:00-20:00 น. (จันทร์-ศุกร์)
+            <br> เบอร์โทร: 085-485-2161</h5><br>
+        <a href="detailn/detailnews12.html" class="btn btn-light"> รายละเอียดเพิ่มเติม</a><br><br><br><br>
+
+
+        <b></b><a href="detailn/detailnews13.html"
+            style="text-align: center; color: black; font-size: 22px; font-weight: 1000; "> เปิดสาขาใหม่ D'ORO สาขา
+            ASPIRE Erawan
+        </a></b>
+        <h6 style="text-align: center; color: gray; "> July 2, 2018</h6>
+        <center>
+            <img src="https://static.wixstatic.com/media/9fa84d_7f07a1293ff9453299f444aec69ed6d6~mv2.jpg/v1/fill/w_1138,h_858,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_7f07a1293ff9453299f444aec69ed6d6~mv2.webp"
+                style="width:630px; height: 476px; "><br><br></center>
+        <h5 style="text-align: left; font-size: 14px;">เปิดให้บริการแล้ววันนี้ที่ ASPIRE Erawan
+            ร้านตั้งอยู่บริเวณทางเข้าคอนโด <br> พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่ทุกวัน <br><br>
+            เวลาเปิดให้บริการ: 07:00-20:00 น. ทุกวัน<br>เบอร์โทร: 089-205-4535</h5><br>
+        <a href="detailn/detailnews13.html" class="btn btn-light"> รายละเอียดเพิ่มเติม</a><br><br><br><br>
+
+        <b></b><a href="detailn/detailnews14.html"
+            style="text-align: center; color: black; font-size: 22px; font-weight: 1000; "> เปิดสาขาใหม่ D'ORO
+            สาขาทันตแพทยศาสตร์ มหาวิทยาลัยมหิดล
+        </a></b>
+        <h6 style="text-align: center; color: gray; "> March 14, 2018</h6>
+        <center>
+            <img src="https://static.wixstatic.com/media/9fa84d_9dff5eca2dc643c09dec632212d47510~mv2.jpg/v1/fill/w_1138,h_695,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9dff5eca2dc643c09dec632212d47510~mv2.webp"
+                style="width:630px; height: 385px; "><br><br></center>
+        <h5 style="text-align: left; font-size: 14px;">เปิดให้บริการแล้ววันนี้ที่อาคาร อาคารเฉลิมพระเกียรติ 50 พรรษาฯ
+            ชั้น1 <br> คณะทันตแพทยศาสตร์ พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่ทุกวัน <br><br> เวลาเปิดให้บริการ:
+            06:30-18:00 น. ทุกวัน <br> เบอร์โทร: 095-208-4912 </h5><br>
+        <a href="detailn/detailnews14.html" class="btn btn-light"> รายละเอียดเพิ่มเติม</a><br><br><br><br>
+
+        <b></b><a href="detailn/detailnews15.html"
+            style="text-align: center; color: black; font-size: 22px; font-weight: 1000; "> เปิดสาขาใหม่ D'ORO สาขาอาคาร
+            AIA รัชดาภิเษก
+        </a></b>
+        <h6 style="text-align: center; color: gray; "> January 18, 2018</h6>
+        <center>
+            <img src="https://static.wixstatic.com/media/9fa84d_af6f4a50eb0940f3b54194f1bdcc6865~mv2.jpg/v1/fill/w_1138,h_638,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_af6f4a50eb0940f3b54194f1bdcc6865~mv2.webp"
+                style="width:630px; height: 354px; "><br><br></center>
+        <h5 style="text-align: left; font-size: 14px;">เปิดให้บริการแล้ววันนี้ที่อาคาร AIA รัชดาภิเษก ชั้น 1 <br>
+            พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่ทุกวัน <br><br> เวลาเปิดให้บริการ: 07:00-19:00 น. ทุกวัน<br>
+            เบอร์โทร: 084-874-2186</h5><br>
+        <a href="detailn/detailnews15.html" class="btn btn-light"> รายละเอียดเพิ่มเติม</a><br><br><br><br>
+
+
+        <b></b><a href="detailn/detailnews16.html"
+            style="text-align: center; color: black; font-size: 22px; font-weight: 1000; "> เปิดสาขาใหม่ D'ORO
+            สาขาคณะสถาปัตยกรรม ม.ธรรมศาสตร์ </a></b>
+        <h6 style="text-align: center; color: gray; "> January 18, 2018</h6>
+        <center>
+            <img src="https://static.wixstatic.com/media/9fa84d_79810f966d1143dfb0d28c69656227ce~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_1138,h_758,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_79810f966d1143dfb0d28c69656227ce~mv2_d_5472_3648_s_4_2.webp"
+                style="width:630px; height: 420px; "><br><br></center>
+        <h5 style="text-align: left; font-size: 14px;">D'ORO สาขาคณะสถาปัตยกรรม ม.ธรรมศาสตร์ <br>
+            เปิดให้บริการแล้ววันนี้ บริเวณคณะสถาปัตยกรรมมหาลัยธรรมศาสตร์ <br><br> เวลาเปิดให้บริการ: 06:30-18:00 น.
+            (จันทร์-เสาร์)<br> เบอร์โทร: 082-667-9096 </h5><br>
+        <a href="detailn/detailnews16.html" class="btn btn-light"> รายละเอียดเพิ่มเติม</a><br><br><br><br>
+
+        <b></b><a href="detailn/detailnews17.html"
+            style="text-align: center; color: black; font-size: 22px; font-weight: 1000; "> เปิดสาขาใหม่ D'ORO สาขา MUIC
+            มหิดล ศาลายา
+        </a></b>
+        <h6 style="text-align: center; color: gray; "> January 18, 2018</h6>
+        <center>
+            <img src="https://static.wixstatic.com/media/9fa84d_49f7fb18676b4ce9b8714bc67effdfc4~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_1138,h_639,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_49f7fb18676b4ce9b8714bc67effdfc4~mv2_d_5472_3072_s_4_2.webp"
+                style="width:630px; height: 354px; "><br><br></center>
+        <h5 style="text-align: left; font-size: 14px;">D'ORO สาขา MUIC มหิดล ศาลายา <br>
+            เปิดให้บริการแล้ววันนี้ที่อาคารอทิตยาธร พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่ทุกวัน
+            <br><br>เวลาเปิดให้บริการ: 06:00-19:00 น. ทุกวัน<br>เบอร์โทร: 095-208-4896</h5><br>
+        <a href="detailn/detailnews17.html" class="btn btn-light"> รายละเอียดเพิ่มเติม</a><br><br><br><br>
+
+        <b></b><a href="detailn/detailnews18.html"
+            style="text-align: center; color: black; font-size: 22px; font-weight: 1000; "> เปิดสาขาใหม่ D'Oro โรงพยาบาล
+            สมิติเวช ธนบุรี
+        </a></b>
+        <h6 style="text-align: center; color: gray; "> January 3, 2018</h6>
+        <center>
+            <img src="https://static.wixstatic.com/media/9fa84d_0bdfa259c16441a084e7c5a43b900bb3~mv2.jpg/v1/fill/w_1260,h_725,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_0bdfa259c16441a084e7c5a43b900bb3~mv2.webp"
+                style="width:630px; height: 363px; "><br><br></center>
+        <h5 style="text-align: left; font-size: 14px;">D'Oro สาขาโรงพยาบาลสมิติเวช ธนบุรี<br><br>
+            เปิดให้บริการแล้ววันนี้ที่ชั้น G ทางเชื่อมอาคารจอดรถ <br><br> เวลาเปิดให้บริการ: 06:30-19:00 น.
+            ทุกวัน<br>เบอร์โทร: 081-874-2385 </h5><br>
+        <a href="detailn/detailnews18.html" class="btn btn-light"> รายละเอียดเพิ่มเติม</a><br><br><br><br>
+
+
+        <b></b><a href="detailn/detailnews19.html"
+            style="text-align: center; color: black; font-size: 22px; font-weight: 1000; "> เปิดสาขาใหม่ D'Oro โรงพยาบาล
+            สมิติเวช ธนบุรี
+        </a></b>
+        <h6 style="text-align: center; color: gray; "> November 25, 2017</h6>
+        <center>
+            <img src="https://static.wixstatic.com/media/9fa84d_5ac1f4c8525a458589f0aed1cb508395~mv2.png/v1/fill/w_678,h_414,al_c,lg_1,q_85/9fa84d_5ac1f4c8525a458589f0aed1cb508395~mv2.webp"
+                style="width:630px; height: 385px; "><br><br></center>
+        <h5 style="text-align: left; font-size: 14px;">เปิดให้บริการแล้ววันนี้ที่มิวเซียมสยาม <br>
+            รับคูปองส่วนลดเมื่อซื้อตั๋วเข้าชม Museum Siam <br><br>เวลาเปิดให้บริการ: 07:00-18:00 น.
+            (ปิดวันจันทร์)<br>เบอร์โทร 081-837-3295</h5><br>
+        <a href="detailn/detailnews19.html" class="btn btn-light"> รายละเอียดเพิ่มเติม</a><br><br><br><br>
+
+
+        <b></b><a href="detailn/detailnews20.html"
+            style="text-align: center; color: black; font-size: 22px; font-weight: 1000; "> D' for Charity
+        </a></b>
+        <h6 style="text-align: center; color: gray; "> November 25, 2017</h6>
+        <center>
+            <img src="https://static.wixstatic.com/media/9fa84d_1a8852e8090a462e834f4baaf867f62f~mv2_d_1667_1250_s_2.jpg/v1/fill/w_788,h_591,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_1a8852e8090a462e834f4baaf867f62f~mv2_d_1667_1250_s_2.webp"
+                style="width:630px; height: 473px; "><br><br></center>
+        <h5 style="text-align: left; font-size: 14px;">อิ่มท้องแล้วยังอิ่มบุญ ร่วมส่งต่อการให้
+            เพียงซื้อเมนูพิเศษได้ร่วมบริจาคให้กับน้องๆ มูลนิธิเด็กอ่อนในสลัมฯ </h5><br>
+        <a href="detailn/detailnews20.html" class="btn btn-light"> รายละเอียดเพิ่มเติม</a><br><br><br>
+
+        <a href="News.html" class="previous">&lt;&nbsp;Prev</a>&nbsp;
+        <a href="News.html" class="one"> 1</a>&nbsp;
+        <a href="News2.html" class="two">2</a>
+        <br><br>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
+            <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
+            <div class="input-container"
+                style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="text" placeholder="Email Address" name="email"
+                    style="background-color: #104751; border: 0px; width: 250px;">
+            </div>
+            <button
+                style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
+                Now</button>
+
+            <h5 style="padding-top: 70px; ">Follow Us:</h5>
+            <a class="warpbutton" href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
+                <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp "
+                    style="width: 60px; height: 70px; ">
+            </a>
+            <a class="warpbutton" href="https://www.instagram.com/d.orothailand/ " target="_blank ">
+                <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
+                    style="width: 55px; height: 60px; ">
+            </a>
+            <a class="warpbutton" href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
+                <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp "
+                    style="width: 50px; height: 65px; ">
+            </a>
+
+            <div style="width: 100%; height: 45px; background-color: #c14e25; margin-top: 25px; ">
+                <h5 style="padding-top: 12.5px; ">Copyright©2018 by Golden Cream Ltd,. (D'ORO) all right reserved.
+                </h5>
+            </div>
+
+            <div style="width: 100%; height: 25px; ">
+
+            </div>
+        </div>
+        <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
+            <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp "
+                width="120px
+        " height="100px ">
+        </div>
+    </footer>
+</body>
+
+</html>
