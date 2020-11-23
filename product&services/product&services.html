@@ -11,22 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
     <title>Product & Service | D'ORA Coffeeeeeeeeeeeee</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="shortcut icon" href="https://static.wixstatic.com/media/9fa84d_87483a6113ae4436bdbc1633f6c60a4c%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/9fa84d_87483a6113ae4436bdbc1633f6c60a4c%7Emv2.png" type="image/png" /> -->
+
 </head>
 <style>
     body {
         font-family: 'Mitr', sans-serif;
-    }
-    
-    .nav-item {
-        font-size: 14px;
-    }
-    
-    .nav-link {
-        color: white;
-    }
-    
-    .nav-link:hover {
-        color: #FA9773;
     }
     
     h5 {
@@ -43,52 +33,6 @@
         width: 426px;
         height: 50px;
         border-top: 2px solid #547478;
-    }
-    
-    a {
-        color: white;
-    }
-    
-    a:hover {
-        color: #FA9773;
-    }
-    
-    .dropbtn {
-        background-color: #547478;
-        color: white;
-        font-size: 14px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    
-    .dropdown-content {
-        border-radius: 3px;
-        opacity: 0.7;
-        background-color: #547478;
-        display: none;
-        position: absolute;
-        right: 0;
-        min-width: 200px;
-        z-index: 2;
-    }
-    
-    .dropdown-content a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    .dropdown-content a:hover {
-        color: #FA9773;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-        color: white;
     }
     
     #imgmenu {
@@ -154,94 +98,164 @@
         background-blend-mode: multiply;
         z-index: -1;
     }
-
-    .warpbutton:hover{
+    
+    .warpbutton:hover {
         color: transparent;
+    }
+    
+    .bar {
+        overflow: hidden;
+        background-color: #547478;
+        height: 32px;
+        line-height: 0.5;
+        margin: 0 auto;
+        border-bottom: #104751 solid 1px;
+        /* padding-left: 17%; */
+    }
+    
+    .bar {
+        overflow: hidden;
+        background-color: #547478;
+        height: 32px;
+        line-height: 0.5;
+        margin: 0 auto;
+        border-bottom: #104751 solid 1px;
+        /* padding-left: 17%; */
+    }
+    
+    .bar a {
+        float: left;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        line-height: 0.5;
+        transition: 0.4s;
+    }
+    
+    .drop {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .drop .btn {
+        font-size: 14px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        line-height: 0.5;
+    }
+    
+    .bar a:hover,
+    .drop:hover .btn {
+        color: #FA9773;
+    }
+    
+    .content {
+        display: none;
+        position: absolute;
+        min-width: 130px;
+        z-index: 4;
+    }
+    
+    .content:not(div) {
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        /* opacity: 0.5; */
+        background-color: rgba(16, 71, 81, 0.5);
+    }
+    
+    .content a:hover {
+        color: #FA9773;
+    }
+    
+    .drop:hover .content {
+        display: block;
+    }
+    
+    #hold {
+        color: #FA9773;
     }
 </style>
 
 <body>
+    <!-- Lego -->
     <div class="bodyparallax">
         <div style="color: white;">
             <div class="top" style="font-size:30px; background-color: #104751; height: 135px;">
                 <center>
-                    <a href="index.html"><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
+                    <a href="/index.html"><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
                 </center>
             </div>
         </div>
 
-        <div style="color: white;">
-            <ul class="nav justify-content-center navbar-light" style="background-color: #547478; height: 33px;">
+        <!--------------------- Header bar --------------------->
+        <div class="bar">
+            <center>
+                <div style="text-align: center; width: 984.86px; height: 32px;">
+                    <a href="/index.html">HOME</a>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">HOME</a>
-                </li>
-
-                <div class="nav-item">
-                    <li class="nav-link">
-                        <div class="dropdown">
-                            <button class="dropbtn">COMPANY</button>
-                            <ul class="dropdown-content">
-                                <a href="aboutus.html">ABOUT US</a><br>
-                                <a href="fromfarmtocup.html">FORM FARM TO CUP</a>
-                            </ul>
+                    <div class="drop">
+                        <button class="btn">COMPANY</button>
+                        <div class="content" style="margin-left: -37px;">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="/company/aboutus.html">ABOUT US</a>
+                            <a href="/company/fromfarmtocup.html">FORM FARM TO CUP</a>
                         </div>
-                    </li>
-                </div>
+                    </div>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="product&services.html" style="color: #FA9773;">PRODUCT & SERVICES</a>
-                </li>
+                    <a href="/product&services/product&services.html" id="hold">PRODUCT & SERVICES</a>
 
-                <div class="nav-item">
-                    <li class="nav-link">
-                        <div class="dropdown">
-                            <button class="dropbtn">NEWS&PROMOTION</button>
-                            <ul class="dropdown-content">
-                                <a href="News.html">NEWS & ACTIVITIES</a><br>
-                                <a href="promotion.html">PROMOTIONS</a><br>
-                                <a href="dekdek.php">DEK DEK's GALLERY</a><br>
-                                <a href="19th-anniversary.html">19th ANNIVERSARY</a>
-                            </ul>
+                    <div class="drop">
+                        <button class="btn">NEWS&PROMOTION</button>
+                        <div class="content">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="/news&promotion/News.html">NEWS & ACTIVITIES</a>
+                            <a href="/news&promotion/promotion.html">PROMOTIONS</a>
+                            <a href="/news&promotion/dekdek.html">DEK DEK's GALLERY</a>
+                            <a href="/news&promotion/19th-anniversary.html">19th ANNIVERSARY</a>
                         </div>
-                    </li>
-                </div>
+                    </div>
 
-                <div class="nav-item">
-                    <li class="nav-link">
-                        <div class="dropdown">
-                            <button class="dropbtn">MEMBERSHIP</button>
-                            <ul class="dropdown-content">
-                                <a href="#">EARN & REDEEM</a><br>
-                                <a href="#">PREMIUM COLLECTION</a><br>
-                                <a href="#">MEMBERTIERS</a><br>
-                                <a href="#">REGISTER NOW</a>
-                            </ul>
+                    <div class="drop">
+                        <button class="btn">MEMBERSHIP</button>
+                        <div class="content" style="margin-left: -35px;">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="#">EARN & REDEEM</a>
+                            <a href="#">PREMIUM COLLECTION</a>
+                            <a href="#">MEMBERTIERS</a>
+                            <a href="#">REGISTER NOW</a>
                         </div>
-                    </li>
-                </div>
+                    </div>
 
-                <li class="nav-item ">
-                    <a class="nav-link " href="# ">STORE LOCATIONS</a>
-                </li>
+                    <a href="#">STORE LOCATIONS</a>
 
-                <li class="nav-item ">
-                    <a class="nav-link " href="# ">FRANCHISE</a>
-                </li>
+                    <a href="#">FRANCHISE</a>
 
-                <div class="nav-item">
-                    <div class="dropdown">
-                        <li class="nav-link">
-                            <button class="dropbtn">CONTACT</button>
-                            <ul class="dropdown-content">
-                                <a href="#">CONTACT US</a><br>
-                                <a href="#">WORK WITH US</a>
-                            </ul>
-                        </li>
+                    <div class="drop">
+                        <button class="btn">CONTACT</button>
+                        <div class="content" style="margin-left: -23px;">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="#">CONTACT US</a>
+                            <a href="#">WORK WITH US</a>
+                        </div>
                     </div>
                 </div>
-
-            </ul>
+            </center>
         </div>
 
         <div class="headparallax" style="width: 100%; position: relative; top: 0px; bottom: 0px;">
@@ -370,3 +384,5 @@
         </footer>
     </div>
 </body>
+
+</html>
