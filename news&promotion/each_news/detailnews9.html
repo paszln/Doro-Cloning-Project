@@ -15,113 +15,51 @@
     body {
         font-family: 'Mitr', sans-serif;
     }
-
-    .nav-item {
-        font-size: 14px;
-    }
-
-    .nav-link {
-        color: white;
-    }
-
-    .nav-link:hover {
-        color: #FA9773;
-    }
-
+    
     h5 {
         font-size: 16px;
     }
-
+    
     #img1 {
         width: 224px;
         height: 84px;
         margin: 20px;
     }
-
+    
     #line {
         width: 426px;
         height: 50px;
         border-top: 2px solid #547478;
     }
-
-    a {
-        color: white;
-    }
-
-    a:hover {
-        color: #FA9773;
-    }
-
-    .dropbtn {
-        background-color: #547478;
-        color: white;
-        font-size: 14px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
-    .dropdown-content {
-        border-radius: 3px;
-        opacity: 0.7;
-        background-color: #547478;
-        display: none;
-        position: absolute;
-        right: 0;
-        min-width: 200px;
-    }
-
-    .dropdown-content a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .dropdown-content a:hover {
-        color: #FA9773;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-        color: white;
-    }
-
-    /* #img2 {
-        z-index: 1;
-    } */
-
+    
     #img3 {
         /* position:absolute; */
         z-index: -1;
     }
-
+    
     #upperphoto {
         margin-top: -400px;
         /* z-index: -1; */
     }
-
+    
     #underphoto {
         margin-top: -150px;
         /* z-index: -1; */
     }
-
+    
     .btn-light {
         border-radius: 20px;
         width: 175px;
         padding: 7.5px 0px 7.5px 0px;
         background-color: white;
         border: solid rgba(37, 92, 99, 1) 1px;
-
     }
-
+    
     .btn-light:hover {
         background-color: rgba(37, 92, 99, 1);
         color: white;
     }
-
+    
     .one {
         background-color: black;
         color: white;
@@ -129,7 +67,7 @@
         display: inline-block;
         padding: 4px 8px;
     }
-
+    
     .two {
         background-color: black;
         color: white;
@@ -137,8 +75,7 @@
         display: inline-block;
         padding: 4px 8px;
     }
-
-
+    
     .next {
         background-color: black;
         color: white;
@@ -146,18 +83,17 @@
         display: inline-block;
         padding: 4px 8px;
     }
-
+    
     .one .two .next:hover {
         background-color: #ddd;
         color: black;
         opacity: 0.6;
     }
-
-
+    
     .warpbutton:hover {
         color: transparent;
     }
-
+    
     .changebg {
         background-color: black;
         opacity: 0.7;
@@ -166,9 +102,8 @@
         height: 100%;
         z-index: 10;
         position: fixed;
-
     }
-
+    
     .changeimg {
         visibility: visible;
         width: 879px;
@@ -178,11 +113,11 @@
         top: 100px;
         margin-top: 20px;
     }
-
+    
     #closeall:hover {
         cursor: pointer;
     }
-
+    
     #closeall {
         z-index: 14;
         position: fixed;
@@ -191,15 +126,15 @@
         width: 50px;
         height: 50px;
     }
-
+    
     img {
         object-fit: cover
     }
-
+    
     .imgchange:hover {
         cursor: pointer;
     }
-
+    
     .bodyparallax {
         background-image: url(https://static.wixstatic.com/media/9fa84d_cbee5e5593994ca089cafbd62b9f6c2b~mv2_d_8000_8159_s_4_2.png);
         height: 100%;
@@ -211,96 +146,155 @@
         background-blend-mode: multiply;
         z-index: -1;
     }
+    
+    .bar {
+        overflow: hidden;
+        background-color: #547478;
+        height: 33px;
+        line-height: 0.5;
+        margin: 0 auto;
+        border-bottom: #104751 solid 1px;
+        /* padding-left: 17%; */
+    }
+    
+    .bar a {
+        float: left;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        line-height: 0.5;
+        transition: 0.4s;
+    }
+    
+    .drop {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .drop .btn {
+        font-size: 14px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        line-height: 0.5;
+    }
+    
+    .bar a:hover,
+    .drop:hover {
+        color: #FA9773;
+    }
+    
+    .content {
+        display: none;
+        position: absolute;
+        min-width: 130px;
+        z-index: 4;
+    }
+    
+    .content:not(div) {
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        /* opacity: 0.5; */
+        background-color: rgba(16, 71, 81, 0.5);
+    }
+    
+    .content a:hover {
+        color: #FA9773;
+    }
+    
+    .drop:hover .content {
+        display: block;
+    }
+    
+    #hold {
+        color: #FA9773;
+    }
 </style>
 <div class="bodyparallax">
 
     <body id="stop" style="overflow: auto;">
         <div style="display: flex;width: 100%; height: 100%;justify-content: center; ">
             <div id="change" style="display: none; z-index:20"></div>
-            <img id="closeall" class="close" style="display: none; filter: brightness(250%); z-index:30"
-                onclick="closepopup()" src="https://image.flaticon.com/icons/png/512/106/106830.png">
+            <img id="closeall" class="close" style="display: none; filter: brightness(250%); z-index:30" onclick="closepopup()" src="https://image.flaticon.com/icons/png/512/106/106830.png">
             <img id="change2" src="" style="display: none; z-index:40">
         </div>
+        <!-- Lego -->
         <div style="color: white;">
-            <div class="top" style="font-size:30px; background-color: #104751;">
-                <center><img id="img1"
-                        src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp">
+            <div class="top" style="font-size:30px; background-color: #104751; height: 135px;">
+                <center>
+                    <a href="/index.html"><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
                 </center>
             </div>
         </div>
 
-        <div style="color: white;">
-            <ul class="nav justify-content-center navbar-light" style="background-color: #547478;">
+        <!--------------------- Header bar --------------------->
+        <div class="bar">
+            <center>
+                <div style="text-align: center; width: 984.86px; height: 32px;">
+                    <a href="/index.html">HOME</a>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">HOME</a>
-                </li>
-
-                <div class="nav-item">
-                    <li class="nav-link">
-                        <div class="dropdown">
-                            <button class="dropbtn">COMPANY</button>
-                            <ul class="dropdown-content">
-                                <a href="aboutus.html">ABOUT US</a><br>
-                                <a href="fromfarmtocup.html">FORM FARM TO CUP</a>
-                            </ul>
+                    <div class="drop">
+                        <button class="btn">COMPANY</button>
+                        <div class="content" style="margin-left: -37px;">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="/company/aboutus.html">ABOUT US</a>
+                            <a href="/company/fromfarmtocup.html">FORM FARM TO CUP</a>
                         </div>
-                    </li>
-                </div>
+                    </div>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="product&services.html">PRODUCT & SERVICES</a>
-                </li>
+                    <a href="/product&services/product&services.html">PRODUCT & SERVICES</a>
 
-                <div class="nav-item">
-                    <li class="nav-link">
-                        <div class="dropdown">
-                            <button class="dropbtn">NEWS&PROMOTION</button>
-                            <ul class="dropdown-content">
-                                <a href="#">NEWS & ACTIVITIES</a><br>
-                                <a href="#">PROMOTIONS</a><br>
-                                <a href="#">DEK DEK's GALLERY</a><br>
-                                <a href="19th-anniversary.html" style="color: #FA9773;">19th ANNIVERSARY</a>
-                            </ul>
+                    <div class="drop">
+                        <button class="btn">NEWS&PROMOTION</button>
+                        <div class="content">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="/news&promotion/News.html">NEWS & ACTIVITIES</a>
+                            <a href="/news&promotion/promotion.html">PROMOTIONS</a>
+                            <a href="/news&promotion/dekdek.html">DEK DEK's GALLERY</a>
+                            <a href="/news&promotion/19th-anniversary.html">19th ANNIVERSARY</a>
                         </div>
-                    </li>
-                </div>
+                    </div>
 
-                <div class="nav-item">
-                    <li class="nav-link">
-                        <div class="dropdown">
-                            <button class="dropbtn">MEMBERSHIP</button>
-                            <ul class="dropdown-content">
-                                <a href="#">EARN & REDEEM</a><br>
-                                <a href="#">PREMIUM COLLECTION</a><br>
-                                <a href="#">MEMBERTIERS</a><br>
-                                <a href="#">REGISTER NOW</a>
-                            </ul>
+                    <div class="drop">
+                        <button class="btn">MEMBERSHIP</button>
+                        <div class="content" style="margin-left: -35px;">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="#">EARN & REDEEM</a>
+                            <a href="#">PREMIUM COLLECTION</a>
+                            <a href="#">MEMBERTIERS</a>
+                            <a href="#">REGISTER NOW</a>
                         </div>
-                    </li>
-                </div>
+                    </div>
 
-                <li class="nav-item ">
-                    <a class="nav-link " href="# ">STORE LOCATIONS</a>
-                </li>
+                    <a href="#">STORE LOCATIONS</a>
 
-                <li class="nav-item ">
-                    <a class="nav-link " href="# ">FRANCHISE</a>
-                </li>
+                    <a href="#">FRANCHISE</a>
 
-                <div class="nav-item">
-                    <div class="dropdown">
-                        <li class="nav-link">
-                            <button class="dropbtn">CONTACT</button>
-                            <ul class="dropdown-content">
-                                <a href="#">CONTACT US</a><br>
-                                <a href="#">WORK WITH US</a>
-                            </ul>
-                        </li>
+                    <div class="drop">
+                        <button class="btn">CONTACT</button>
+                        <div class="content" style="margin-left: -23px;">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="#">CONTACT US</a>
+                            <a href="#">WORK WITH US</a>
+                        </div>
                     </div>
                 </div>
-
-            </ul>
+            </center>
         </div>
 
 
@@ -311,27 +305,20 @@
             </b>
             <h6 style=" color: gray; text-align: left; "> November 19, 2018</h6>
 
-            <img src="https://static.wixstatic.com/media/9fa84d_a0d75f6a076749e1bad54f862ed6895e~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_788,h_442,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_a0d75f6a076749e1bad54f862ed6895e~mv2_d_5472_3072_s_4_2.webp"
-                style="width:910px; height: 511px; "><br><br>
+            <img src="https://static.wixstatic.com/media/9fa84d_a0d75f6a076749e1bad54f862ed6895e~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_788,h_442,al_c,q_80,usm_0.66_1.00_0.01/9fa84d_a0d75f6a076749e1bad54f862ed6895e~mv2_d_5472_3072_s_4_2.webp" style="width:910px; height: 511px; "><br><br>
             <div class="row">
                 <div class="col-md-4">
-                    <img class="imgchange"
-                        src="https://static.wixstatic.com/media/9fa84d_5abebd3454a444a4b1f1b2f96aebd423~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_1294,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_5abebd3454a444a4b1f1b2f96aebd423~mv2_d_5472_3072_s_4_2.webp"
-                        style="width: 288px; height: 218px;"
+                    <img class="imgchange" src="https://static.wixstatic.com/media/9fa84d_5abebd3454a444a4b1f1b2f96aebd423~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_1294,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_5abebd3454a444a4b1f1b2f96aebd423~mv2_d_5472_3072_s_4_2.webp" style="width: 288px; height: 218px;"
                         onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_5abebd3454a444a4b1f1b2f96aebd423~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_1294,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_5abebd3454a444a4b1f1b2f96aebd423~mv2_d_5472_3072_s_4_2.webp')">
 
                 </div>
                 <div class="col-md-4">
-                    <img class="imgchange"
-                        src="https://static.wixstatic.com/media/9fa84d_a8ac9d27164f4b7baaf9f67a0c1786bf~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_1294,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_a8ac9d27164f4b7baaf9f67a0c1786bf~mv2_d_5472_3072_s_4_2.webp"
-                        style="width: 288px; height: 218px;"
+                    <img class="imgchange" src="https://static.wixstatic.com/media/9fa84d_a8ac9d27164f4b7baaf9f67a0c1786bf~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_1294,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_a8ac9d27164f4b7baaf9f67a0c1786bf~mv2_d_5472_3072_s_4_2.webp" style="width: 288px; height: 218px;"
                         onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_a8ac9d27164f4b7baaf9f67a0c1786bf~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_1294,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_a8ac9d27164f4b7baaf9f67a0c1786bf~mv2_d_5472_3072_s_4_2.webp')">
 
                 </div>
                 <div class="col-md-4">
-                    <img class="imgchange"
-                        src="https://static.wixstatic.com/media/9fa84d_3ccc5c0767194c8897c2fdd05114b28e~mv2_d_4576_3072_s_4_2.jpg/v1/fill/w_1081,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_3ccc5c0767194c8897c2fdd05114b28e~mv2_d_4576_3072_s_4_2.webp"
-                        style="width: 288px; height: 218px;"
+                    <img class="imgchange" src="https://static.wixstatic.com/media/9fa84d_3ccc5c0767194c8897c2fdd05114b28e~mv2_d_4576_3072_s_4_2.jpg/v1/fill/w_1081,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_3ccc5c0767194c8897c2fdd05114b28e~mv2_d_4576_3072_s_4_2.webp" style="width: 288px; height: 218px;"
                         onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_3ccc5c0767194c8897c2fdd05114b28e~mv2_d_4576_3072_s_4_2.jpg/v1/fill/w_1081,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_3ccc5c0767194c8897c2fdd05114b28e~mv2_d_4576_3072_s_4_2.webp')">
 
                 </div>
@@ -340,23 +327,17 @@
             </div><br>
             <div class="row">
                 <div class="col-md-4">
-                    <img class="imgchange"
-                        src="https://static.wixstatic.com/media/9fa84d_47c9d8eec8e74fafb0f979b0a9b15135~mv2_d_4440_2632_s_4_2.jpg/v1/fill/w_1225,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_47c9d8eec8e74fafb0f979b0a9b15135~mv2_d_4440_2632_s_4_2.webp"
-                        style="width: 288px; height: 218px;"
+                    <img class="imgchange" src="https://static.wixstatic.com/media/9fa84d_47c9d8eec8e74fafb0f979b0a9b15135~mv2_d_4440_2632_s_4_2.jpg/v1/fill/w_1225,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_47c9d8eec8e74fafb0f979b0a9b15135~mv2_d_4440_2632_s_4_2.webp" style="width: 288px; height: 218px;"
                         onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_47c9d8eec8e74fafb0f979b0a9b15135~mv2_d_4440_2632_s_4_2.jpg/v1/fill/w_1225,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_47c9d8eec8e74fafb0f979b0a9b15135~mv2_d_4440_2632_s_4_2.webp')">
 
                 </div>
                 <div class="col-md-4">
-                    <img class="imgchange"
-                        src="https://static.wixstatic.com/media/9fa84d_b01e5e82603b421091e3409dd7075fe5~mv2_d_4704_2208_s_2.jpg/v1/fill/w_1547,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_b01e5e82603b421091e3409dd7075fe5~mv2_d_4704_2208_s_2.webp"
-                        style="width: 288px; height: 218px;"
+                    <img class="imgchange" src="https://static.wixstatic.com/media/9fa84d_b01e5e82603b421091e3409dd7075fe5~mv2_d_4704_2208_s_2.jpg/v1/fill/w_1547,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_b01e5e82603b421091e3409dd7075fe5~mv2_d_4704_2208_s_2.webp" style="width: 288px; height: 218px;"
                         onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_b01e5e82603b421091e3409dd7075fe5~mv2_d_4704_2208_s_2.jpg/v1/fill/w_1547,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_b01e5e82603b421091e3409dd7075fe5~mv2_d_4704_2208_s_2.webp')">
 
                 </div>
                 <div class="col-md-4">
-                    <img class="imgchange"
-                        src="https://static.wixstatic.com/media/9fa84d_47e2668e18fd481fae0de50b324816d2~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_1294,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_47e2668e18fd481fae0de50b324816d2~mv2_d_5472_3072_s_4_2.webp"
-                        style="width: 288px; height: 218px;"
+                    <img class="imgchange" src="https://static.wixstatic.com/media/9fa84d_47e2668e18fd481fae0de50b324816d2~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_1294,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_47e2668e18fd481fae0de50b324816d2~mv2_d_5472_3072_s_4_2.webp" style="width: 288px; height: 218px;"
                         onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_47e2668e18fd481fae0de50b324816d2~mv2_d_5472_3072_s_4_2.jpg/v1/fill/w_1294,h_726,al_c,q_90,usm_0.66_1.00_0.01/9fa84d_47e2668e18fd481fae0de50b324816d2~mv2_d_5472_3072_s_4_2.webp')">
 
                 </div>
@@ -364,57 +345,63 @@
 
             </div><br><br>
             <p style="font-size: 12.5px; text-align: left; color: #969696;">
-                เมื่อวันที่ 12 ตุลาคมที่ผ่านมา ทางผู้บริหารของดิโอโร่ได้นำเงินบริจาคจากกิจกรรม อิ่มท้องแล้วยังอิ่มบุญ
-                จากการขายสินค้าในช่วงเทศกาลวันแม่ ตลอดทั้งเดือนสิงหาคมที่ผ่านมา<br> บริจาคให้กับมูลนิธิเด็กอ่อนในสลัมฯ
-                คลองเตย พร้อมทั้งนำขนมและเครื่องดื่มจากทางดิโอโร่ไปแจกน้องๆ ที่มูลนิธิฯ อีกด้วย</p>
+                เมื่อวันที่ 12 ตุลาคมที่ผ่านมา ทางผู้บริหารของดิโอโร่ได้นำเงินบริจาคจากกิจกรรม อิ่มท้องแล้วยังอิ่มบุญ จากการขายสินค้าในช่วงเทศกาลวันแม่ ตลอดทั้งเดือนสิงหาคมที่ผ่านมา<br> บริจาคให้กับมูลนิธิเด็กอ่อนในสลัมฯ คลองเตย พร้อมทั้งนำขนมและเครื่องดื่มจากทางดิโอโร่ไปแจกน้องๆ
+                ที่มูลนิธิฯ อีกด้วย</p>
             <p style="font-size: 12.5px; text-align: left; color: #969696;">
                 ทางดิโอโร่ต้องขอขอบพระคุณลูกค้าทุกท่านที่เข้าร่วมการบริจาคในกิจกรรมดังกล่าวเป็นอย่างยิ่ง</p>
         </div><br><br><br><br>
 
+
         <div class="container" style="padding-left: 120px;">
-            <img src="https://can2-prod.s3.amazonaws.com/uploads/data/000/385/812/original/button-share-facebook.png"
-                style="left: 400px; width: 140px; height: 32px; object-fit: cover; cursor: pointer;"></div>
+            <img src="https://can2-prod.s3.amazonaws.com/uploads/data/000/385/812/original/button-share-facebook.png" style="left: 400px; width: 140px; height: 32px; object-fit: cover; cursor: pointer;" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.d-oro.coffee%2Fsingle-post%2F2018%2F11%2F19%2F%25E0%25B8%25A0%25E0%25B8%25B2%25E0%25B8%259E%25E0%25B8%2581%25E0%25B8%25B4%25E0%25B8%2588%25E0%25B8%2581%25E0%25B8%25A3%25E0%25B8%25A3%25E0%25B8%25A1-%25E0%25B8%25AD%25E0%25B8%25B4%25E0%25B9%2588%25E0%25B8%25A1%25E0%25B8%2597%25E0%25B9%2589%25E0%25B8%25AD%25E0%25B8%2587%25E0%25B9%2581%25E0%25B8%25A5%25E0%25B9%2589%25E0%25B8%25A7%25E0%25B8%25A2%25E0%25B8%25B1%25E0%25B8%2587%25E0%25B8%25AD%25E0%25B8%25B4%25E0%25B9%2588%25E0%25B8%25A1%25E0%25B8%259A%25E0%25B8%25B8%25E0%25B8%258D-%25E0%25B8%2581%25E0%25B8%25B1%25E0%25B8%259A%25E0%25B8%2594%25E0%25B8%25B4%25E0%25B9%2582%25E0%25B8%25AD%25E0%25B9%2582%25E0%25B8%25A3%25E0%25B9%2588&title=%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%20%E0%B8%AD%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%97%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%AD%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%9A%E0%B8%B8%E0%B8%8D%20%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%94%E0%B8%B4%E0%B9%82%E0%B8%AD%E0%B9%82%E0%B8%A3%E0%B9%88&description="
+                onclick="myFunction()">
+        </div>
         <br><br><br>
+        <div id="comp-j962wuhzfacebook" class="fbc1facebook" style="margin: -40px 0px -50px 290px; width: 700px;">
+            <div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="http://www.d-oro.coffee/#!เปิดสาขาใหม่-DORO-สาขา-กูร์เมต์-มาร์เก็ต-พุทธมณฑล/hkj3s/5f5af2e3d246a97fbd0078d6
+" data-width="744" data-numposts="2" data-colorscheme="light" data-mobile="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=304553036307597&amp;color_scheme=light&amp;container_width=744&amp;height=100&amp;href=http%3A%2F%2Fwww.d-oro.coffee%2F%23!%25E0%25B9%2580%25E0%25B8%259B%25E0%25B8%25B4%25E0%25B8%2594%25E0%25B8%25AA%25E0%25B8%25B2%25E0%25B8%2582%25E0%25B8%25B2%25E0%25B9%2583%25E0%25B8%25AB%25E0%25B8%25A1%25E0%25B9%2588-DORO-%25E0%25B8%25AA%25E0%25B8%25B2%25E0%25B8%2582%25E0%25B8%25B2-%25E0%25B8%2581%25E0%25B8%25B9%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B9%2580%25E0%25B8%25A1%25E0%25B8%2595%25E0%25B9%258C-%25E0%25B8%25A1%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B9%2580%25E0%25B8%2581%25E0%25B9%2587%25E0%25B8%2595-%25E0%25B8%259E%25E0%25B8%25B8%25E0%25B8%2597%25E0%25B8%2598%25E0%25B8%25A1%25E0%25B8%2593%25E0%25B8%2591%25E0%25B8%25A5%2Fhkj3s%2F5f5af2e3d246a97fbd0078d6&amp;locale=en_US&amp;mobile=false&amp;numposts=2&amp;sdk=joey&amp;version=v2.4&amp;width="
+                style="width: 100%;"><span style="vertical-align: bottom; width: 100%; height: 263px;"><iframe name="f3ca4a8ef0ffcf" width="1000px" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.4/plugins/comments.php?app_id=304553036307597&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2f3eb0ab1dd9b%26domain%3Dwww.d-oro.coffee%26origin%3Dhttps%253A%252F%252Fwww.d-oro.coffee%252Ff38ce44570a529c%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=744&amp;height=100&amp;href=http%3A%2F%2Fwww.d-oro.coffee%2F%23!%25E0%25B9%2580%25E0%25B8%259B%25E0%25B8%25B4%25E0%25B8%2594%25E0%25B8%25AA%25E0%25B8%25B2%25E0%25B8%2582%25E0%25B8%25B2%25E0%25B9%2583%25E0%25B8%25AB%25E0%25B8%25A1%25E0%25B9%2588-DORO-%25E0%25B8%25AA%25E0%25B8%25B2%25E0%25B8%2582%25E0%25B8%25B2-%25E0%25B8%2581%25E0%25B8%25B9%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B9%2580%25E0%25B8%25A1%25E0%25B8%2595%25E0%25B9%258C-%25E0%25B8%25A1%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B9%2580%25E0%25B8%2581%25E0%25B9%2587%25E0%25B8%2595-%25E0%25B8%259E%25E0%25B8%25B8%25E0%25B8%2597%25E0%25B8%2598%25E0%25B8%25A1%25E0%25B8%2593%25E0%25B8%2591%25E0%25B8%25A5%2Fhkj3s%2F5f5af2e3d246a97fbd0078d6&amp;locale=en_US&amp;mobile=false&amp;numposts=2&amp;sdk=joey&amp;version=v2.4&amp;width=" style="border: none; visibility: visible; width: 100%; height: 263px;" class=""></iframe></span></div>
+        </div>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Footer -->
-    <footer>
-        <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
-            <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
-            <div class="input-container" style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
-                <i class="fa fa-envelope icon"></i>
-                <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
-            </div>
-            <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
+        <!-- Footer -->
+        <footer>
+            <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
+                <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
+                <div class="input-container" style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
+                    <i class="fa fa-envelope icon"></i>
+                    <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
+                </div>
+                <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
             Now</button>
 
-            <h5 style="padding-top: 70px; ">Follow Us:</h5>
-            <a class="warpbutton" href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
-                <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp " style="width: 60px; height: 70px; ">
-            </a>
-            <a class="warpbutton" href="https://www.instagram.com/d.orothailand/ " target="_blank ">
-                <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
-                    style="width: 55px; height: 60px; ">
-            </a>
-            <a class="warpbutton" href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
-                <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp "
-                    style="width: 50px; height: 65px; ">
-            </a>
+                <h5 style="padding-top: 70px; ">Follow Us:</h5>
+                <a class="warpbutton" href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp " style="width: 60px; height: 70px; ">
+                </a>
+                <a class="warpbutton" href="https://www.instagram.com/d.orothailand/ " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
+                        style="width: 55px; height: 60px; ">
+                </a>
+                <a class="warpbutton" href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp "
+                        style="width: 50px; height: 65px; ">
+                </a>
 
-            <div style="width: 100%; height: 45px; background-color: #c14e25; margin-top: 25px; ">
-                <h5 style="padding-top: 12.5px; ">Copyright©2018 by Golden Cream Ltd,. (D'ORO) all right reserved.
-                </h5>
+                <div style="width: 100%; height: 45px; background-color: #c14e25; margin-top: 25px; ">
+                    <h5 style="padding-top: 12.5px; ">Copyright©2018 by Golden Cream Ltd,. (D'ORO) all right reserved.
+                    </h5>
+                </div>
+
+                <div style="width: 100%; height: 25px; ">
+
+                </div>
             </div>
-
-            <div style="width: 100%; height: 25px; ">
-
-            </div>
-        </div>
-        <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
-            <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp " width="120px
+            <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
+                <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp " width="120px
         " height="100px ">
-        </div>
-    </footer>
+            </div>
+        </footer>
 </div>
 
 <script>
@@ -427,6 +414,7 @@
         document.getElementById("change2").src = n;
         document.getElementById("stop").style.overflow = "hidden";
     }
+
     function closepopup() {
         document.getElementById("change2").style.display = "none";
         document.getElementById("change").style.display = "none";
@@ -435,6 +423,10 @@
 
     }
 
+    function myFunction() {
+        window.open("https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.d-oro.coffee%2Fsingle-post%2F2018%2F11%2F19%2F%25E0%25B8%25A0%25E0%25B8%25B2%25E0%25B8%259E%25E0%25B8%2581%25E0%25B8%25B4%25E0%25B8%2588%25E0%25B8%2581%25E0%25B8%25A3%25E0%25B8%25A3%25E0%25B8%25A1-%25E0%25B8%25AD%25E0%25B8%25B4%25E0%25B9%2588%25E0%25B8%25A1%25E0%25B8%2597%25E0%25B9%2589%25E0%25B8%25AD%25E0%25B8%2587%25E0%25B9%2581%25E0%25B8%25A5%25E0%25B9%2589%25E0%25B8%25A7%25E0%25B8%25A2%25E0%25B8%25B1%25E0%25B8%2587%25E0%25B8%25AD%25E0%25B8%25B4%25E0%25B9%2588%25E0%25B8%25A1%25E0%25B8%259A%25E0%25B8%25B8%25E0%25B8%258D-%25E0%25B8%2581%25E0%25B8%25B1%25E0%25B8%259A%25E0%25B8%2594%25E0%25B8%25B4%25E0%25B9%2582%25E0%25B8%25AD%25E0%25B9%2582%25E0%25B8%25A3%25E0%25B9%2588&title=%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%20%E0%B8%AD%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%97%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%AD%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%9A%E0%B8%B8%E0%B8%8D%20%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%94%E0%B8%B4%E0%B9%82%E0%B8%AD%E0%B9%82%E0%B8%A3%E0%B9%88&description=", "Google Chrome", "width=600,height=300");
+        window.focus();
+    }
 </script>
 </body>
 
