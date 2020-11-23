@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+    <title>News & Activities | D'ORA Coffee</title>
+</head>
+<style>
+    body {
+        font-family: 'Mitr', sans-serif;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: #FA9773;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    #img1 {
+        width: 224px;
+        height: 84px;
+        margin: 20px;
+    }
+
+    #line {
+        width: 426px;
+        height: 50px;
+        border-top: 2px solid #547478;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: #FA9773;
+    }
+
+    .dropbtn {
+        background-color: #547478;
+        color: white;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        border-radius: 3px;
+        opacity: 0.7;
+        background-color: #547478;
+        display: none;
+        position: absolute;
+        right: 0;
+        min-width: 200px;
+    }
+
+    .dropdown-content a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+        color: #FA9773;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        color: white;
+    }
+
+    /* #img2 {
+        z-index: 1;
+    } */
+
+    #img3 {
+        /* position:absolute; */
+        z-index: -1;
+    }
+
+    #upperphoto {
+        margin-top: -400px;
+        /* z-index: -1; */
+    }
+
+    #underphoto {
+        margin-top: -150px;
+        /* z-index: -1; */
+    }
+
+    .btn-light {
+        border-radius: 20px;
+        width: 175px;
+        padding: 7.5px 0px 7.5px 0px;
+        background-color: white;
+        border: solid rgba(37, 92, 99, 1) 1px;
+
+    }
+
+    .btn-light:hover {
+        background-color: rgba(37, 92, 99, 1);
+        color: white;
+    }
+
+    .one {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 4px 8px;
+    }
+
+    .two {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 4px 8px;
+    }
+
+
+    .next {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 4px 8px;
+    }
+
+    .one .two .next:hover {
+        background-color: #ddd;
+        color: black;
+        opacity: 0.6;
+    }
+
+    .warpbutton:hover {
+        color: transparent;
+    }
+</style>
+
+<body>
+    <div style="color: white;">
+        <div class="top" style="font-size:30px; background-color: #104751;">
+            <center><img id="img1"
+                    src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp">
+            </center>
+        </div>
+    </div>
+
+    <div style="color: white;">
+        <ul class="nav justify-content-center navbar-light" style="background-color: #547478;">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+
+            <div class="nav-item">
+                <li class="nav-link">
+                    <div class="dropdown">
+                        <button class="dropbtn">COMPANY</button>
+                        <ul class="dropdown-content">
+                            <a href="aboutus.html">ABOUT US</a><br>
+                            <a href="fromfarmtocup.html">FORM FARM TO CUP</a>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="product&services.html">PRODUCT & SERVICES</a>
+            </li>
+
+            <div class="nav-item">
+                <li class="nav-link">
+                    <div class="dropdown">
+                        <button class="dropbtn">NEWS&PROMOTION</button>
+                        <ul class="dropdown-content">
+                            <a href="#">NEWS & ACTIVITIES</a><br>
+                            <a href="#">PROMOTIONS</a><br>
+                            <a href="#">DEK DEK's GALLERY</a><br>
+                            <a href="19th-anniversary.html" style="color: #FA9773;">19th ANNIVERSARY</a>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+
+            <div class="nav-item">
+                <li class="nav-link">
+                    <div class="dropdown">
+                        <button class="dropbtn">MEMBERSHIP</button>
+                        <ul class="dropdown-content">
+                            <a href="#">EARN & REDEEM</a><br>
+                            <a href="#">PREMIUM COLLECTION</a><br>
+                            <a href="#">MEMBERTIERS</a><br>
+                            <a href="#">REGISTER NOW</a>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+
+            <li class="nav-item ">
+                <a class="nav-link " href="# ">STORE LOCATIONS</a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link " href="# ">FRANCHISE</a>
+            </li>
+
+            <div class="nav-item">
+                <div class="dropdown">
+                    <li class="nav-link">
+                        <button class="dropbtn">CONTACT</button>
+                        <ul class="dropdown-content">
+                            <a href="#">CONTACT US</a><br>
+                            <a href="#">WORK WITH US</a>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+
+        </ul>
+    </div>
+
+
+
+    <div class="container" style="text-align: center; width: 910px;"><br><br>
+        <b>
+            <h4 style="text-align: left; font-weight:1000;">เปิดสาขาใหม่ D'ORO สาขา SUCCO บางคูวัต</h4>
+        </b>
+        <h6 style=" color: gray; text-align: left; "> Junuary 9, 2019</h6>
+
+        <img src="https://static.wixstatic.com/media/9fa84d_e5f690a8cdc14fb88037ba5a5868069d~mv2.jpg/v1/fill/w_788,h_443,al_c,lg_1,q_80/9fa84d_e5f690a8cdc14fb88037ba5a5868069d~mv2.webp"
+            style="width:910px; height: 683px; "><br><br>
+        <h6 style=" color: gray; font-size: 15px; text-align: left;">เปิดให้บริการแล้ววันนี้ที่น้ำมัน Susco บางคูวัต
+            <br> พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่ทุกวัน <br><br> เวลาเปิดให้บริการ: 06:30-19:00 น.
+            (ทุกวัน)<br>เบอร์โทร: 082-667-9141 </h6><br>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Footer -->
+    <footer>
+        <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
+            <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
+            <div class="input-container" style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
+            </div>
+            <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
+            Now</button>
+
+            <h5 style="padding-top: 70px; ">Follow Us:</h5>
+            <a class="warpbutton" href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
+                <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp " style="width: 60px; height: 70px; ">
+            </a>
+            <a class="warpbutton" href="https://www.instagram.com/d.orothailand/ " target="_blank ">
+                <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
+                    style="width: 55px; height: 60px; ">
+            </a>
+            <a class="warpbutton" href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
+                <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp "
+                    style="width: 50px; height: 65px; ">
+            </a>
+
+            <div style="width: 100%; height: 45px; background-color: #c14e25; margin-top: 25px; ">
+                <h5 style="padding-top: 12.5px; ">Copyright©2018 by Golden Cream Ltd,. (D'ORO) all right reserved.
+                </h5>
+            </div>
+
+            <div style="width: 100%; height: 25px; ">
+
+            </div>
+        </div>
+        <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
+            <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp " width="120px
+        " height="100px ">
+        </div>
+    </footer>
+</body>
+
+</html>
