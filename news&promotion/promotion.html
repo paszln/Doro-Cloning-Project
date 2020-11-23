@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Promotions | D'ORA Coffee</title>
+    <style>
+        body {
+            font-family: 'Mitr', sans-serif;
+        }
+        
+        h5 {
+            font-size: 16px;
+        }
+        
+        #img1 {
+            width: 224px;
+            height: 84px;
+            margin: 20px;
+        }
+        
+        img {
+            width: 600px;
+            height: 240px;
+        }
+        
+        #line {
+            width: 426px;
+            height: 50px;
+            border-top: 2px solid #547478;
+        }
+        
+        #img3 {
+            /* position:absolute; */
+            z-index: -1;
+        }
+        
+        #upperphoto {
+            margin-top: -400px;
+            /* z-index: -1; */
+        }
+        
+        #underphoto {
+            margin-top: -150px;
+            /* z-index: -1; */
+        }
+        
+        .btn-light {
+            border-radius: 10px;
+            padding: 0;
+            background-color: white;
+            border: solid rgba(37, 92, 99, 1) 1px;
+            float: left;
+            width: 135px;
+            font-size: 14px;
+            height: 32px;
+            font-weight: 900;
+        }
+        
+        .btn-light:hover {
+            background-color: rgba(37, 92, 99, 1);
+            color: white;
+        }
+        
+        #testfooter {
+            width: 500px;
+            height: 500px;
+        }
+        
+        #underline {
+            width: 990px;
+            height: 50px;
+            border-top: 2px solid #547478;
+            opacity: 0.6;
+        }
+        
+        span {
+            color: #c8623e;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        #imgrow {
+            margin-right: -60px;
+            left: -5px;
+            top: -3px;
+        }
+        
+        #textrow {
+            text-align: left;
+            font-size: 13px;
+        }
+        
+        .changebg {
+            background-color: black;
+            opacity: 0.7;
+            visibility: visible;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            position: fixed;
+        }
+        
+        .changeimg {
+            visibility: visible;
+            width: 450px;
+            height: 625px;
+            z-index: 12;
+            position: fixed;
+            top: 100px;
+            margin-top: 20px;
+        }
+        
+        span {
+            cursor: pointer;
+        }
+        
+        #closeall {
+            z-index: 14;
+            position: fixed;
+            right: 100px;
+            top: 30px;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .bodyparallax {
+            background-image: url(https://static.wixstatic.com/media/9fa84d_cbee5e5593994ca089cafbd62b9f6c2b~mv2_d_8000_8159_s_4_2.png);
+            height: 100%;
+            width: 100%;
+            background-attachment: fixed;
+            background-position: 0% 0%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: multiply;
+            z-index: -1;
+        }
+        
+        #foot {
+            width: 120px;
+            height: 100px;
+        }
+        
+        .warpbutton:hover {
+            color: transparent;
+        }
+        
+        .bar {
+            overflow: hidden;
+            background-color: #547478;
+            height: 33px;
+            line-height: 0.5;
+            margin: 0 auto;
+            border-bottom: #104751 solid 1px;
+            /* padding-left: 17%; */
+        }
+        
+        .bar a {
+            float: left;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            line-height: 0.5;
+            transition: 0.4s;
+        }
+        
+        .drop {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .drop .btn {
+            font-size: 14px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            line-height: 0.5;
+        }
+        
+        .bar a:hover,
+        .drop:hover .btn {
+            color: #FA9773;
+        }
+        
+        .content {
+            display: none;
+            position: absolute;
+            min-width: 130px;
+            z-index: 4;
+        }
+        
+        .content:not(div) {
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        .content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding-top: 10px;
+            /* opacity: 0.5; */
+            background-color: rgba(16, 71, 81, 0.5);
+        }
+        
+        .content a:hover {
+            color: #FA9773;
+        }
+        
+        .drop:hover .content {
+            display: block;
+        }
+        
+        #hold {
+            color: #FA9773;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Lego -->
+    <div class="bodyparallax">
+        <div style="color: white;">
+            <div class="top" style="font-size:30px; background-color: #104751; height: 135px;">
+                <center>
+                    <a href="/index.html"><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
+                </center>
+            </div>
+        </div>
+
+        <!--------------------- Header bar --------------------->
+        <div class="bar">
+            <center>
+                <div style="text-align: center; width: 984.86px; height: 32px;">
+                    <a href="/index.html">HOME</a>
+
+                    <div class="drop">
+                        <button class="btn">COMPANY</button>
+                        <div class="content" style="margin-left: -37px;">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="/company/aboutus.html">ABOUT US</a>
+                            <a href="/company/fromfarmtocup.html">FORM FARM TO CUP</a>
+                        </div>
+                    </div>
+
+                    <a href="/product&services/product&services.html">PRODUCT & SERVICES</a>
+
+                    <div class="drop">
+                        <button class="btn">NEWS&PROMOTION</button>
+                        <div class="content">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="/news&promotion/News.html">NEWS & ACTIVITIES</a>
+                            <a href="/news&promotion/promotion.html" id="hold">PROMOTIONS</a>
+                            <a href="/news&promotion/dekdek.html">DEK DEK's GALLERY</a>
+                            <a href="/news&promotion/19th-anniversary.html">19th ANNIVERSARY</a>
+                        </div>
+                    </div>
+
+                    <div class="drop">
+                        <button class="btn">MEMBERSHIP</button>
+                        <div class="content" style="margin-left: -35px;">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="#">EARN & REDEEM</a>
+                            <a href="#">PREMIUM COLLECTION</a>
+                            <a href="#">MEMBERTIERS</a>
+                            <a href="#">REGISTER NOW</a>
+                        </div>
+                    </div>
+
+                    <a href="#">STORE LOCATIONS</a>
+
+                    <a href="#">FRANCHISE</a>
+
+                    <div class="drop">
+                        <button class="btn">CONTACT</button>
+                        <div class="content" style="margin-left: -23px;">
+                            <div style="height: 10px; width: auto; margin-top: -3px;"></div>
+                            <a href="#">CONTACT US</a>
+                            <a href="#">WORK WITH US</a>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+
+        <div class="container" style="text-align: center; ">
+            <h1 style="color: #255c63; margin-top: 55px; font-weight: bold; font-size: 50px;  height: 60px;"> PROMOTIONS
+            </h1><br>
+            <center>
+                <div style="width: 435px; height: 50px; border-top: 2px solid  #547478; opacity: 0.6; margin-top: -12px; margin-bottom: 12px;">
+                </div>
+            </center>
+        </div>
+        <center>
+            <div style="width: 1100px">
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_da68c2a19a8048bf9d6ee01aecf9871f~mv2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Winter%20Wonderland%20-%20Promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span> Winter Wonderland</span>
+                            <br> พบกับเครื่องดื่มและเบเกอรี่สุดพิเศษ สำหรับเทศกาลหน้าหนาว<br>ได้แล้ววันนี้ ที่ร้านดิโอโร่ทุกสาขา
+                        </p><br><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_250f102a550d410ba38c4694edacdefb~mv2.jpg/v1/crop/x_3,y_0,w_2473,h_3508/fill/w_980,h_1390,al_c,q_85,usm_0.66_1.00_0.01/AW%20Winter%20Wonderland-01.webp', 'WINTER WONDERLAND')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div>
+                <br>
+                <div id="underline"></div>
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_9140089abca44e1dbbda8729bea053e3~mv2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Gift%20Set%20Newyear%202021%20-%20Promotions_jp.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span> NEW
+                                YEAR GIFT SET 2021</span>
+                            <br> พบกับชุดของขวัญปีใหม่สุดพิเศษจาก D'ORO Joy Set และ<br> Premium Cookies Set ได้แล้ววันนี้ ที่ร้านดิโอโร่ทุกสาขา
+                        </p><br><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_fd149ba8aa704b32b0b6071fbc557a07~mv2.jpg/v1/crop/x_3,y_0,w_2473,h_3508/fill/w_613,h_869,al_c,q_85,usm_0.66_1.00_0.01/AW%20Gift%20Set%20Newyear%202021-01.webp', 'HAPPY NEW YEAR GIFT SET 2021')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_ea92d5e34ae04a6ab9b8c1c967d682ef~mv2.jpg/v1/crop/x_63,y_0,w_10235,h_4094/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/Vegetarian%20Festival%202020-01.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                VEGETARIAN FESTIVAL</span>
+                            <br> เทศกาล กินเจ อิ่มท้อง อิ่มบุญ ต้อนรับเทศกาลกินเจกับเครื่องดื่มและเบเกอรี่ ได้แล้ววันนี้ที่ดิโอโร่ทุกสาขา ถึงวันที่ 31 ตุลาคม 2563</p><br><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_477adeef036f407ab673ba6b706ecc84~mv2.jpg/v1/crop/x_3,y_0,w_2473,h_3508/fill/w_613,h_869,al_c,q_85,usm_0.66_1.00_0.01/AW%20Vegetarian%20Festival%202020%20A4.webp', 'VEGETARIAN FESTIVAL')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_4ef1d4cb07c94ac6904ca78e1ee3d5cb~mv2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Sharing%20for%20Mom%20-%20Promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                D'SHARING FOR MOM</span>
+                            <br> D'Sharing For Mom สินค้าใหม่! เติมความชุ่มชื่น พร้อมได้ ร่วมบริจาคส่งต่อความรัก รายได้ส่วนหนึ่งจากการจำหน่าย ตั้งเเต่วันที่ 3-31 ส.ค. 2563 ร่วมส่งมอบให้แก่ "มูลนิธิเพื่อเด็กพิการ"</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_1705b5e094f148b78f979ce1162459dd~mv2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_613,h_869,al_c,q_85,usm_0.66_1.00_0.01/AW%20Sharing%20for%20Mom-01.webp', 'D\'SHARING FOR MOM')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_701f968c7b1a42dc8dd62d5b5ae733e4~mv2.jpg/v1/crop/x_149,y_0,w_2183,h_873/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Premium%202020-A4-01-3.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                PREMIUM COLLECTION</span>
+                            <br> New D'Oro Premiums! ของพรีเมี่ยมดิโอโร่สุดแนว น่ารัก ทันสมัย เรียบง่าย ดูดี แลกรับฟรีหรือซื้อจับจองเป็นเจ้าของ กันได้เเล้วที่ดิโอโร่ ตั้งเเต่วันนี้ - จนกว่าสินค้าจะหมด (สินค้ามีจำนวนจำกัด)
+                        </p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_d1a7841aaae64af0beec0b8744d7121e~mv2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/AW%20Premium%202020-A4-01.webp', 'PREMIUM COLLECTION')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_17094a73134048888675f4a54e2ffb81~mv2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Keep%20Smiling%202020%20-%20Promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                KEEP SMILING</span>
+                            <br> ในช่วงวิกฤตแบบนี้ ดิโอโร่ขอมอบสินค้าดีๆ เพื่อสร้างรอยยิ้ม สร้างกำลังใจให้เราสู้ไปด้วยกันกับสินค้า Keep Smiling Collection!</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_9c86e937f6bd4b2d9f68ff6d2c727cfd~mv2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/AW%20Keep%20Smiling%202020-01.webp', 'KEEP SMILING')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_f71775c782314f3789ac1cd9f1561e7f~mv2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Summer%20Gets%20Better_Promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                SUMMER GETS BETTER!</span>
+                            <br> รับซัมเมอร์ด้วยเครื่องดื่มสุด Fresh และเบเกอรี่แสนอร่อย ที่พร้อมคลายร้อนให้ทุกคนแล้วที่ดิโอโร่ทุกสาขา
+                        </p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_49c8b800f6ed4f478e2e341308660215~mv2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/AW%20Summer%20Gets%20Better-01.webp', 'SUMMER GETS BETTER!')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_c7a405080ae24e98a776c5120ca06092~mv2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/20th%20Anniversary%20Product%20-%20Promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                20th ANNIVERSARY</span>
+                            <br> เครื่องดื่มและเบเกอรี่แนะนำพิเศษฉลองเดือนครบรอบ 20 ปี! Belgium Chocolate ปรับสูตรใหม่ เข้มกว่าเดิม!<br> D'Coffee กาแฟผสมนมสตรลับสุดฟิน<br> Butter Cake&Two-tone Butter Cake หอมอร่อย!<br> ลิ้มลองได้เเล้ววันนี้ที่ดิโอโร่ทุกสาขา
+                        </p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_9d03211df8174d15878a7e597015f784~mv2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/20th%20Anniversary%20Product-01.webp', '20th ANNIVERSARY')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_51ad319cacc440b881b535e3046ea775~mv2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/All%20You%20Need%20is%20Love_Promotion-02.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                ALL YOU NEED IS LOVE</span>
+                            <br> เดือนแห่งความรัก มาพักใจกับดิโอโร่ พบกับสินค้าแสนอร่อย ที่จะทำให้คุณตกหลุมรักในคอลเลคชั่น All You Need Is Love</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_0c073f9721a84863979c9a46d323b706~mv2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/All%20You%20Need%20is%20Love-01.webp', 'ALL YOU NEED IS LOVE')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_855d6c0d82644784a1a68147f6559543~mv2.jpg/v1/crop/x_37,y_0,w_5577,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/REENP%20TUMBLERS-Promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                NEW YEAR TUMBLER</span>
+                            <br> พบกับ D'Oro X Reenp New Year Tumbler 2 แบบ แก้วทัมเบลอร์ แบบฝาโดมสโนว์โกลฟ และแก้วทัมเบลอร์ ฝาเรียบ ลายฝาเป็นสโนว์เเมน ตัวแก้วสกรีนลายการ์ตูน วาดโดยคุณ Reenp พบกันที่ดิโอโร่ทุกสาขาวันนี้ (สินค้ามีจำนวนจำกัด)</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_d3034ff3a67e44cbab8444ff86fdca18~mv2_d_2480_3508_s_4_2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/Media%20D\'Oro%20x%20Reenp%20-%20Tumbler%202019-01_jp.webp', 'NEW YEAR TUMBLER')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_1f28d3d3a1824f378e27bb6fab908ee8~mv2_d_5642_2229_s_2.jpg/v1/crop/x_35,y_0,w_5577,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/A%20Jolly%20Good%20Time!%20-%20Promotion-02.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                A JOLLY GOOD TIME!</span>
+                            <br> It's a festive time of the year! ดิโอโร่สร้างสรรค์เมนูสุดพิเศษ เพื่อลูกค้าคนพิเศษในช่วงเทศกาลอันอบอุ่นส่งท้ายปี
+                        </p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_1537f12554334695b5ff28ccb8ea091b~mv2_d_2480_3508_s_4_2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/A%20Jolly%20Good%20Time!-01.webp', 'A JOLLY GOOD TIME!')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_722badf580ce41a4880456581f2fb3e8~mv2_d_5642_2229_s_2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_748,h_298,al_c,q_80,usm_0.66_1.00_0.01/%5BFinal%5D%20Media%20Special%20Treats%2C%20Special%20Th.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                SPECIAL TREATS, SPECIAL THANKS!</span>
+                            <br> SPECIAL TREATS, SPECIAL THANKS!<br> เมื่อซื้อครบ 150 บาท รับฟรีคูปองเครื่องดื่มมูลค่า 50 บาท หรือ ซื้อครบ 300 บาท รับฟรี SPECIAL GIFT จากดิโอโร่</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_0de144e26c4f44a6baa0170c7814d112~mv2_d_2480_3508_s_4_2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/%5BFinal%5D%20Media%20Special%20Treats%2C%20Special%20Th.webp', 'SPECIAL TREATS, SPECIAL THANKS!')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_c1dde61b2f6344f3a999ad832b97aff6~mv2_d_5642_2229_s_2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/D%E2%80%99ORO_HAPPY_NEW_YEAR_GIFTSET_-_Promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                HAPPY NEW YEAR GIFT SET</span>
+                            <br> พบกับชุดของขวัญปีใหม่สุดพิเศษจาก D'ORO<br> LOVE & JOY SET และ HAPPY PREMIUM BOX SET ได้แล้ววันนี้ที่ร้านดิโอโร่ทุกสาขา</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_b5eb3a67142f489ab0f01950630f94d9~mv2_d_2480_3508_s_4_2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/D%E2%80%99ORO_HAPPY_NEW_YEAR_GIFTSET-02.webp', 'HAPPY NEW YEAR GIFT SET')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_f6e6931a1ce8499c973c34d8ded9813f~mv2_d_5642_2229_s_2.jpg/v1/crop/x_35,y_0,w_5577,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Vegetarian%20Festival%20-%20Promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                VEGETARIAN FESTIVAL</span>
+                            <br> เทศกาล กินเจ อิ่มท้อง อิ่มบุญ ต้อนรับเทศกาลกินเจกับเครื่องดื่มและเบเกอรี่ ได้แล้ววันนี้ที่ดิโอโร่ทุกสาขา ถึงวันที่ 15 ตุลาคม 2562</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_26d2a3df85d84d2b8da9ff1b98140940~mv2_d_2480_3508_s_4_2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/AW%20Vegetarian%20Festival-%20A4.webp', 'VEGETARIAN FESTIVAL')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_58b3eb6cac1149778df71a299881380a~mv2_d_5642_2229_s_2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20D'Travel%20Set%20-%20Promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                D'TRAVEL COLLECTION</span>
+                            <br> พบกับชุดพรีเมี่ยม คอลเลคชั่นใหม่ D'TRAVEL COLLECTION ได้แล้ววันนี้ที่ร้านดิโอโร่ทุกสาขา
+                        </p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_dfb920a8fdb44808bea660817bf5cadd~mv2_d_2480_3508_s_4_2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/AW%20D\'Travel%20Set%20-%20A4.webp', 'D\TRAVEL COLLECTION')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_48d454ca3ee94e35afd0065f3221b36f~mv2_d_5642_2229_s_2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Happy%20Mom%20Happy%20Me%202019%20-%20Promotion_j.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                HAPPY ME HAPPY MOM</span>
+                            <br> พบกับเครื่องดื่มและเบเกอรี่ต้อนรับวันแม่
+                            <br> อิ่มท้องแล้วยังอิ่มบุญ ด้วยการร่วมส่งต่อการให้<br> เมื่อซื้อเครื่องดื่มและเบเกอรี่ ได้ร่วมบริจาคให้กับน้องๆ มูลนิธิเด็กอ่อนในสลัมฯ ตั้งแต่วันนี้ - 30 กันยายน 2562</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_0cc765c4b4b042a4adf9fe87c63286f4~mv2_d_2480_3508_s_4_2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/AW%20Happy%20Mom%20Happy%20Me%202019%20-%20Create-02_j.webp', 'HAPPY ME HAPPY MOM')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_572a168f36194b5a939e99c0693f53c9~mv2_d_5642_2229_s_2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Mother's%20Gift%20Set%202019%20-%20Promotion_jp.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                MOTHER'S GIFT SET</span>
+                            <br> เลือกจับคู่ คุกกี้ 2 กระปุก + คุกกี้ 1 ถุง บรรจุในกระเป๋าอัดพลีท สีขาว พร้อมเข็มกลัดดอกมะลิ ในราคา 350 บาท/เซ็ท</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_6aa7013103d24212bc47b1d9fa2f4c31~mv2_d_2480_3508_s_4_2.jpg/v1/crop/x_4,y_0,w_2473,h_3508/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/AW%20Mother\'s%20Gift%20Set%202019-01.webp', 'MOTHER\'S GIFT SET')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_4511748dcfb3474ca3a349e58881adfb~mv2.jpg/v1/crop/x_17,y_0,w_2788,h_1115/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/coffee%20mania%202019%20-%20Promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                COFFEE MANIA</span>
+                            <br> พบกับเครื่องดื่ม Coffee Mania Collection พร้อมเสิร์ฟความสดชื่น ได้ที่ร้านดิโอโร่ทุกสาขา</p>
+                        <br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_4234d172b7aa4f25b5d5bed2e229206e~mv2_d_1240_1754_s_2.jpg/v1/crop/x_2,y_0,w_1236,h_1754/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/coffee%20mania%202019%20-%20A4.webp', 'COFFEE MANIA')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_3a7866166dbd4f25b4e7f4ebc431dcf6~mv2.jpg/v1/crop/x_17,y_0,w_2788,h_1115/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/Summer%202019%20Media%20-%20Create%20-%20Copy-04.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                ALOHA SUMMER</span>
+                            <br> คลายร้อนรับซัมเมอร์ กับเมนูเครื่องดื่มและเบเกอรี่ ที่ได้จากวันถุดิบชั้นดี "มะพร้าวน้ำหอม" จากแหล่งต้นกำเนิด "บ้านแพ้ว" ผสานกันอย่างลงตัว พร้อมเสิร์ฟความสดชื่น ได้ที่ร้านดิโอโร่ทุกสาขา</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_4ee5dbf440934dbfb48cb712f634eaa8~mv2_d_1240_1754_s_2.jpg/v1/crop/x_2,y_0,w_1236,h_1754/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/Summer%202019%20Media-01.webp', 'ALOHA SUMMER')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_0ddb08d3097942ad8c80ab023abecf5b~mv2.jpg/v1/crop/x_17,y_0,w_2788,h_1115/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/ngi%20ngi%20premium_promotion.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                NGI NGI COLLECTION</span>
+                            <br> พบกับชุดพรีเมี่ยม คอลเลคชั่นใหม่ NGI NGI COLLECTION <br> ได้แล้ววันนี้ที่ร้านดิโอโร่ทุกสาขา
+                        </p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_7969694e78fa4f659d6b4ace8a3f52ec~mv2_d_1240_1754_s_2.jpg/v1/crop/x_2,y_0,w_1236,h_1754/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/ngi%20ngi%20premium_resize-01.webp', 'NGI NGI COLLECTION')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_dce3f8e0b159424b9fb0e93459d33229~mv2.jpg/v1/crop/x_11,y_0,w_1703,h_681/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Sweetest%20Love%20-%20Resize-01.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                SWEETEST LOVE</span>
+                            <br> พบกับเครื่องดื่มและเบเกอรี่สุดพิเศษ ต้อนรับเทศกาลวาเลนไทน์นี้กับเมนู Sweetest Love ได้แล้ววันนี้ที่ร้าน ดิโอโร่ทุกสาขา
+                        </p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_e0d2becb61b647a99332c2ce2f01d3bb~mv2_d_1750_2474_s_2.jpg/v1/crop/x_3,y_0,w_1744,h_2474/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/AW%20Sweetest%20Love-01.webp', 'SWEETEST LOVE')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_3abb25c52ae54868abaacf4d0a26ebb9~mv2.jpg/v1/crop/x_17,y_0,w_2788,h_1115/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/Christmas%20Promotion-03.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                CHRISTMAS FESTIVAL</span>
+                            <br> คริสต์มาสปีนี้ ร่วมเฉลิมฉลองความสุขด้วย เครื่องดื่มและ เบเกอรี่สุดพิเศษ ที่ร้านดิโอโร่ทุกสาขา</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_691e71230f39442c8bae42f19b2369f6~mv2_d_1754_2480_s_2.jpg/v1/crop/x_3,y_0,w_1748,h_2480/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/Christmas%20Poster-01.webp', 'CHRISTMAS FESTIVAL')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_3160ab312bcb4fe6851d35046a9ffb0e~mv2.jpg/v1/crop/x_17,y_0,w_2788,h_1115/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/happy%20new%20year%20giftset%202109%20_%20Promotion-.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                HAPPY NEW YEAR GIFTSET 2019</span>
+                            <br> HAPPY NEW YEAR GIFTSET 2019<br> ชุดของขวัญปีใหม่ กับลายสุดพิเศษ มีให้เลือก<br> 3 แบบ ตั้งแต่วันนี้ - 31 มกราคมนี้</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_6e14013d66af421baccd114c209ba63d~mv2_d_1754_2480_s_2.jpg/v1/crop/x_3,y_0,w_1748,h_2480/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/POSTER-01.webp', 'HAPPY NEW YEAR GIFTSET 2019')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+
+                <div class="row">
+                    <div class="col-8" id="imgrow">
+                        <img src="https://static.wixstatic.com/media/9fa84d_3ce0295218784da8ac7d06854545152b~mv2.jpg/v1/crop/x_17,y_0,w_2788,h_1115/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/EDM%20D'FAMILY%20D'VIP%20_%20Promotion-01.webp">
+                    </div>
+                    <div class="col-4" style="top: 4px;">
+                        <p id="textrow"><span>
+                                NEW YEAR GIFT SET</span>
+                            <br> NEW YEAR GIFT SET ของขวัญปีใหม่ 2019 สำหรับ <br> D'FAMILY D'VIP ทุกท่าน รีบสะสมยอดซื้อกันให้ทัน<br> ภายใน 31 ธันวาคมนี้</p><br>
+                        <button href="# " class="btn btn-light" onclick="popup('https:\/\/static.wixstatic.com/media/9fa84d_e6072b0c789a4448a457a043ab84cad6~mv2_d_1240_1754_s_2.jpg/v1/crop/x_2,y_0,w_1236,h_1754/fill/w_591,h_839,al_c,q_85,usm_0.66_1.00_0.01/D\'FAMILI%20D\'VIP%20POSTER-01.webp', 'NEW YEAR GIFT SET')">รายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div><br>
+                <div id="underline"></div>
+            </div>
+        </center>
+
+        <!-- Footer -->
+        <footer>
+            <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
+                <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
+                <div class="input-container" style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
+                    <i class="fa fa-envelope icon"></i>
+                    <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
+                </div>
+                <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
+                    Now</button>
+
+                <h5 style="padding-top: 70px; ">Follow Us:</h5>
+                <a class="warpbutton" href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp " style="width: 60px; height: 70px; ">
+                </a>
+                <a class="warpbutton" href="https://www.instagram.com/d.orothailand/ " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
+                        style="width: 55px; height: 60px; ">
+                </a>
+                <a class="warpbutton" href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp "
+                        style="width: 50px; height: 65px; ">
+                </a>
+
+                <div style="width: 100%; height: 45px; background-color: #c14e25; margin-top: 25px; ">
+                    <h5 style="padding-top: 12.5px; ">Copyright©2018 by Golden Cream Ltd,. (D'ORO) all right reserved.
+                    </h5>
+                </div>
+
+                <div style="width: 100%; height: 25px; ">
+
+                </div>
+            </div>
+            <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
+                <img id="foot" src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp " width="120px
+            " height="100px ">
+            </div>
+        </footer>
+    </div>
+    <script>
+        function popup(n, y) {
+            document.getElementById("change").classList.add('changebg');
+            document.getElementById("change2").classList.add('changeimg');
+            document.getElementById("change2").style.display = null;
+            document.getElementById("change").style.display = null;
+            document.getElementById("closeall").style.display = null;
+            document.getElementById("text").innerHTML = '<h1 id="eiei" style="position:fixed;top:45px;color:white;z-index:12;">' + y + '</h1>';
+            document.getElementById("change2").src = n;
+            document.getElementById("text").removeAttribute("hidden", "true");
+        }
+
+        function closepopup() {
+            document.getElementById("change2").style.display = "none";
+            document.getElementById("change").style.display = "none";
+            document.getElementById("closeall").style.display = "none";
+            document.getElementById("text").setAttribute("hidden", "true");
+
+        }
+    </script>
+</body>
+
+</html>
