@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <title>D'ORO COFFEE | Thailand</title>
+    <link rel="shortcut icon" href="https://static.wixstatic.com/media/9fa84d_87483a6113ae4436bdbc1633f6c60a4c%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/9fa84d_87483a6113ae4436bdbc1633f6c60a4c%7Emv2.png" type="image/png"/>
 </head>
 <style>
     body {
@@ -72,28 +73,11 @@
         font-size: 13px;
     }
 
-    /* #title_home {
-        overflow: hidden;
-        position: relative;
-        color: white;
-    }
-    #title_home:before {
-        background-color: white;
-        background: url('https://static.wixstatic.com/media/9fa84d_57ad2d479fd049c8abcf53fbb3ca4ff7~mv2_d_5616_3744_s_4_2.jpg') no-repeat 0% 57%;
-        background-size: cover;
-        z-index: -3;
-        content: " ";
-        position: fixed;
-        will-change: transform;
-        width: 100%;
-        height: 100%;
-    } */
-
     .bodyparallax {
         background-image: url(https://static.wixstatic.com/media/9fa84d_cbee5e5593994ca089cafbd62b9f6c2b~mv2_d_8000_8159_s_4_2.png);
         height: 100%;
         width: 100%;
-        /* background-attachment: fixed; */
+        background-attachment: fixed;
         background-position: 0% 3%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -112,7 +96,6 @@
         line-height: 0.5;
         margin: 0 auto;
         border-bottom: #104751 solid 1px;
-        /* padding-left: 17%; */
     }
 
     .bar a {
@@ -167,7 +150,6 @@
         display: block;
         text-align: center;
         padding-top: 10px;
-        /* opacity: 0.5; */
         background-color: rgba(16, 71, 81, 0.5);
     }
 
@@ -198,75 +180,6 @@
     .btn-light:hover {
         background-color: rgba(37, 92, 99, 1);
         color: white;
-    }
-
-    .slider-frame {
-        width: 1200px;
-        height: 286px;
-    }
-
-    @-webkit-keyframes slide_animation {
-        0% {
-            right: 0px;
-        }
-
-        10% {
-            right: 0px;
-        }
-
-        20% {
-            right: 1200px;
-        }
-
-        30% {
-            right: 1200px;
-        }
-
-        40% {
-            right: 2400px;
-        }
-
-        50% {
-            right: 2400px;
-        }
-
-        60% {
-            right: 1200px;
-        }
-
-        70% {
-            right: 1200px;
-        }
-
-        80% {
-            right: 0px;
-        }
-
-        90% {
-            right: 0px;
-        }
-
-        100% {
-            right: 0px;
-        }
-    }
-
-    .slide-images {
-        width: 3600px;
-        height: 286px;
-        position: relative;
-        -webkit-animation-name: slide_animation;
-        -webkit-animation-duration: 33s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
-        -webkit-animation-play-state: running;
-    }
-
-    .img-container {
-        position: relative;
-        width: 1200px;
-        height: 286px;
-        display: inline-block;
     }
 
     .slide {
@@ -305,32 +218,29 @@
     }
 
     @keyframes pulse {
+
         0% {
+            color: black;
+        }
+
+        12.5% {
             color: transparent;
         }
 
-        10% {
-            color: transparent;
-        }
-
-        30% {
+        25% {
             color: black;
         }
 
         50% {
-            color: transparent;
-        }
-
-        60% {
-            color: transparent;
-        }
-
-        80% {
             color: black;
         }
 
-        100% {
+        75% {
             color: transparent;
+        }
+
+        100% {
+            color: black;
         }
     }
 
@@ -342,6 +252,14 @@
 
     @keyframes spin {
         0% {
+            content: "HAPPY NEW YEAR\aGIFT SET 2021";
+        }
+
+        25% {
+            content: "WINTER\aWONDERLAND";
+        }
+
+        50% {
             content: "WINTER\aWONDERLAND";
         }
 
@@ -366,6 +284,14 @@
 
     @keyframes spin2 {
         0% {
+            content: "พบกับชุดของขวัญปีใหม่สุดพิเศษจาก D\'ORO\aJoy Set และ Premium Cookies Set ได้แล้ว\aวันนี้ที่ร้านดิโอโร่ทุกสาขา";
+        }
+
+        25% {
+            content: "Winter Wonderland พบกับเครื่องดื่มและเบเกอรี่\aสุดพิเศษ สำหรับเทศกาลหน้าหนาวปีนี้ ได้แล้ววันนี้\aที่ร้านดิโอโร่ทุกสาขา";
+        }
+
+        50% {
             content: "Winter Wonderland พบกับเครื่องดื่มและเบเกอรี่\aสุดพิเศษ สำหรับเทศกาลหน้าหนาวปีนี้ ได้แล้ววันนี้\aที่ร้านดิโอโร่ทุกสาขา";
         }
 
@@ -445,9 +371,230 @@
             left: -3600px;
         }
     }
+
+    #chatbox {
+        background-image: url(https://rwidget.readyplanet.com/widget/images/widget_icon_menu.png);
+        background-color: rgba(233, 30, 99, 1);
+        background-position: center;
+        background-size: 38px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        right: 0;
+        margin-right: 15px;
+        bottom: 0;
+        margin-bottom: 15px;
+        position: fixed;
+        cursor: pointer;
+        opacity: 1;
+        /* position: relative; */
+        z-index: 3;
+    }
+
+    #box {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 13px;
+        width: 170px;
+        height: 35px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: 700;
+        display: block;
+        box-sizing: border-box;
+        line-height: 25px;
+        right: 0;
+        margin-right: 75px;
+        bottom: 0;
+        margin-bottom: 22px;
+        position: fixed;
+        padding: 5px 10px;
+        cursor: pointer;
+        opacity: 1;
+
+    }
+
+    #line {
+        background-image: url(https://rwidget.readyplanet.com/widget/images/widget_icon_line.png);
+        background-color: #00b800;
+        background-position: center;
+        background-size: 50px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        right: 0;
+        margin-right: 15px;
+        bottom: 0;
+        margin-bottom: -200px;
+        position: fixed;
+        cursor: pointer;
+        /* opacity: 0; */
+        z-index: 2;
+    }
+
+    #tel {
+        background-image: url(https://rwidget.readyplanet.com/widget/images/widget_icon_click_to_call.png);
+        background-color: #FF9c00;
+        background-position: center;
+        background-size: 38px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        right: 0;
+        margin-right: 15px;
+        bottom: 0;
+        margin-bottom: -200px;
+        position: fixed;
+        cursor: pointer;
+        /* opacity: 0; */
+        z-index: 1;
+
+    }
+
+    #cancel {
+        background-image: url(https://rwidget.readyplanet.com/widget/images/widget_icon_close.png);
+        background-color: rgba(233, 30, 99, 1);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        right: 0;
+        margin-right: 15px;
+        bottom: 0;
+        margin-bottom: 15px;
+        position: fixed;
+        cursor: pointer;
+        /* opacity: 0; */
+        z-index: 4;
+    }
+
+    .changebg {
+        background-color: black;
+        opacity: 0.8;
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        position: fixed;
+
+    }
+
+    #box2-1 {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 6.5px;
+        width: 120px;
+        height: 20px;
+        text-align: left;
+        border-radius: 5px;
+        font-weight: 700;
+        display: block;
+        box-sizing: border-box;
+        line-height: 12px;
+        right: 0;
+        margin-right: 80px;
+        bottom: 0;
+        margin-bottom: 30px;
+        position: fixed;
+        padding: 7px 10px 3px 10px;
+        cursor: pointer;
+        z-index: 1;
+
+    }
+
+    #box2-2 {
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        color: white;
+        font-size: 10px;
+        width: 120px;
+        height: 20px;
+        text-align: right;
+        border-radius: 5px;
+        font-weight: 700;
+        display: block;
+        box-sizing: border-box;
+        line-height: 12px;
+        right: 0;
+        margin-right: 80px;
+        bottom: 0;
+        margin-bottom: 30px;
+        position: fixed;
+        padding: 5px 10px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    #box3 {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 13px;
+        width: 140px;
+        height: 35px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: 700;
+        display: block;
+        box-sizing: border-box;
+        line-height: 25px;
+        right: 0;
+        margin-right: 75px;
+        bottom: 0;
+        margin-bottom: -200px;
+        position: fixed;
+        padding: 5px 10px;
+        cursor: pointer;
+        /* opacity: 0; */
+        z-index: 1;
+    }
+
+    #box4 {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 13px;
+        width: 140px;
+        height: 35px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: 700;
+        display: block;
+        box-sizing: border-box;
+        line-height: 25px;
+        right: 0;
+        margin-right: 75px;
+        bottom: 0;
+        margin-bottom: -200px;
+        position: fixed;
+        padding: 5px 10px;
+        cursor: pointer;
+        /* opacity: 0; */
+        z-index: 1;
+    }
 </style>
 
 <body>
+    <div id="change" style="display: none; "></div>
+    <div id="chatbox" onclick="chatbox()"></div>
+    <div id="cancel" onclick="closechatbox()" style="display: none;"></div>
+    <div onclick="chatbox()" style=" display:block;  background-color: rgba(0,0,0,0.5)" class="widget_get_width_main_button salesdesk-widget-button-default-text salesdesk-widget-button-text salesdesk-widget-button-text-bottom-right" onclick="popup()">
+        <span id="box">ติดต่อสั่ง Snack Box คลิก</span>
+    </div>
+    <div id="box2" style=" display:none;  background-color: rgba(0,0,0,0.5)" class="widget_get_width_main_button salesdesk-widget-button-default-text salesdesk-widget-button-text salesdesk-widget-button-text-bottom-right" onclick="document.querySelector('.salesdesk-widget-menu-group').popup();">
+        <span id="box2-1">powered by </span>
+        <span id="box2-2">Readyplanet</span>
+    </div>
+    <div id="tel"></div>
+    <div style=" display:block;  background-color: rgba(0,0,0,0.5)" class="widget_get_width_main_button salesdesk-widget-button-default-text salesdesk-widget-button-text salesdesk-widget-button-text-bottom-right" onclick="document.querySelector('.salesdesk-widget-menu-group').popup();">
+        <span id="box3">โทรศัพท์</span>
+    </div>
+    <div id="line"></div>
+    <div style=" display:block;  background-color: rgba(0,0,0,0.5)" class="widget_get_width_main_button salesdesk-widget-button-default-text salesdesk-widget-button-text salesdesk-widget-button-text-bottom-right" onclick="document.querySelector('.salesdesk-widget-menu-group').popup();">
+        <span id="box4">แชทผ่าน LINE</span>
+    </div>
     <!-- Lego -->
     <div class="bodyparallax">
         <div style="color: white;">
@@ -561,7 +708,7 @@
         </div>
 
         <!-- NEWS & UPDATE -->
-        <h2 style=" font-weight: bold; text-align: center; color: #C14E25; padding-bottom: 50px; padding-top: 60px;">
+        <h2 style=" font-weight: bold; text-align: center; color: #C14E25; padding-bottom: 10px; padding-top: 160px;">
             NEWS & UPDATE
         </h2>
         <div style="display: flex;
@@ -660,6 +807,35 @@
             </div>
         </footer>
     </div>
+    <script>
+        function chatbox() {
+            document.getElementById("change").classList.add('changebg');
+            document.getElementById("change").style.display = null;
+            document.getElementById('tel').style.bottom = "270px";
+            document.getElementById('tel').style.transition = "0.2s";
+            document.getElementById('line').style.bottom = "325px";
+            document.getElementById('line').style.transition = "0.2s";
+            document.getElementById('cancel').style.display = null;
+            console.log(document.getElementById('cancel'))
+            document.getElementById('box').style.display = 'none';
+            document.getElementById('box2').style.display = 'block';
+            document.getElementById('box3').style.bottom = "270px";
+            document.getElementById('box3').style.transition = "0.2s";
+            document.getElementById('box4').style.bottom = "325px";
+            document.getElementById('box4').style.transition = "0.2s";
+        }
+        function closechatbox() {
+            console.log('test');
+            document.getElementById("change").style.display = "none";
+            document.getElementById('cancel').style.display = 'none';
+            document.getElementById('tel').style.bottom = "0px";
+            document.getElementById('line').style.bottom = "0px";
+            document.getElementById('box2').style.display = 'none';
+            document.getElementById('box').style.display = null;
+            document.getElementById('box3').style.bottom = "0px";
+            document.getElementById('box4').style.bottom = "0px";
+        }
+    </script>
 </body>
 
 </html>
