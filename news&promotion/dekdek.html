@@ -11,8 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>DEK DEK's GALLERY | D'ORO COFFEE</title>
+    <link rel="shortcut icon" href="https://static.wixstatic.com/media/9fa84d_87483a6113ae4436bdbc1633f6c60a4c%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/9fa84d_87483a6113ae4436bdbc1633f6c60a4c%7Emv2.png" type="image/png"/>
     <style>
-         #chatbox {
+        .warpbutton:hover {
+        color: transparent;
+    }
+        #chatbox {
         background-image: url(https://rwidget.readyplanet.com/widget/images/widget_icon_menu.png);
         background-color: rgba(233, 30, 99, 1);
         background-position: center;
@@ -53,7 +57,7 @@
         opacity: 1;
 
     }
-    #linechat {
+    #linepopup {
         background-image: url(https://rwidget.readyplanet.com/widget/images/widget_icon_line.png);
         background-color: #00b800;
         background-position: center;
@@ -204,6 +208,162 @@
         cursor: pointer;
         /* opacity: 0; */
         z-index: 1;
+    }
+    #teldetail {
+        background-color: #F9F9F9;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -95px;
+        margin-left: -183px;
+        width: 300px;
+        height: 180px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 25px;
+        z-index: 3;
+    }
+    
+    #telcancel {
+        background-image: url(https://rwidget.readyplanet.com/widget/css/close.png);
+        background-size: 22px;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 9px 7px;
+        cursor: pointer;
+    }
+    #line-detail {
+        background-color: #F9F9F9;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -220px;
+        margin-left: -175px;
+        width: 300px;
+        height: 390px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 25px;
+        z-index: 3;
+
+    }
+    #QRcode {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6AQAAAACgl2eQAAACMElEQVR42u2ZQWrDMBREv/FCSx1BN0kuFrDBF3NuoiN4qYXJ78w4FOyGLrrxhzqLEskvkP8zGo1U899fs13ABVzAvwYMr9LMHqXdlwcGeeXUEApI7muxbnkUDEZLT71bggGz6ZlXvBuqhuADAmh1X1mPqZ6gwG3TA6bnvAYEpIf7AuXesldI4aNgzgW0siTV7z8flt7JgL+pvhqXf7t/NLHTgcUMeujdnz5VKsP8lWMBjW2FKKaKLhs8CvIAGgtgg7X8XUbfLE+eogFo6+Stg5E2ihVu0MtSQwH4xqP5c6GRLj1nxgKj8lAAWj3wmRbVqCp+/BYBAHxtY6sNy4v9HiqHoYA052nzeKmABRz0EABAFaulFywfg4ka1vLyUICkCmAzUke/B34oFqDwgWcQxS1jUQGte6cNAEAP0qtxI4Llz3lkfg8HjCVho6xUAVMnPWqv6gAApNCU5Syr334QTASAuzlEi82zo5FSvq0LBrCtUCnDBy0fMWSQm4YC4OwrCuC+hFJoT6uoWAATEkRLCh6VmD93KysCoKOZEhyNigUwxHswQBsRN0/Kl1MrU9MQCjBewTjtE3rA9Eupc/9bnA74O9BhI2IBlK8fW306oDPvVgqPu/SAsg97AQDdHjAmmRKS+r1LxSEAXWEZUydjks6Uh1QcBGhMSGkzArppSIDhDacK7PBOD+C1USyAeuAhrehiY5PHHAzQytJljE6/ief0XZaLAFz/4LiAC7iAvwBfmCY+B0g6dMAAAAAASUVORK5CYII=);
+        width: 250px;
+        height: 250px;
+        border: #cdcdcd 1px solid;
+        margin-top: 40px;
+    }
+    
+    #line-cancel {
+        background-image: url(https://rwidget.readyplanet.com/widget/css/close.png);
+        background-size: 22px;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 9px 7px;
+        cursor: pointer;
+    }
+        .bar {
+        overflow: hidden;
+        background-color: #547478;
+        height: 33px;
+        line-height: 0.5;
+        margin: 0 auto;
+        border-bottom: #104751 solid 1px;
+    }
+
+    .bar a {
+        float: left;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        line-height: 0.5;
+        transition: 0.4s;
+    }
+
+    .drop {
+        float: left;
+        overflow: hidden;
+    }
+
+    .drop .btn {
+        font-size: 14px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        line-height: 0.5;
+    }
+
+    .bar a:hover,
+    .drop:hover {
+        color: #FA9773;
+    }
+
+    .content {
+        display: none;
+        position: absolute;
+        min-width: 130px;
+        z-index: 4;
+    }
+
+    .content:not(div) {
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgba(16, 71, 81, 0.5);
+    }
+
+    .content a:hover {
+        color: #FA9773;
+    }
+
+    .drop:hover .content {
+        display: block;
+    }
+
+    #hold {
+        color: #FA9773;
+    }
+
+    .btn-light {
+        border-radius: 20px;
+        padding: 0;
+        background-color: white;
+        border: solid rgba(37, 92, 99, 1) 1px;
+        float: left;
+        width: 217px;
+        font-size: 14px;
+        height: 35px;
+        font-weight: 900;
+    }
+
+    .btn-light:hover {
+        background-color: rgba(37, 92, 99, 1);
+        color: white;
     }
         body {
             font-family: 'Mitr', sans-serif;
@@ -556,14 +716,30 @@
         <span id="box2-1">powered by </span>
         <span id="box2-2">Readyplanet</span>
     </div>
-    <div id="tel"></div>
+    <div id="tel" onclick="popuptel()"></div>
     <div style=" display:block;  background-color: rgba(0,0,0,0.5)" class="widget_get_width_main_button salesdesk-widget-button-default-text salesdesk-widget-button-text salesdesk-widget-button-text-bottom-right" onclick="document.querySelector('.salesdesk-widget-menu-group').popup();">
-        <span id="box3">โทรศัพท์</span>
+        <span onclick="popuptel()" id="box3">โทรศัพท์</span>
     </div>
-    <div id="linechat"></div>
+    <div id="linepopup" onclick="popupline()"></div>
     <div style=" display:block;  background-color: rgba(0,0,0,0.5)" class="widget_get_width_main_button salesdesk-widget-button-default-text salesdesk-widget-button-text salesdesk-widget-button-text-bottom-right" onclick="document.querySelector('.salesdesk-widget-menu-group').popup();">
-        <span id="box4">แชทผ่าน LINE</span>
+        <span id="box4" onclick="popupline()">แชทผ่าน LINE</span>
     </div>
+    <div id="teldetail" style="display: none;">
+        <div style="color: #FF9c00; font-weight: 700; font-size: 18px;">โทรศัพท์</div>
+        <div style="color: #777; font-size: 14px; margin: 5px 0 15px;">โทรหาเราที่เบอร์นี้</div>
+        <div style="color: #555; cursor: pointer; font-size: 32px; margin-top: 29px;">081-701-2295</div>
+        <div id="telcancel" onclick="closepopuptel()"></div>
+    </div>
+    <div id="line-detail" style="display: none;"> 
+        <div style="color: #00b800; font-weight: 700; font-size: 18px;">แชทผ่าน LINE</div>
+        <div style="color: #777; font-size: 14px; margin: 5px 0 15px;">สแกน QR Code เพื่อแชทกับเรา</div>
+        <center>
+            <div id="QRcode"></div>
+        </center>
+        <div id="line-cancel" onclick="closeline()"></div>
+    </div>
+    
+    
     <div class="bodyparallax">
     <div id="eiei" style="display: flex;width: 100%; height: 100%;justify-content: center; ">
         <div id="change" style="display: none; z-index:20"></div>
@@ -584,7 +760,7 @@
     <div class="bar">
         <center>
             <div style="text-align: center; width: 984.86px; height: 32px;">
-                <a href="/index.html" id="hold">HOME</a>
+                <a href="/index.html" >HOME</a>
 
                 <div class="drop">
                     <button class="btn">COMPANY</button>
@@ -603,7 +779,7 @@
                         <div style="height: 10px; width: auto; margin-top: -3px;"></div>
                         <a href="/news&promotion/News.html">NEWS & ACTIVITIES</a>
                         <a href="/news&promotion/promotion.html">PROMOTIONS</a>
-                        <a href="/news&promotion/dekdek.html">DEK DEK's GALLERY</a>
+                        <a href="/news&promotion/dekdek.html" id="hold">DEK DEK's GALLERY</a>
                         <a href="/news&promotion/19th-anniversary.html">19th ANNIVERSARY</a>
                     </div>
                 </div>
@@ -989,8 +1165,13 @@
 
         </div>
     </div>
+    <!-- Footer -->
     <footer>
-        <div id="all" style="background-color:#104751; text-align: center; color: white;">
+        <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
+
+
+
+
             <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
             <div class="input-container"
                 style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
@@ -1003,15 +1184,15 @@
                 Now</button>
 
             <h5 style="padding-top: 70px; ">Follow Us:</h5>
-            <a href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
+            <a class="warpbutton" href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
                 <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp "
                     style="width: 60px; height: 70px; ">
             </a>
-            <a href="https://www.instagram.com/d.orothailand/ " target="_blank ">
+            <a class="warpbutton" href="https://www.instagram.com/d.orothailand/ " target="_blank ">
                 <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
                     style="width: 55px; height: 60px; ">
             </a>
-            <a href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
+            <a class="warpbutton" href="https://line.me/R/ti/p/%40d.orothailand " target="_blank ">
                 <img src="https://static.wixstatic.com/media/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.png/v1/crop/x_280,y_0,w_1244,h_1772/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_2f89e2501a684967881e398a7f82e6c9~mv2_d_1772_1772_s_2.webp "
                     style="width: 50px; height: 65px; ">
             </a>
@@ -1020,10 +1201,13 @@
                 <h5 style="padding-top: 12.5px; ">Copyright©2018 by Golden Cream Ltd,. (D'ORO) all right reserved.
                 </h5>
             </div>
+
+            <div style="width: 100%; height: 25px; ">
+
+            </div>
         </div>
-        <div style="text-align: right; margin-top: -370px; margin-right: 23%;">
-            <img id="foot"
-                src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp "
+        <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
+            <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp "
                 width="120px
         " height="100px ">
         </div>
@@ -1057,15 +1241,15 @@
             document.getElementById("changebgchat").style.display = null;
             document.getElementById('tel').style.bottom = "270px";
             document.getElementById('tel').style.transition = "0.2s";
-            document.getElementById('linechat').style.bottom = "325px";
-            document.getElementById('linechat').style.transition = "0.2s";
+            document.getElementById('linepopup').style.bottom = "325px";
+            document.getElementById('linepopup').style.transition = "0.2s";
             document.getElementById('cancel').style.display = null;
             console.log( document.getElementById('cancel'))
             document.getElementById('box').style.display = 'none';
             document.getElementById('box2').style.display = 'block';
-            document.getElementById('box3').style.bottom = "270px";
+            document.getElementById('box3').style.bottom = "275px";
             document.getElementById('box3').style.transition = "0.2s";
-            document.getElementById('box4').style.bottom = "325px";
+            document.getElementById('box4').style.bottom = "330px";
             document.getElementById('box4').style.transition = "0.2s";
         }
         function closechatbox(){
@@ -1073,11 +1257,27 @@
             document.getElementById("changebgchat").style.display = "none";
             document.getElementById('cancel').style.display = 'none';
             document.getElementById('tel').style.bottom = "0px";
-            document.getElementById('linechat').style.bottom = "0px";
+            document.getElementById('linepopup').style.bottom = "0px";
             document.getElementById('box2').style.display = 'none';
             document.getElementById('box').style.display = null;
             document.getElementById('box3').style.bottom = "0px";
             document.getElementById('box4').style.bottom = "0px";
+            document.getElementById("teldetail").style.display = 'none';
+            document.getElementById("line-detail").style.display = 'none';
+        }
+        function popuptel(){
+            document.getElementById("teldetail").style.display = null;
+            document.getElementById("line-detail").style.display = 'none';
+        }
+        function closepopuptel(){
+            document.getElementById("teldetail").style.display = 'none';
+        }
+        function popupline(){
+            document.getElementById("line-detail").style.display = null;
+            document.getElementById("teldetail").style.display = 'none';
+        }
+        function closeline(){
+            document.getElementById("line-detail").style.display = 'none';
         }
     </script>
 
