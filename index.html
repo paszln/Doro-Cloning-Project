@@ -10,29 +10,31 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold" rel="stylesheet" type="text/css"/>
     <title>D'ORO COFFEE | Thailand</title>
 </head>
 <style>
+    
     body {
         font-family: 'Mitr', sans-serif;
     }
-    
+
     h5 {
         font-size: 16px;
     }
-    
+
     #img1 {
         width: 224px;
         height: 84px;
         margin: 20px;
     }
-    
+
     #line {
         width: 426px;
         height: 50px;
         border-top: 2px solid #547478;
     }
-    
+
     #title_home {
         width: 100%;
         height: 650px;
@@ -46,27 +48,28 @@
         background-blend-mode: multiply;
         z-index: 0;
     }
-    
+
     .img_bottom {
         position: absolute;
         bottom: 0px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.5);
         width: 316px;
         height: 30px;
         font-weight: 600;
-        /* opacity: 0.5; */
+        padding-top: 6px;
     }
-    
+
     #imgrow {
         margin-right: -60px;
         left: -5px;
         top: -3px;
     }
-    
+
     #textrow {
         text-align: left;
         font-size: 13px;
     }
+
     /* #title_home {
         overflow: hidden;
         position: relative;
@@ -84,7 +87,7 @@
         width: 100%;
         height: 100%;
     } */
-    
+
     .bodyparallax {
         background-image: url(https://static.wixstatic.com/media/9fa84d_cbee5e5593994ca089cafbd62b9f6c2b~mv2_d_8000_8159_s_4_2.png);
         height: 100%;
@@ -96,11 +99,11 @@
         background-blend-mode: multiply;
         z-index: -1;
     }
-    
+
     .warpbutton:hover {
         color: transparent;
     }
-    
+
     .bar {
         overflow: hidden;
         background-color: #547478;
@@ -110,7 +113,7 @@
         border-bottom: #104751 solid 1px;
         /* padding-left: 17%; */
     }
-    
+
     .bar a {
         float: left;
         font-size: 14px;
@@ -121,12 +124,12 @@
         line-height: 0.5;
         transition: 0.4s;
     }
-    
+
     .drop {
         float: left;
         overflow: hidden;
     }
-    
+
     .drop .btn {
         font-size: 14px;
         border: none;
@@ -138,23 +141,23 @@
         margin: 0;
         line-height: 0.5;
     }
-    
+
     .bar a:hover,
     .drop:hover {
         color: #FA9773;
     }
-    
+
     .content {
         display: none;
         position: absolute;
         min-width: 130px;
         z-index: 4;
     }
-    
+
     .content:not(div) {
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     }
-    
+
     .content a {
         float: none;
         color: white;
@@ -166,19 +169,19 @@
         /* opacity: 0.5; */
         background-color: rgba(16, 71, 81, 0.5);
     }
-    
+
     .content a:hover {
         color: #FA9773;
     }
-    
+
     .drop:hover .content {
         display: block;
     }
-    
+
     #hold {
         color: #FA9773;
     }
-    
+
     .btn-light {
         border-radius: 20px;
         padding: 0;
@@ -190,53 +193,63 @@
         height: 35px;
         font-weight: 900;
     }
-    
+
     .btn-light:hover {
         background-color: rgba(37, 92, 99, 1);
         color: white;
     }
-    
+
     .slider-frame {
         width: 1200px;
         height: 286px;
     }
-    
+
     @-webkit-keyframes slide_animation {
         0% {
             right: 0px;
         }
+
         10% {
             right: 0px;
         }
+
         20% {
             right: 1200px;
         }
+
         30% {
             right: 1200px;
         }
+
         40% {
             right: 2400px;
         }
+
         50% {
             right: 2400px;
         }
+
         60% {
             right: 1200px;
         }
+
         70% {
             right: 1200px;
         }
+
         80% {
             right: 0px;
         }
+
         90% {
             right: 0px;
         }
+
         100% {
             right: 0px;
         }
     }
-    
+
     .slide-images {
         width: 3600px;
         height: 286px;
@@ -247,31 +260,122 @@
         -webkit-animation-direction: alternate;
         -webkit-animation-play-state: running;
     }
-    
+
     .img-container {
         position: relative;
         width: 1200px;
         height: 286px;
         display: inline-block;
     }
-    
+
     .slide {
-        width: 100%;
-        height: 700px;
-        background-image: url(https://static.wixstatic.com/media/9fa84d_8cf6082cfbe9451eae58080b1d4f41d4~mv2.jpg/v1/fill/w_831,h_606,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_8cf6082cfbe9451eae58080b1d4f41d4~mv2.webp);
-        margin: 10px auto;
+        background-image: url(https://static.wixstatic.com/media/9fa84d_8cf6082cfbe9451eae58080b1d4f41d4~mv2.jpg);
+        background-size: 665px 485px;
         animation: slide 10s infinite;
-        background-repeat: no-repeat
-        /* display: block; */
+        background-repeat: no-repeat;
+        width: 665px;
+        height: 485px;
     }
-    
+
     @keyframes slide {
         50% {
-            background-image: url(https://static.wixstatic.com/media/9fa84d_71e9da231591423393fb3055ac881882~mv2.jpg/v1/fill/w_831,h_606,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_71e9da231591423393fb3055ac881882~mv2.webp)
+            background-image: url(https://static.wixstatic.com/media/9fa84d_71e9da231591423393fb3055ac881882~mv2.jpg);
         }
+
         100% {
-            background-image: url(https://static.wixstatic.com/media/9fa84d_8cf6082cfbe9451eae58080b1d4f41d4~mv2.jpg/v1/fill/w_831,h_606,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_8cf6082cfbe9451eae58080b1d4f41d4~mv2.webp)
+            background-image: url(https://static.wixstatic.com/media/9fa84d_8cf6082cfbe9451eae58080b1d4f41d4~mv2.jpg);
         }
+    }
+
+    #wrapper {
+        display: inline-block;
+        transform: translate(18px, -370px);
+        font-size: 20px;
+        text-align: center;
+        width: 250px;
+        font-family: "LuloCleanW01-OneBold";
+        }
+
+    #hi, #detail {
+        animation: pulse 10s infinite;
+        white-space: pre;
+    }
+
+    @keyframes pulse {
+        0% {
+            color: transparent;
+        }
+
+        10% {
+            color: transparent;
+        }
+
+        30% {
+            color: black;
+        }
+
+        50% {
+            color: transparent;
+        }
+
+        60% {
+            color: transparent;
+        }
+
+        80% {
+            color: black;
+        }
+
+        100% {
+            color: transparent;
+        }
+    }
+
+    #hi:after {
+        content: "";
+        animation: spin 10s linear infinite;
+        white-space: pre;
+    }
+
+    @keyframes spin {
+        0% {
+            content: "WINTER\aWONDERLAND";
+        }
+
+        100% {
+            content: "HAPPY NEW YEAR\aGIFT SET 2021";
+        }
+    }
+
+    #wrapper2 {
+        display: inline-block;
+        transform: translate(685px, -340px);
+        font-size: 13.5px;
+        line-height: 1.8;
+        width: 277px;
+    }
+
+    #detail:after{
+        content: "";
+        animation: spin2 10s linear infinite;
+        white-space: pre;
+    }
+
+    @keyframes spin2 {
+        0% {
+            content: "Winter Wonderland พบกับเครื่องดื่มและเบเกอรี่\aสุดพิเศษ สำหรับเทศกาลหน้าหนาวปีนี้ ได้แล้ววันนี้\aที่ร้านดิโอโร่ทุกสาขา";
+        }
+
+        100% {
+            content: "พบกับชุดของขวัญปีใหม่สุดพิเศษจาก D\'ORO\aJoy Set และ Premium Cookies Set ได้แล้ว\aวันนี้ที่ร้านดิโอโร่ทุกสาขา";
+        }
+    }
+
+    #GetInTouch{
+        width: 145px;
+        height: 35px;
+        transform: translate(685px, -340px);
+
     }
 </style>
 
@@ -281,7 +385,8 @@
         <div style="color: white;">
             <div class="top" style="font-size:30px; background-color: #104751; height: 135px;">
                 <center>
-                    <a href="/index.html"><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
+                    <a href="/index.html"><img id="img1"
+                            src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
                 </center>
             </div>
         </div>
@@ -354,33 +459,38 @@
         <div style="text-align: center;">
             <div style="position: relative; display: inline-block;">
                 <a href="promotion.html">
-                    <img src="https://static.wixstatic.com/media/9fa84d_fd149ba8aa704b32b0b6071fbc557a07~mv2.jpg" width="316px" height="448px">
+                    <img src="https://static.wixstatic.com/media/9fa84d_fd149ba8aa704b32b0b6071fbc557a07~mv2.jpg"
+                        width="316px" height="448px">
                 </a>
                 <div class="img_bottom" style="color: white;">HAPPY NEW YEAR GIFT SET 2021</div>
             </div>&ensp;&ensp;&ensp;&ensp;&ensp;
             <div style="position: relative; display: inline-block;">
                 <a href="promotion.html">
-                    <img src="https://static.wixstatic.com/media/9fa84d_250f102a550d410ba38c4694edacdefb~mv2.jpg" width="316px" height="448px">
+                    <img src="https://static.wixstatic.com/media/9fa84d_250f102a550d410ba38c4694edacdefb~mv2.jpg"
+                        width="316px" height="448px">
                 </a>
                 <div class="img_bottom" style="color: white;">Winter Wonderland</div>
             </div>
         </div>
 
         <!-- PROMOTION of THE MONTH -->
-        <h2 style=" font-weight: bold; text-align: center; color: #C14E25; padding-bottom: 50px; padding-top: 60px;">
+        <h2 style=" font-weight: bold; text-align: center; color: #C14E25; padding-bottom: 25px; padding-top: 60px;">
             PROMOTION of THE MONTH
         </h2>
 
-        <!-- <center> -->
-        <div style="width: 978px; height: 485px; background-color: #fbf3e8; left: 50%; transform: translateX(-50%); position: relative;">
+        <div
+            style="width: 978px; height: 485px; background-color: #fbf3e8; left: 50%; transform: translateX(-50%); position: relative;">
             <div class="slide" style="display: inline-block;">
-                <!-- <img src="https://static.wixstatic.com/media/9fa84d_71e9da231591423393fb3055ac881882~mv2.jpg"
-                    width="665px" height="485px"> -->
-
             </div>
-            <div style="display: inline-block; transform: translateY(-200px);">สวัสดีค่ะ</div>
+            <div id="wrapper">
+                <p id="hi"></p>
+            </div>
+            <div id="wrapper2">
+                <p id="detail"></p>
+            </div>
+            <button id="GetInTouch" style=""></button>
+            <!-- <div style="display: inline-block; transform: translateY(-200px);">สวัสดีค่ะ</div> -->
         </div>
-        <!-- </center> -->
 
         <!-- NEWS & UPDATE -->
         <h2 style=" font-weight: bold; text-align: center; color: #C14E25; padding-bottom: 50px; padding-top: 60px;">
@@ -390,11 +500,13 @@
         justify-content: center;">
             <div class="row" style="margin-bottom: 40px;">
                 <div>
-                    <img src="https://static.wixstatic.com/media/9fa84d_a445427f28d045f98a0ca28a19669673~mv2.jpg/v1/crop/x_34,y_36,w_1383,h_1018/fill/w_708,h_521,al_c,q_85,usm_0.66_1.00_0.01/For%20Gourmet.webp" style="width: 566px; height: 417px;">
+                    <img src="https://static.wixstatic.com/media/9fa84d_a445427f28d045f98a0ca28a19669673~mv2.jpg/v1/crop/x_34,y_36,w_1383,h_1018/fill/w_708,h_521,al_c,q_85,usm_0.66_1.00_0.01/For%20Gourmet.webp"
+                        style="width: 566px; height: 417px;">
                 </div>
                 <div style="margin-left: 55px; font-size: 15px;">
                     <p style="padding-bottom: 10px;"><b>D'ORO สาขา กูร์เมต์ มาร์เก็ต พุทธมณฑล</b></p>
-                    <p style="padding-bottom: 10px;">เปิดให้บริการแล้ววันนี้ ที่กูร์เมต์ มาร์เก็ต สาขาดีไซน์ วิลล่า<br> พุทธมณฑล พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่<br>ทุกวัน</p>
+                    <p style="padding-bottom: 10px;">เปิดให้บริการแล้ววันนี้ ที่กูร์เมต์ มาร์เก็ต สาขาดีไซน์ วิลล่า<br>
+                        พุทธมณฑล พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่<br>ทุกวัน</p>
                     <p style="padding-bottom: 50px;"><b>เวลาเปิดให้บริการ:</b> 09:00-20:00 น. (ทุกวัน)
                         <br><b>เบอร์โทร:</b> 082-667-9106</p>
                     <button href="# " class="btn btn-light" onclick="">เพิ่มเติม</button>
@@ -406,36 +518,18 @@
             <div class="row" style="margin-bottom: 40px;">
                 <div style=" font-size: 15px; text-align: right;">
                     <p style="padding-bottom: 10px;"><b>D'ORO สาขา SUCCO หทัยราษฎร์</b></p>
-                    <p style="padding-bottom: 10px;">เปิดให้บริการแล้ววันนี้ ที่ปั๊มน้ำมัน Succo ถนนหทัยราษฎร์<br> พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่ทุกวัน</p>
+                    <p style="padding-bottom: 10px;">เปิดให้บริการแล้ววันนี้ ที่ปั๊มน้ำมัน Succo ถนนหทัยราษฎร์<br>
+                        พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่ทุกวัน</p>
                     <p style="padding-bottom: 50px;"><b>เวลาเปิดให้บริการ:</b> 06:30-19:00 น. (ทุกวัน)
                         <br><b>เบอร์โทร:</b> 095-208-4913</p>
                     <button href="# " class="btn btn-light" onclick="" style="float: right; ">เพิ่มเติม</button>
                 </div>
                 <div style="margin-left: 55px;">
-                    <img src="https://static.wixstatic.com/media/9fa84d_438a364509ab4a8c91e7048625c9f93e~mv2.jpg/v1/crop/x_0,y_5,w_926,h_684/fill/w_711,h_525,al_c,q_85,usm_0.66_1.00_0.01/D190.webp" style="width: 566px; height: 417px;">
+                    <img src="https://static.wixstatic.com/media/9fa84d_438a364509ab4a8c91e7048625c9f93e~mv2.jpg/v1/crop/x_0,y_5,w_926,h_684/fill/w_711,h_525,al_c,q_85,usm_0.66_1.00_0.01/D190.webp"
+                        style="width: 566px; height: 417px;">
                 </div>
             </div>
         </div>
-
-        <!-- <center>
-            <div style="width: 1100px">
-                <div class="row">
-                    <div class="col-8" id="imgrow">
-                        <img
-                            src="https://static.wixstatic.com/media/9fa84d_9140089abca44e1dbbda8729bea053e3~mv2.jpg/v1/crop/x_35,y_0,w_5573,h_2229/fill/w_750,h_300,al_c,q_80,usm_0.66_1.00_0.01/AW%20Gift%20Set%20Newyear%202021%20-%20Promotions_jp.webp">
-                    </div>
-                    <div class="col-4" style="top: 4px;">
-                        <p id="textrow"><span> NEW
-                                YEAR GIFT SET 2021</span>
-                            <br>
-                            พบกับชุดของขวัญปีใหม่สุดพิเศษจาก D'ORO Joy Set และ<br> Premium Cookies Set ได้แล้ววันนี้
-                            ที่ร้านดิโอโร่ทุกสาขา</p><br><br>
-                        <button href="# " class="btn btn-light">รายละเอียดเพิ่มเติม</button>
-                    </div>
-                </div>
-            </div>
-        </center> -->
-        <!-- </div> -->
 
         <!-- Footer -->
         <footer>
@@ -444,13 +538,16 @@
                 <div class="slider-frame">
                     <div class="slide-images">
                         <div class="img-container">
-                            <img src="https://static.wixstatic.com/media/9fa84d_ce241dd732e5407da9ed9d6f1d9254ae~mv2.png/v1/fill/w_1137,h_318,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_ce241dd732e5407da9ed9d6f1d9254ae~mv2.webp">
+                            <img
+                                src="https://static.wixstatic.com/media/9fa84d_ce241dd732e5407da9ed9d6f1d9254ae~mv2.png/v1/fill/w_1137,h_318,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_ce241dd732e5407da9ed9d6f1d9254ae~mv2.webp">
                         </div>
                         <div class="img-container">
-                            <img src="https://static.wixstatic.com/media/9fa84d_1ad43b6c43584789bd949b560b668ffe~mv2.png/v1/fill/w_1137,h_318,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_1ad43b6c43584789bd949b560b668ffe~mv2.webp">
+                            <img
+                                src="https://static.wixstatic.com/media/9fa84d_1ad43b6c43584789bd949b560b668ffe~mv2.png/v1/fill/w_1137,h_318,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_1ad43b6c43584789bd949b560b668ffe~mv2.webp">
                         </div>
                         <div class="img-container">
-                            <img src="https://static.wixstatic.com/media/9fa84d_13c2f56b56a64319857e91baec82cdec~mv2.png/v1/fill/w_1137,h_318,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_13c2f56b56a64319857e91baec82cdec~mv2.webp">
+                            <img
+                                src="https://static.wixstatic.com/media/9fa84d_13c2f56b56a64319857e91baec82cdec~mv2.png/v1/fill/w_1137,h_318,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_13c2f56b56a64319857e91baec82cdec~mv2.webp">
                         </div>
                     </div>
                 </div>
@@ -458,16 +555,20 @@
 
 
                 <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
-                <div class="input-container" style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
+                <div class="input-container"
+                    style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
                     <i class="fa fa-envelope icon"></i>
-                    <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
+                    <input class="input-field" type="text" placeholder="Email Address" name="email"
+                        style="background-color: #104751; border: 0px; width: 250px;">
                 </div>
-                <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
+                <button
+                    style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
                     Now</button>
 
                 <h5 style="padding-top: 70px; ">Follow Us:</h5>
                 <a class="warpbutton" href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
-                    <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp " style="width: 60px; height: 70px; ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp "
+                        style="width: 60px; height: 70px; ">
                 </a>
                 <a class="warpbutton" href="https://www.instagram.com/d.orothailand/ " target="_blank ">
                     <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
@@ -488,7 +589,8 @@
                 </div>
             </div>
             <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
-                <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp " width="120px
+                <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp "
+                    width="120px
             " height="100px ">
             </div>
         </footer>
