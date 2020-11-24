@@ -178,6 +178,101 @@
     #hold {
         color: #FA9773;
     }
+    
+    .btn-light {
+        border-radius: 20px;
+        padding: 0;
+        background-color: white;
+        border: solid rgba(37, 92, 99, 1) 1px;
+        float: left;
+        width: 217px;
+        font-size: 14px;
+        height: 35px;
+        font-weight: 900;
+    }
+    
+    .btn-light:hover {
+        background-color: rgba(37, 92, 99, 1);
+        color: white;
+    }
+    
+    .slider-frame {
+        width: 1200px;
+        height: 286px;
+    }
+    
+    @-webkit-keyframes slide_animation {
+        0% {
+            right: 0px;
+        }
+        10% {
+            right: 0px;
+        }
+        20% {
+            right: 1200px;
+        }
+        30% {
+            right: 1200px;
+        }
+        40% {
+            right: 2400px;
+        }
+        50% {
+            right: 2400px;
+        }
+        60% {
+            right: 1200px;
+        }
+        70% {
+            right: 1200px;
+        }
+        80% {
+            right: 0px;
+        }
+        90% {
+            right: 0px;
+        }
+        100% {
+            right: 0px;
+        }
+    }
+    
+    .slide-images {
+        width: 3600px;
+        height: 286px;
+        position: relative;
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration: 33s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+    
+    .img-container {
+        position: relative;
+        width: 1200px;
+        height: 286px;
+        display: inline-block;
+    }
+    
+    .slide {
+        width: 100%;
+        height: 700px;
+        background-image: url(https://static.wixstatic.com/media/9fa84d_8cf6082cfbe9451eae58080b1d4f41d4~mv2.jpg/v1/fill/w_831,h_606,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_8cf6082cfbe9451eae58080b1d4f41d4~mv2.webp);
+        margin: 10px auto;
+        animation: slide 10s infinite;
+        background-repeat: no-repeat
+        /* display: block; */
+    }
+    
+    @keyframes slide {
+        50% {
+            background-image: url(https://static.wixstatic.com/media/9fa84d_71e9da231591423393fb3055ac881882~mv2.jpg/v1/fill/w_831,h_606,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_71e9da231591423393fb3055ac881882~mv2.webp)
+        }
+        100% {
+            background-image: url(https://static.wixstatic.com/media/9fa84d_8cf6082cfbe9451eae58080b1d4f41d4~mv2.jpg/v1/fill/w_831,h_606,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_8cf6082cfbe9451eae58080b1d4f41d4~mv2.webp)
+        }
+    }
 </style>
 
 <body>
@@ -253,7 +348,8 @@
         </div>
 
         <!-- HIGHLIGHT of THE MONTH -->
-        <h2 style=" font-weight: bold; text-align: center; color: #C14E25; margin-bottom: 50px; padding-top: 60px;">HIGHLIGHT of THE MONTH
+        <h2 style=" font-weight: bold; text-align: center; color: #C14E25; margin-bottom: 50px; padding-top: 60px;">
+            HIGHLIGHT of THE MONTH
         </h2>
         <div style="text-align: center;">
             <div style="position: relative; display: inline-block;">
@@ -277,8 +373,9 @@
 
         <!-- <center> -->
         <div style="width: 978px; height: 485px; background-color: #fbf3e8; left: 50%; transform: translateX(-50%); position: relative;">
-            <div style="display: inline-block;">
-                <img src="https://static.wixstatic.com/media/9fa84d_71e9da231591423393fb3055ac881882~mv2.jpg" width="665px" height="485px">
+            <div class="slide" style="display: inline-block;">
+                <!-- <img src="https://static.wixstatic.com/media/9fa84d_71e9da231591423393fb3055ac881882~mv2.jpg"
+                    width="665px" height="485px"> -->
 
             </div>
             <div style="display: inline-block; transform: translateY(-200px);">สวัสดีค่ะ</div>
@@ -289,6 +386,36 @@
         <h2 style=" font-weight: bold; text-align: center; color: #C14E25; padding-bottom: 50px; padding-top: 60px;">
             NEWS & UPDATE
         </h2>
+        <div style="display: flex;
+        justify-content: center;">
+            <div class="row" style="margin-bottom: 40px;">
+                <div>
+                    <img src="https://static.wixstatic.com/media/9fa84d_a445427f28d045f98a0ca28a19669673~mv2.jpg/v1/crop/x_34,y_36,w_1383,h_1018/fill/w_708,h_521,al_c,q_85,usm_0.66_1.00_0.01/For%20Gourmet.webp" style="width: 566px; height: 417px;">
+                </div>
+                <div style="margin-left: 55px; font-size: 15px;">
+                    <p style="padding-bottom: 10px;"><b>D'ORO สาขา กูร์เมต์ มาร์เก็ต พุทธมณฑล</b></p>
+                    <p style="padding-bottom: 10px;">เปิดให้บริการแล้ววันนี้ ที่กูร์เมต์ มาร์เก็ต สาขาดีไซน์ วิลล่า<br> พุทธมณฑล พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่<br>ทุกวัน</p>
+                    <p style="padding-bottom: 50px;"><b>เวลาเปิดให้บริการ:</b> 09:00-20:00 น. (ทุกวัน)
+                        <br><b>เบอร์โทร:</b> 082-667-9106</p>
+                    <button href="# " class="btn btn-light" onclick="">เพิ่มเติม</button>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex;
+        justify-content: center; margin-bottom: 30px;">
+            <div class="row" style="margin-bottom: 40px;">
+                <div style=" font-size: 15px; text-align: right;">
+                    <p style="padding-bottom: 10px;"><b>D'ORO สาขา SUCCO หทัยราษฎร์</b></p>
+                    <p style="padding-bottom: 10px;">เปิดให้บริการแล้ววันนี้ ที่ปั๊มน้ำมัน Succo ถนนหทัยราษฎร์<br> พบกับเครื่องดื่มแสนอร่อย เเละขนมอบสดใหม่ทุกวัน</p>
+                    <p style="padding-bottom: 50px;"><b>เวลาเปิดให้บริการ:</b> 06:30-19:00 น. (ทุกวัน)
+                        <br><b>เบอร์โทร:</b> 095-208-4913</p>
+                    <button href="# " class="btn btn-light" onclick="" style="float: right; ">เพิ่มเติม</button>
+                </div>
+                <div style="margin-left: 55px;">
+                    <img src="https://static.wixstatic.com/media/9fa84d_438a364509ab4a8c91e7048625c9f93e~mv2.jpg/v1/crop/x_0,y_5,w_926,h_684/fill/w_711,h_525,al_c,q_85,usm_0.66_1.00_0.01/D190.webp" style="width: 566px; height: 417px;">
+                </div>
+            </div>
+        </div>
 
         <!-- <center>
             <div style="width: 1100px">
@@ -313,13 +440,30 @@
         <!-- Footer -->
         <footer>
             <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
+
+                <div class="slider-frame">
+                    <div class="slide-images">
+                        <div class="img-container">
+                            <img src="https://static.wixstatic.com/media/9fa84d_ce241dd732e5407da9ed9d6f1d9254ae~mv2.png/v1/fill/w_1137,h_318,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_ce241dd732e5407da9ed9d6f1d9254ae~mv2.webp">
+                        </div>
+                        <div class="img-container">
+                            <img src="https://static.wixstatic.com/media/9fa84d_1ad43b6c43584789bd949b560b668ffe~mv2.png/v1/fill/w_1137,h_318,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_1ad43b6c43584789bd949b560b668ffe~mv2.webp">
+                        </div>
+                        <div class="img-container">
+                            <img src="https://static.wixstatic.com/media/9fa84d_13c2f56b56a64319857e91baec82cdec~mv2.png/v1/fill/w_1137,h_318,al_c,q_95,usm_0.66_1.00_0.01/9fa84d_13c2f56b56a64319857e91baec82cdec~mv2.webp">
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
                 <div class="input-container" style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
                     <i class="fa fa-envelope icon"></i>
                     <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
                 </div>
                 <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
-                Now</button>
+                    Now</button>
 
                 <h5 style="padding-top: 70px; ">Follow Us:</h5>
                 <a class="warpbutton" href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
