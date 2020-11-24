@@ -10,56 +10,58 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="https://static.wixstatic.com/media/9fa84d_87483a6113ae4436bdbc1633f6c60a4c%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/9fa84d_87483a6113ae4436bdbc1633f6c60a4c%7Emv2.png" type="image/png" />
+    <link rel="shortcut icon"
+        href="https://static.wixstatic.com/media/9fa84d_87483a6113ae4436bdbc1633f6c60a4c%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/9fa84d_87483a6113ae4436bdbc1633f6c60a4c%7Emv2.png"
+        type="image/png" />
     <title>Bakery | D'ORO coffee</title>
 </head>
 <style>
     body {
         font-family: 'Mitr', sans-serif;
     }
-    
+
     h5 {
         font-size: 16px;
     }
-    
+
     #img1 {
         width: 224px;
         height: 84px;
         margin: 20px;
     }
-    
+
     #line {
         width: 426px;
         height: 50px;
         border-top: 2px solid #547478;
     }
-    
+
     #imgmenu {
         width: 232px;
         height: 232px;
         object-fit: cover;
         margin-top: none;
     }
-    
+
     .card {
         width: 232px;
         height: 232px;
         border: none;
     }
-    
+
     .card-body {
         font-weight: bold;
     }
-    
+
     .card2 {
         width: 563px;
         height: 334px;
     }
-    
+
     .card-text {
         margin-top: -30px;
     }
-    
+
     .btn-light {
         border-radius: 20px;
         width: 125px;
@@ -68,28 +70,28 @@
         border: solid rgba(37, 92, 99, 1) 1px;
         font-weight: bold;
     }
-    
+
     .btn-light:hover {
         background-color: rgba(37, 92, 99, 1);
         color: white;
     }
-    
+
     .card-title {
         font-weight: bold;
     }
-    
+
     #menuname {
         font-size: 18px;
         margin-top: 10px;
     }
-    
+
     #underline {
         width: 190px;
         height: 50px;
         border-top: 3px solid rgb(150, 150, 150);
         margin-top: 20px;
     }
-    
+
     .bodyparallax {
         background-image: url(https://static.wixstatic.com/media/9fa84d_cbee5e5593994ca089cafbd62b9f6c2b~mv2_d_8000_8159_s_4_2.png);
         height: 100%;
@@ -101,11 +103,11 @@
         background-blend-mode: multiply;
         z-index: -1;
     }
-    
+
     .warpbutton:hover {
         color: transparent;
     }
-    
+
     .bar {
         overflow: hidden;
         background-color: #547478;
@@ -115,7 +117,7 @@
         border-bottom: #104751 solid 1px;
         /* padding-left: 17%; */
     }
-    
+
     .bar a {
         float: left;
         font-size: 14px;
@@ -126,12 +128,12 @@
         line-height: 0.5;
         transition: 0.4s;
     }
-    
+
     .drop {
         float: left;
         overflow: hidden;
     }
-    
+
     .drop .btn {
         font-size: 14px;
         border: none;
@@ -143,23 +145,23 @@
         margin: 0;
         line-height: 0.5;
     }
-    
+
     .bar a:hover,
     .drop:hover {
         color: #FA9773;
     }
-    
+
     .content {
         display: none;
         position: absolute;
         min-width: 130px;
         z-index: 4;
     }
-    
+
     .content:not(div) {
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     }
-    
+
     .content a {
         float: none;
         color: white;
@@ -171,28 +173,382 @@
         /* opacity: 0.5; */
         background-color: rgba(16, 71, 81, 0.5);
     }
-    
+
     .content a:hover {
         color: #FA9773;
     }
-    
+
     .drop:hover .content {
         display: block;
     }
-    
+
     #hold {
         color: #FA9773;
+    }
+
+    #chatbox {
+        background-image: url(https://rwidget.readyplanet.com/widget/images/widget_icon_menu.png);
+        background-color: rgba(233, 30, 99, 1);
+        background-position: center;
+        background-size: 38px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        right: 0;
+        margin-right: 15px;
+        bottom: 0;
+        margin-bottom: 15px;
+        position: fixed;
+        cursor: pointer;
+        opacity: 1;
+        /* position: relative; */
+        z-index: 3;
+    }
+
+    #box {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 13px;
+        width: 170px;
+        height: 35px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: 700;
+        display: block;
+        box-sizing: border-box;
+        line-height: 25px;
+        right: 0;
+        margin-right: 75px;
+        bottom: 0;
+        margin-bottom: 22px;
+        position: fixed;
+        padding: 5px 10px;
+        cursor: pointer;
+        opacity: 1;
+
+    }
+
+    #line {
+        background-image: url(https://rwidget.readyplanet.com/widget/images/widget_icon_line.png);
+        background-color: #00b800;
+        background-position: center;
+        background-size: 50px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        right: 0;
+        margin-right: 15px;
+        bottom: 0;
+        margin-bottom: -200px;
+        position: fixed;
+        cursor: pointer;
+        /* opacity: 0; */
+        z-index: 2;
+    }
+
+    #tel {
+        background-image: url(https://rwidget.readyplanet.com/widget/images/widget_icon_click_to_call.png);
+        background-color: #FF9c00;
+        background-position: center;
+        background-size: 38px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        right: 0;
+        margin-right: 15px;
+        bottom: 0;
+        margin-bottom: -200px;
+        position: fixed;
+        cursor: pointer;
+        /* opacity: 0; */
+        z-index: 1;
+
+    }
+
+    #cancel {
+        background-image: url(https://rwidget.readyplanet.com/widget/images/widget_icon_close.png);
+        background-color: rgba(233, 30, 99, 1);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        right: 0;
+        margin-right: 15px;
+        bottom: 0;
+        margin-bottom: 15px;
+        position: fixed;
+        cursor: pointer;
+        /* opacity: 0; */
+        z-index: 4;
+    }
+
+    .changebgchat {
+        background-color: black;
+        opacity: 0.8;
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        position: fixed;
+
+    }
+
+    #box2-1 {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 6.5px;
+        width: 120px;
+        height: 20px;
+        text-align: left;
+        border-radius: 5px;
+        font-weight: 700;
+        display: block;
+        box-sizing: border-box;
+        line-height: 12px;
+        right: 0;
+        margin-right: 80px;
+        bottom: 0;
+        margin-bottom: 30px;
+        position: fixed;
+        padding: 7px 10px 3px 10px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    #box2-2 {
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        color: white;
+        font-size: 10px;
+        width: 120px;
+        height: 20px;
+        text-align: right;
+        border-radius: 5px;
+        font-weight: 700;
+        display: block;
+        box-sizing: border-box;
+        line-height: 12px;
+        right: 0;
+        margin-right: 80px;
+        bottom: 0;
+        margin-bottom: 30px;
+        position: fixed;
+        padding: 5px 10px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    #box3 {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 13px;
+        width: 140px;
+        height: 35px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: 700;
+        display: block;
+        box-sizing: border-box;
+        line-height: 25px;
+        right: 0;
+        margin-right: 75px;
+        bottom: 0;
+        margin-bottom: -200px;
+        position: fixed;
+        padding: 5px 10px;
+        cursor: pointer;
+        /* opacity: 0; */
+        z-index: 1;
+    }
+
+    #box4 {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 13px;
+        width: 140px;
+        height: 35px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: 700;
+        display: block;
+        box-sizing: border-box;
+        line-height: 25px;
+        right: 0;
+        margin-right: 75px;
+        bottom: 0;
+        margin-bottom: -200px;
+        position: fixed;
+        padding: 5px 10px;
+        cursor: pointer;
+        /* opacity: 0; */
+        z-index: 1;
+    }
+
+    #teldetail {
+        background-color: #F9F9F9;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -95px;
+        margin-left: -183px;
+        width: 300px;
+        height: 180px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 25px;
+        z-index: 3;
+    }
+
+    #telcancel {
+        background-image: url(https://rwidget.readyplanet.com/widget/css/close.png);
+        background-size: 22px;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 9px 7px;
+        cursor: pointer;
+    }
+
+    #line-detail {
+        background-color: #F9F9F9;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -220px;
+        margin-left: -175px;
+        width: 300px;
+        height: 390px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 25px;
+        z-index: 3;
+
+    }
+
+    #QRcode {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6AQAAAACgl2eQAAACMElEQVR42u2ZQWrDMBREv/FCSx1BN0kuFrDBF3NuoiN4qYXJ78w4FOyGLrrxhzqLEskvkP8zGo1U899fs13ABVzAvwYMr9LMHqXdlwcGeeXUEApI7muxbnkUDEZLT71bggGz6ZlXvBuqhuADAmh1X1mPqZ6gwG3TA6bnvAYEpIf7AuXesldI4aNgzgW0siTV7z8flt7JgL+pvhqXf7t/NLHTgcUMeujdnz5VKsP8lWMBjW2FKKaKLhs8CvIAGgtgg7X8XUbfLE+eogFo6+Stg5E2ihVu0MtSQwH4xqP5c6GRLj1nxgKj8lAAWj3wmRbVqCp+/BYBAHxtY6sNy4v9HiqHoYA052nzeKmABRz0EABAFaulFywfg4ka1vLyUICkCmAzUke/B34oFqDwgWcQxS1jUQGte6cNAEAP0qtxI4Llz3lkfg8HjCVho6xUAVMnPWqv6gAApNCU5Syr334QTASAuzlEi82zo5FSvq0LBrCtUCnDBy0fMWSQm4YC4OwrCuC+hFJoT6uoWAATEkRLCh6VmD93KysCoKOZEhyNigUwxHswQBsRN0/Kl1MrU9MQCjBewTjtE3rA9Eupc/9bnA74O9BhI2IBlK8fW306oDPvVgqPu/SAsg97AQDdHjAmmRKS+r1LxSEAXWEZUydjks6Uh1QcBGhMSGkzArppSIDhDacK7PBOD+C1USyAeuAhrehiY5PHHAzQytJljE6/ief0XZaLAFz/4LiAC7iAvwBfmCY+B0g6dMAAAAAASUVORK5CYII=);
+        width: 250px;
+        height: 250px;
+        border: #cdcdcd 1px solid;
+        margin-top: 40px;
+    }
+
+    #line-cancel {
+        background-image: url(https://rwidget.readyplanet.com/widget/css/close.png);
+        background-size: 22px;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 9px 7px;
+        cursor: pointer;
     }
 </style>
 
 <body>
-
+    <div id="changebgchat" style="display: none; "></div>
+    <div id="chatbox" onclick="chatbox()"></div>
+    <div id="cancel" onclick="closechatbox()" style="display: none;"></div>
+    <div onclick="chatbox()" style=" display:block;  background-color: rgba(0,0,0,0.5)"
+        class="widget_get_width_main_button salesdesk-widget-button-default-text salesdesk-widget-button-text salesdesk-widget-button-text-bottom-right"
+        onclick="popup()">
+        <span id="box">ติดต่อสั่ง Snack Box คลิก</span>
+    </div>
+    <div id="box2" style=" display:none;  background-color: rgba(0,0,0,0.5)"
+        class="widget_get_width_main_button salesdesk-widget-button-default-text salesdesk-widget-button-text salesdesk-widget-button-text-bottom-right"
+        onclick="document.querySelector('.salesdesk-widget-menu-group').popup();">
+        <span id="box2-1">powered by </span>
+        <span id="box2-2">Readyplanet</span>
+    </div>
+    <div id="tel" onclick="popuptel()"></div>
+    <div style=" display:block;  background-color: rgba(0,0,0,0.5)"
+        class="widget_get_width_main_button salesdesk-widget-button-default-text salesdesk-widget-button-text salesdesk-widget-button-text-bottom-right"
+        onclick="document.querySelector('.salesdesk-widget-menu-group').popup();">
+        <span onclick="popuptel()" id="box3">โทรศัพท์</span>
+    </div>
+    <div id="line" onclick="popupline()"></div>
+    <div style=" display:block;  background-color: rgba(0,0,0,0.5)"
+        class="widget_get_width_main_button salesdesk-widget-button-default-text salesdesk-widget-button-text salesdesk-widget-button-text-bottom-right"
+        onclick="document.querySelector('.salesdesk-widget-menu-group').popup();">
+        <span id="box4" onclick="popupline()">แชทผ่าน LINE</span>
+    </div>
+    <div id="teldetail" style="display: none;">
+        <div style="color: #FF9c00; font-weight: 700; font-size: 18px;">โทรศัพท์</div>
+        <div style="color: #777; font-size: 14px; margin: 5px 0 15px;">โทรหาเราที่เบอร์นี้</div>
+        <div style="color: #555; cursor: pointer; font-size: 32px; margin-top: 29px;">081-701-2295</div>
+        <div id="telcancel" onclick="closepopuptel()"></div>
+    </div>
+    <div id="line-detail" style="display: none;">
+        <div style="color: #00b800; font-weight: 700; font-size: 18px;">แชทผ่าน LINE</div>
+        <div style="color: #777; font-size: 14px; margin: 5px 0 15px;">สแกน QR Code เพื่อแชทกับเรา</div>
+        <center>
+            <div id="QRcode"></div>
+        </center>
+        <div id="line-cancel" onclick="closeline()"></div>
+    </div>
+    <script>
+        function chatbox() {
+            document.getElementById("changebgchat").classList.add('changebgchat');
+            document.getElementById("changebgchat").style.display = null;
+            document.getElementById('tel').style.bottom = "270px";
+            document.getElementById('tel').style.transition = "0.2s";
+            document.getElementById('line').style.bottom = "325px";
+            document.getElementById('line').style.transition = "0.2s";
+            document.getElementById('cancel').style.display = null;
+            console.log(document.getElementById('cancel'))
+            document.getElementById('box').style.display = 'none';
+            document.getElementById('box2').style.display = 'block';
+            document.getElementById('box3').style.bottom = "275px";
+            document.getElementById('box3').style.transition = "0.2s";
+            document.getElementById('box4').style.bottom = "330px";
+            document.getElementById('box4').style.transition = "0.2s";
+        }
+        function closechatbox() {
+            console.log('test');
+            document.getElementById("changebgchat").style.display = "none";
+            document.getElementById('cancel').style.display = 'none';
+            document.getElementById('tel').style.bottom = "0px";
+            document.getElementById('line').style.bottom = "0px";
+            document.getElementById('box2').style.display = 'none';
+            document.getElementById('box').style.display = null;
+            document.getElementById('box3').style.bottom = "0px";
+            document.getElementById('box4').style.bottom = "0px";
+            document.getElementById("teldetail").style.display = 'none';
+            document.getElementById("line-detail").style.display = 'none';
+        }
+        function popuptel() {
+            document.getElementById("teldetail").style.display = null;
+            document.getElementById("line-detail").style.display = 'none';
+        }
+        function closepopuptel() {
+            document.getElementById("teldetail").style.display = 'none';
+        }
+        function popupline() {
+            document.getElementById("line-detail").style.display = null;
+            document.getElementById("teldetail").style.display = 'none';
+        }
+        function closeline() {
+            document.getElementById("line-detail").style.display = 'none';
+        }
+    </script>
     <!-- Lego -->
     <div class="bodyparallax">
         <div style="color: white;">
             <div class="top" style="font-size:30px; background-color: #104751; height: 135px;">
                 <center>
-                    <a href="/index.html"><img id="img1" src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
+                    <a href="/index.html"><img id="img1"
+                            src="https://static.wixstatic.com/media/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.png/v1/fill/w_280,h_105,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_aa13b15690be45ba91c57715ccd883ae~mv2_d_3508_2480_s_4_2.webp"></a>
                 </center>
             </div>
         </div>
@@ -261,10 +617,13 @@
             </center>
 
             <!--------------------- CAKE --------------------->
-            <h3 style="color: rgb(153,143,132); margin-top: -50px; font-weight: bold; font-size: 25px;  height: 60px;">CAKE
+            <h3 style="color: rgb(153,143,132); margin-top: -50px; font-weight: bold; font-size: 25px;  height: 60px;">
+                CAKE
             </h3>
             <center>
-                <div style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;"></div>
+                <div
+                    style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;">
+                </div>
             </center>
         </div>
         <!--------------------- row1 --------------------->
@@ -273,7 +632,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_2e71e30bc94644f788980beaa5b47a70~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_2e71e30bc94644f788980beaa5b47a70~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">CHOCOLATE CAKE<br>/ เค้กช็อคโกแลต</h4>
@@ -284,7 +645,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_4e8de5ba39bd4a899f9ee78c6c36a03a~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_4e8de5ba39bd4a899f9ee78c6c36a03a~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">TOFFEE ALMOND CAKE /<br>เค้กท๊อฟฟี่อัลมอนด์</h4>
@@ -295,7 +658,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_f7aed2aee26643c3bc0be16c3bf24b4e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_f7aed2aee26643c3bc0be16c3bf24b4e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">GOLD EGG YOLK THREAD CAKE /<br>เค้กฝอยทอง</h4>
@@ -310,7 +675,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_fffcfaaef6d54b58aad05ec9a66b855a~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_fffcfaaef6d54b58aad05ec9a66b855a~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">CUSTARD PANDAN CAKE /<br>เค้กคัสตาร์ดใบเตย</h4>
@@ -321,7 +688,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_1ede18284f9446e0b7bae94613dfac83~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_1ede18284f9446e0b7bae94613dfac83~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">PUMPKIN CAKE / เค้กฟักทอง</h4>
@@ -332,7 +701,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_5bc09ee77df648828c453681bb2b8278~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_5bc09ee77df648828c453681bb2b8278~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">COFFEE CAKE / เค้กกาแฟ</h4>
@@ -346,10 +717,13 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_c162e06f87b2491bac4c62af74ebe47e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_c162e06f87b2491bac4c62af74ebe47e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
-                            <h4 id="menuname" class="card-title ">CARROT CAKE WITH<br>CREAM CHEESE FROSTING<br>/ เค้กแครอทครีมชีส</h4>
+                            <h4 id="menuname" class="card-title ">CARROT CAKE WITH<br>CREAM CHEESE FROSTING<br>/
+                                เค้กแครอทครีมชีส</h4>
                             <center>
                                 <div id="underline"></div>
                             </center>
@@ -357,7 +731,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_008180b901e24644bc2cb41fb0904867~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_008180b901e24644bc2cb41fb0904867~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BLUEBERRY CAKE /<br>เค้กบลูเบอร์รี่</h4>
@@ -368,7 +744,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_b5a5caee177140228010b3f13dda40f7~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_b5a5caee177140228010b3f13dda40f7~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">CUSTARD ORANGE CAKE /<br>เค้กคัสตาร์ดส้ม</h4>
@@ -383,7 +761,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_566216ed3ae14a908b3bdded84b94adb~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_566216ed3ae14a908b3bdded84b94adb~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">MOCHA CAKE / เค้กมอคค่า</h4>
@@ -394,7 +774,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_87cf343ebe1243459ad86757365ceb27~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_87cf343ebe1243459ad86757365ceb27~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">VANILLA CAKE / เค้กวนิลา</h4>
@@ -405,7 +787,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_f44379eec23e40e088bb95970a34c6f8~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_f44379eec23e40e088bb95970a34c6f8~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">CHOCOLATE MOUSSE CAKE /<br>เค้กช็อคโกแลตมูส</h4>
@@ -419,7 +803,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_ef6f194e8b8e468e9c3256287e8fbcd1~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_ef6f194e8b8e468e9c3256287e8fbcd1~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">PANDAN & TODDY ROLL /<br>โรลใบเตย ลูกตาล</h4>
@@ -430,7 +816,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_f91aab23bb504788bdaccb25f428ce45~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_f91aab23bb504788bdaccb25f428ce45~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BLUEBERRY ROLL /<br>โรลบลูเบอร์รี่</h4>
@@ -441,7 +829,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_4c37b8d9c20849ac97152012ff35e4fe~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_4c37b8d9c20849ac97152012ff35e4fe~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">COFFEE ROLL / โรลกาแฟ</h4>
@@ -455,7 +845,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_1376b920170d491ab038e3ccab962f4d~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_1376b920170d491ab038e3ccab962f4d~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">FANCY ROLL / โรลแฟนซี</h4>
@@ -466,7 +858,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_21bb82fdff2c457a8f411b0df69d7a53~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_21bb82fdff2c457a8f411b0df69d7a53~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BLUEBERRY CHEESECAKE /<br>บลูเบอร์รี่ชีสเค้ก</h4>
@@ -477,10 +871,13 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_6fc8a75607cd4e1bb68044519aebbd61~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_6fc8a75607cd4e1bb68044519aebbd61~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
-                            <h4 id="menuname" class=" card-title ">SWISS CHOCOLATE BROWNIES /<br>สวิสช็อคโกแลตบราวนี่</h4>
+                            <h4 id="menuname" class=" card-title ">SWISS CHOCOLATE BROWNIES /<br>สวิสช็อคโกแลตบราวนี่
+                            </h4>
                             <center>
                                 <div id="underline"></div>
                             </center>
@@ -491,7 +888,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_28894aaae44a43278a5e07029a1b80dd~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_28894aaae44a43278a5e07029a1b80dd~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">BANANA CKE WITH CHEESE /<br>เค้กกล้วยหอมชีส</h4>
@@ -502,7 +901,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_2c72ce41e26147cf87df6ee4c63632c8~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_2c72ce41e26147cf87df6ee4c63632c8~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">LOW FAT CARROT CAKE /<br>เค้กแครอทแบบ LOW FAT</h4>
@@ -513,7 +914,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_fd299ff55506419486c1d627aae5b45e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_fd299ff55506419486c1d627aae5b45e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">LOW FAT PRUNE CAKE /<br>เค้กลูกพรุนแบบ LOW FAT</h4>
@@ -527,7 +930,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_8c793552a3664907aa9b6a8b2a2a3ae0~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_8c793552a3664907aa9b6a8b2a2a3ae0~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">Vanilla Cream Roll</h4>
@@ -539,7 +944,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_52bf38a88c8e4cbe9c6b259b849a9ad1~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_52bf38a88c8e4cbe9c6b259b849a9ad1~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Chocolate Cream Roll</h4>
@@ -551,7 +958,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_d24f10b8ef61411b9be67b1186f52b87~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_d24f10b8ef61411b9be67b1186f52b87~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Coffee Cream Roll</h4>
@@ -566,7 +975,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_35fdacf6f3f340bfbca47d5569fe67a4~mv2_d_1458_1458_s_2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_35fdacf6f3f340bfbca47d5569fe67a4~mv2_d_1458_1458_s_2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">Cotton Cake</h4>
@@ -582,10 +993,13 @@
 
         <!------------------ SANDWICHES ------------------>
         <div class="container" style="text-align: center; ">
-            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">SANDWICHES
+            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">
+                SANDWICHES
             </h3>
             <center>
-                <div style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;"></div>
+                <div
+                    style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;">
+                </div>
             </center>
         </div>
         <!--------------------- row1 --------------------->
@@ -594,7 +1008,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_6b887d16a0744c35a094c690c651707b~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_6b887d16a0744c35a094c690c651707b~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">TUNA SANDWICHES /<br>แซนวิชทูน่า</h4>
@@ -605,7 +1021,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_17b08076c41f4542970f318c4fcda737~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_17b08076c41f4542970f318c4fcda737~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">HAM & CHEESE SANDWICHES /<br>แซนวิชแฮมชีส</h4>
@@ -616,7 +1034,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_eb1ba45b93a3401c8fa1f3359da0fe81~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_eb1ba45b93a3401c8fa1f3359da0fe81~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">MINI MUSHROOM SANDWICHES /<br>มินิแซนวิชเห็ด</h4>
@@ -630,7 +1050,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_172d819fe6f74f0fb8b43c589d78d88a~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_172d819fe6f74f0fb8b43c589d78d88a~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">CHEESE SANDWICHES /<br>แซนวิชชีส</h4>
@@ -641,7 +1063,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_ad6a6ece319e436c8502cead9d25fdfa~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_ad6a6ece319e436c8502cead9d25fdfa~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">CRAB STRICK SANDWICHES /<br>แซนวิชปูอัด</h4>
@@ -652,7 +1076,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_ef29334771564228b4aa8d7af2998f05~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_ef29334771564228b4aa8d7af2998f05~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">SPICY TUNA SANDWICHES /<br>แซนวิชยำทูน่า</h4>
@@ -666,10 +1092,13 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_95392c4177744edca63601062650ce4c~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_95392c4177744edca63601062650ce4c~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
-                            <h4 id="menuname" class="card-title ">CURRIED CHICKEN SALAD<br>SANDWICHES / แซนวิชไส้ไก่<br>ผงกะหรี่</h4>
+                            <h4 id="menuname" class="card-title ">CURRIED CHICKEN SALAD<br>SANDWICHES /
+                                แซนวิชไส้ไก่<br>ผงกะหรี่</h4>
                             <center>
                                 <div id="underline"></div>
                             </center>
@@ -677,7 +1106,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_6891a5625111459b9f7647c633f16a86~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_6891a5625111459b9f7647c633f16a86~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Chicken Panaeng Bread</h4>
@@ -693,10 +1124,13 @@
 
         <!------------------ BREAD ------------------>
         <div class="container" style="text-align: center; ">
-            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">BREAD
+            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">
+                BREAD
             </h3>
             <center>
-                <div style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;"></div>
+                <div
+                    style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;">
+                </div>
             </center>
         </div>
         <!--------------------- row1 --------------------->
@@ -705,7 +1139,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_1c43a76712d74ac0a232f13fc8ed791d~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_1c43a76712d74ac0a232f13fc8ed791d~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">HAM & CHEESE BUN /<br>ขนมปังแฮมชีส</h4>
@@ -716,7 +1152,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_0c89611f710342b585556f3e58499421~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_0c89611f710342b585556f3e58499421~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">CHEESE SAUSAGE BUN /<br>ขนมปังไส้กรอกชีส</h4>
@@ -727,7 +1165,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_cbdfc4ededa6461f90663d2495e8af45~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_cbdfc4ededa6461f90663d2495e8af45~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">SAUSAGE BUN /<br>ขนมปังไส้กรอก</h4>
@@ -741,10 +1181,13 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_ab23839ef03249b685d64019eade46ca~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_ab23839ef03249b685d64019eade46ca~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
-                            <h4 id="menuname" class="card-title ">SHREDDED PORK<br>MAYONNAISE BUN / ขนมปัง<br>หมูหยองมายองเนส</h4>
+                            <h4 id="menuname" class="card-title ">SHREDDED PORK<br>MAYONNAISE BUN /
+                                ขนมปัง<br>หมูหยองมายองเนส</h4>
                             <center>
                                 <div id="underline"></div>
                             </center>
@@ -752,7 +1195,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_3ffbf84fa5a54ac98ee59daf93a261d5~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_3ffbf84fa5a54ac98ee59daf93a261d5~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BUTTER BUN / ขนมปังเนยสด</h4>
@@ -763,7 +1208,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_a97128de31e740aa92ba41412b020b6b~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_a97128de31e740aa92ba41412b020b6b~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BACON & CHEESE BUN</h4>
@@ -778,7 +1225,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_c8adefe1fb584a548a15400e57b0d696~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_c8adefe1fb584a548a15400e57b0d696~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">Crab Stick Pizza</h4>
@@ -790,7 +1239,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_4113a696f621462089529d0c5e528d5d~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_4113a696f621462089529d0c5e528d5d~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Sausage Pizza</h4>
@@ -802,7 +1253,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_747f12ba60b14504b3a3d83cf5165374~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_747f12ba60b14504b3a3d83cf5165374~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Premium Milky Butter Bun</h4>
@@ -818,10 +1271,13 @@
 
         <!------------------ SNACKS ------------------>
         <div class="container" style="text-align: center; ">
-            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">SNACKS
+            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">
+                SNACKS
             </h3>
             <center>
-                <div style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;"></div>
+                <div
+                    style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;">
+                </div>
             </center>
         </div>
         <!--------------------- row1 --------------------->
@@ -830,7 +1286,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_87a6dfb8dbc64c488ea763071de1780b~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_87a6dfb8dbc64c488ea763071de1780b~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">BUTTER CAKE / บัตเตอร์เค้ก</h4>
@@ -841,7 +1299,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_fd54e2eac419464a924e78d45f553eb5~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_fd54e2eac419464a924e78d45f553eb5~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BLUEBERRY CHEESE TART /<br>บลูเบอร์รี่ชีสทาร์ต</h4>
@@ -852,7 +1312,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_07a8f50bba7348ebab12b220e82fd2a4~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_07a8f50bba7348ebab12b220e82fd2a4~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">CHEESE TART / ชีสทาร์ต</h4>
@@ -866,7 +1328,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_b50787b767f947358de31b03dc4b0908~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_b50787b767f947358de31b03dc4b0908~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">CHOCOLATE BALL<br>/ ช็อคโกแลตบอลล์</h4>
@@ -877,7 +1341,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_64c09bd5253f4e2aa008286bdda4a316~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_64c09bd5253f4e2aa008286bdda4a316~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">CARAMEL NUT TART<br>/ ทาร์ตถั่ว</h4>
@@ -888,7 +1354,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_ea491fbde484447b869463fd4f13cac7~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_ea491fbde484447b869463fd4f13cac7~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">VANILLA ECLAIR<br>/ เอแคร์ไส้ครีม</h4>
@@ -903,10 +1371,13 @@
 
         <!------------------ COOKIES ------------------>
         <div class="container" style="text-align: center; ">
-            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">COOKIES
+            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">
+                COOKIES
             </h3>
             <center>
-                <div style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;"></div>
+                <div
+                    style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;">
+                </div>
             </center>
         </div>
         <!--------------------- row1 --------------------->
@@ -915,7 +1386,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_d20402db10a24047974d8009bd9ca343~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_d20402db10a24047974d8009bd9ca343~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">CHOCOLATE CHIP COOKIES /<br>คุกกี้ช็อคโกแลตชิพ</h4>
@@ -926,7 +1399,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_b969b0aaccd24a8690627898be2e0dd0~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_b969b0aaccd24a8690627898be2e0dd0~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BUTTER COOKIES / คุกกี้เนยสด</h4>
@@ -937,7 +1412,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_cf8c7490f1a2485184f0bb5e417a0b87~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_cf8c7490f1a2485184f0bb5e417a0b87~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">OATMEAL COOKIES / คุกกี้ข้าวโอ๊ต</h4>
@@ -951,7 +1428,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_d93ee328140448a29cdc7e2ea9de41f2~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_d93ee328140448a29cdc7e2ea9de41f2~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">PRUNE COOKIES / คุกกี้ลูกพรุน</h4>
@@ -962,7 +1441,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_1ce273a485df483cae671cfe53c141f9~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_1ce273a485df483cae671cfe53c141f9~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">CORNFLAKE COOKIES /<br>คุกกี้คอนเฟลค</h4>
@@ -973,7 +1454,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_7ba29a300b2746078fcb0cd4488fb14a~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_7ba29a300b2746078fcb0cd4488fb14a~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BUTTERFLY (PALMIERS) /<br>บัตเตอร์ฟลาย</h4>
@@ -987,7 +1470,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_ad8d1d4ee43b4032bdf37823222923f3~mv2_d_1500_1600_s_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_ad8d1d4ee43b4032bdf37823222923f3~mv2_d_1500_1600_s_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">BELGIUM CHOCOLATE COOKIES</h4>
@@ -998,7 +1483,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_0540a5e77c514d029d9d659208326792~mv2_d_1500_1600_s_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_0540a5e77c514d029d9d659208326792~mv2_d_1500_1600_s_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">D'ORO COFFEE COOKIES</h4>
@@ -1009,7 +1496,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_08fae50928d243449672af07baacec06~mv2_d_1500_1600_s_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_08fae50928d243449672af07baacec06~mv2_d_1500_1600_s_2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BUTTER COOKIES</h4>
@@ -1024,10 +1513,13 @@
 
         <!------------------ PASTRY ------------------>
         <div class="container" style="text-align: center; ">
-            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">PASTRY
+            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">
+                PASTRY
             </h3>
             <center>
-                <div style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;"></div>
+                <div
+                    style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;">
+                </div>
             </center>
         </div>
         <!--------------------- row1 --------------------->
@@ -1036,7 +1528,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_558c84d8c61046839adeaf6820b1be6d~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_558c84d8c61046839adeaf6820b1be6d~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">CROISSANTS / ครัวซองท์</h4>
@@ -1047,7 +1541,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_cd328b35d66a4bfaaf927edd8cc0ac62~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_cd328b35d66a4bfaaf927edd8cc0ac62~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">HAM & CHEESE CROISSANTS /<br>ครัวซองท์แฮมชีส</h4>
@@ -1058,7 +1554,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_5fb55d598a4248e6b9758c5aaf038155~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_5fb55d598a4248e6b9758c5aaf038155~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">HAM CROISSANTS /<br>ครัวซองท์แฮม</h4>
@@ -1072,7 +1570,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_9d7bc93b274741059d671d51df49d489~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_9d7bc93b274741059d671d51df49d489~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">SAUSAGE CROISSANTS /<br>ครัวซองท์ไส้กรอก</h4>
@@ -1083,7 +1583,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_3a685a35de0a415abd0d0c763c4263f8~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_3a685a35de0a415abd0d0c763c4263f8~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">ALMOND CROISSANTS /<br>ครัวซองท์อัลมอนด์</h4>
@@ -1094,7 +1596,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_30670c7eafa04266874c3017be7efeb1~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_30670c7eafa04266874c3017be7efeb1~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BACON TWIST / เบคอนทวิสต์</h4>
@@ -1108,7 +1612,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_673d8a03d112404ca1f85fccb97828c2~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_673d8a03d112404ca1f85fccb97828c2~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">TUNA PUFF / พัฟทูน่า</h4>
@@ -1119,7 +1625,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_fe571dbcb70245d7993933845448f9aa~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_fe571dbcb70245d7993933845448f9aa~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">HAM PUFF WITH BLACK PEPPER /<br>พัฟแฮมพริกไทยดำ</h4>
@@ -1130,7 +1638,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_d55ebe7c1a0e4569b397b322598d933e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_d55ebe7c1a0e4569b397b322598d933e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">CURRIED CHICKEN PIE /<br>พายไก่ผงกะหรี่</h4>
@@ -1144,7 +1654,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_1938c245e94e4bcb852d3aaa97b959d4~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_1938c245e94e4bcb852d3aaa97b959d4~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">TODDY PALM PUFF / พัฟลูกตาล</h4>
@@ -1155,7 +1667,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_b06eb8c7f5e04bbdbaebfa5fd93aa021~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_b06eb8c7f5e04bbdbaebfa5fd93aa021~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">HAM & SPINACH DANISH /<br>เดนิชแฮมผักโขม</h4>
@@ -1166,7 +1680,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_7b0577a19d934e89a5a4dc3d3f66288f~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_7b0577a19d934e89a5a4dc3d3f66288f~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">TODDY PALM DANISH /<br>เดนิชลูกตาล</h4>
@@ -1180,7 +1696,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_0dc20e6bd00747aca35f1097cfea97b2~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_0dc20e6bd00747aca35f1097cfea97b2~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">BLUEBERRY DANISH /<br>เดนิบลูเบอร์รี่</h4>
@@ -1191,7 +1709,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_e656f838d6144a7dbe0ebf261afafb30~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_e656f838d6144a7dbe0ebf261afafb30~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">RAISIN DANISH / เดนิชลูกเกด</h4>
@@ -1202,7 +1722,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_3f05dcf91b3646f5821ba5b787a77e46~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_3f05dcf91b3646f5821ba5b787a77e46~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">CINNAMON ROLL /<br>ชินนาม่อนโรล</h4>
@@ -1216,7 +1738,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_97ecde7c7e974ad29f2b447117faf85e~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_97ecde7c7e974ad29f2b447117faf85e~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">Ham Puff Roll</h4>
@@ -1228,7 +1752,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_b7f089efba4e427ebe0c9a452959c898~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_b7f089efba4e427ebe0c9a452959c898~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Red Curried Chicken Puff</h4>
@@ -1240,7 +1766,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_9bd080a3c30e4c8c93711d3ffc030d6a~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_9bd080a3c30e4c8c93711d3ffc030d6a~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Salted Egg Croissant</h4>
@@ -1256,10 +1784,13 @@
 
         <!------------------ PUFF SNACK ------------------>
         <div class="container" style="text-align: center; ">
-            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">PUFF SNACK
+            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">
+                PUFF SNACK
             </h3>
             <center>
-                <div style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;"></div>
+                <div
+                    style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;">
+                </div>
             </center>
             <p style="font-size: 19px; margin-top: 15px; margin-bottom: 50px;"> พายกรอบ</p>
         </div>
@@ -1269,7 +1800,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_008b9ddc3f3843f68d2290d82fc965d7~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_008b9ddc3f3843f68d2290d82fc965d7~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">BOSTON LOBSTER /<br>รสล็อปสเตอร์</h4>
@@ -1280,7 +1813,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_9d04e267c9d648689bf46f9e74cb1d6e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_9d04e267c9d648689bf46f9e74cb1d6e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">BACON CHEESE BURGER /<br>รสเบค่อนชีสเบอร์เกอร์</h4>
@@ -1291,7 +1826,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_e6cf22321e964e59a26b7c8783cdc89b~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_e6cf22321e964e59a26b7c8783cdc89b~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">SWEET CINNAMON /<br>รสชินนาม่อน</h4>
@@ -1305,7 +1842,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_06b3290e232642c7879687f82b0160bb~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_06b3290e232642c7879687f82b0160bb~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">Maple Syrup Puff Snack</h4>
@@ -1317,7 +1856,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_dc012fd3475f4dbaa74be64228b7c2cc~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_dc012fd3475f4dbaa74be64228b7c2cc~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Seaweed Puff Snack</h4>
@@ -1329,7 +1870,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_d88767affaff44bbb1a8aba06e00a287~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_d88767affaff44bbb1a8aba06e00a287~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Laab Puff Snack</h4>
@@ -1345,10 +1888,13 @@
 
         <!------------------ BAKED BREAD ------------------>
         <div class="container" style="text-align: center; ">
-            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">BAKED BREAD
+            <h3 style="color: rgb(153,143,132); margin-top: 130px; font-weight: bold; font-size: 25px;  height: 60px;">
+                BAKED BREAD
             </h3>
             <center>
-                <div style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;"></div>
+                <div
+                    style="width: 100px; height: 50px; border-top: 3px solid rgb(153,143,132); margin-bottom: -47px; margin-top: -13px;">
+                </div>
             </center>
             <p style="font-size: 19px; margin-top: 15px; margin-bottom: 50px;">ขนมปังอบกรอบ</p>
         </div>
@@ -1358,7 +1904,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" id="imgmenu" src="https://static.wixstatic.com/media/9fa84d_9489817ee6c341958a210e116743e1c8~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image" style="width:100%">
+                            <img class="card-img-top" id="imgmenu"
+                                src="https://static.wixstatic.com/media/9fa84d_9489817ee6c341958a210e116743e1c8~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image" style="width:100%">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class="card-title ">Hot & Spicy Baked Bread</h4>
@@ -1370,7 +1918,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_6efa990c62a34e658f019db474456ad3~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_6efa990c62a34e658f019db474456ad3~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Butter & Sugar Baked Bread</h4>
@@ -1382,7 +1932,9 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="card ">
-                            <img class="card-img-top " id="imgmenu " src="https://static.wixstatic.com/media/9fa84d_0eb8f85c07d64b4891e67ca4f0836b51~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp" alt="Card image " style="width:100% ">
+                            <img class="card-img-top " id="imgmenu "
+                                src="https://static.wixstatic.com/media/9fa84d_0eb8f85c07d64b4891e67ca4f0836b51~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                alt="Card image " style="width:100% ">
                         </div>
                         <div class="card-body">
                             <h4 id="menuname" class=" card-title ">Corn Cheese Baked Bread</h4>
@@ -1401,16 +1953,20 @@
         <footer>
             <div id="all" style="background-color:#104751; text-align: center; color: white; overflow-x: hidden;">
                 <h5 style="padding-top: 70px;">BE THE FIRST TO KNOW ABOUT OUR PROMOTIONS AND SPECIAL DISCOUNTS!</h5>
-                <div class="input-container" style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
+                <div class="input-container"
+                    style="border-bottom: 2px solid white; width: 300px; display: inline-block; margin-top: 10px;">
                     <i class="fa fa-envelope icon"></i>
-                    <input class="input-field" type="text" placeholder="Email Address" name="email" style="background-color: #104751; border: 0px; width: 250px;">
+                    <input class="input-field" type="text" placeholder="Email Address" name="email"
+                        style="background-color: #104751; border: 0px; width: 250px;">
                 </div>
-                <button style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
-                Now</button>
+                <button
+                    style="width: 150px; height: 35px; padding: 7px; border: 1px solid white ; background-color: #104751; color: white;">Subscribe
+                    Now</button>
 
                 <h5 style="padding-top: 70px; ">Follow Us:</h5>
                 <a class="warpbutton" href="https://web.facebook.com/D.OroThailand.1999/?_rdc=1&_rdr " target="_blank ">
-                    <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp " style="width: 60px; height: 70px; ">
+                    <img src="https://static.wixstatic.com/media/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.png/v1/fill/w_61,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_e63dbce0bb9e4f7a90d32a72805f9818~mv2.webp "
+                        style="width: 60px; height: 70px; ">
                 </a>
                 <a class="warpbutton" href="https://www.instagram.com/d.orothailand/ " target="_blank ">
                     <img src="https://static.wixstatic.com/media/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.png/v1/crop/x_218,y_0,w_1306,h_1772/fill/w_68,h_75,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_d3948ed9d69148e599c064356306daa3~mv2_d_1772_1772_s_2.webp "
@@ -1431,7 +1987,8 @@
                 </div>
             </div>
             <div style="text-align: right; margin-top: -370px; margin-right: 260px;">
-                <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp " width="120px
+                <img src="https://static.wixstatic.com/media/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.png/v1/fill/w_150,h_125,al_c,q_85,usm_0.66_1.00_0.01/9fa84d_9e11f129b9ca47aa9fd2ba61836a0988~mv2_d_2362_2362_s_2.webp "
+                    width="120px
             " height="100px ">
             </div>
         </footer>
